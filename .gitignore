@@ -1,0 +1,9 @@
+# tlapm fingerprint cache — must NOT ship: a clean clone re-proves from scratch.
+specs/.tlacache/
+
+# TLC scratch
+specs/states/
+specs/*.toolbox/
+
+# external tool (fetch per README §1)
+tla2tools.jar

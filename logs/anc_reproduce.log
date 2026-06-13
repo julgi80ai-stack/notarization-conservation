@@ -1,0 +1,15 @@
+================ TLAPS (universal, unbounded) ================
+Notarization           : [INFO]: All 83 obligations proved.
+Antagonism             : [INFO]: All 84 obligations proved.
+Resilience             : [INFO]: All 11 obligations proved.
+Synthesis              : [INFO]: All 316 obligations proved.
+DeniabilityInstance    : [INFO]: All 44 obligations proved.
+AnonymityInstance      : [INFO]: All 44 obligations proved.
+AuditLogInstance       : [INFO]: All 44 obligations proved.
+SepClosureInstance     : [INFO]: All 53 obligations proved.
+================ TLC (existence / necessity) ================
+AntagonismWitness      : Model checking completed. No error has been found.
+NecessityWitness       : Model checking completed. No error has been found.
+
+Expected: 8x 'All N obligations proved' (TLAPS, 0 omitted) + 2x 'No error has been found' (TLC).
+Universal = proven (TLAPS); existence/necessity = checked (TLC); crypto dual = argued in paper Sec. 8.

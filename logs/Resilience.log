@@ -1,0 +1,215 @@
+
+\* TLAPM version 1.5.0
+\* launched at 2026-06-13 11:08:09 with command line:
+\* tlapm --toolbox 0 0 Resilience.tla
+
+@!!BEGIN
+@!!type:obligationsnumber
+@!!count:0
+@!!END
+
+(* created new ".tlacache/TLAPS.tlaps/TLAPS.thy" *)
+(* fingerprints written in ".tlacache/TLAPS.tlaps/fingerprints" *)
+File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362, character 77:
+[INFO]: All 0 obligation proved.
+@!!BEGIN
+@!!type:obligationsnumber
+@!!count:0
+@!!END
+
+(* created new ".tlacache/Notarization.tlaps/Notarization.thy" *)
+(* fingerprints written in ".tlacache/Notarization.tlaps/fingerprints" *)
+File "./Notarization.tla", line 1, character 1 to line 197, character 74:
+[INFO]: All 0 obligation proved.
+(* loading fingerprints in ".tlacache/Resilience.tlaps/fingerprints" *)
+@!!BEGIN
+@!!type:obligation
+@!!id:1
+@!!loc:44:13:44:15
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:2
+@!!loc:44:16:44:20
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:3
+@!!loc:44:22:44:26
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:4
+@!!loc:44:28:44:32
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:5
+@!!loc:37:19:37:21
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:6
+@!!loc:40:7:40:9
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:7
+@!!loc:41:17:41:24
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:8
+@!!loc:42:26:42:28
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:9
+@!!loc:42:29:42:33
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:10
+@!!loc:43:17:43:19
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:11
+@!!loc:43:20:43:25
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligationsnumber
+@!!count:11
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:1
+@!!loc:44:13:44:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5
+@!!already:true
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:2
+@!!loc:44:16:44:20
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:3
+@!!loc:44:22:44:26
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:4
+@!!loc:44:28:44:32
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:5
+@!!loc:37:19:37:21
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5
+@!!already:true
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:6
+@!!loc:40:7:40:9
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5
+@!!already:true
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:7
+@!!loc:41:17:41:24
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5
+@!!already:true
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:8
+@!!loc:42:26:42:28
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5
+@!!already:true
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:9
+@!!loc:42:29:42:33
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:10
+@!!loc:43:17:43:19
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5
+@!!already:true
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:11
+@!!loc:43:20:43:25
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+(* created new ".tlacache/Resilience.tlaps/Resilience.thy" *)
+(* fingerprints written in ".tlacache/Resilience.tlaps/fingerprints" *)
+File "./Resilience.tla", line 1, character 1 to line 46, character 76:
+[INFO]: All 11 obligations proved.
