@@ -49,7 +49,11 @@ verify for yourself that a `PASS` is not vacuous, are in **`checker/README.md`**
 
 A verbatim run is in `logs/checker.log`.
 
-> **Reading the logs for cache reuse.** `tlapm` marks an obligation resolved from its fingerprint cache with `already:true`. A genuine cold run of this bundle produces **exactly one**, in `Synthesis.log`: that module states one obligation twice, so the second lookup hits the fingerprint the first just wrote. Every other log has **zero**. More than that means the cache was warm and the run does not demonstrate what it claims.
+> **Reading the logs for cache reuse.** Two different checks apply, because the logs were produced two ways.
+>
+> The four abstract-layer logs (`Notarization`, `Antagonism`, `Resilience`, `Synthesis`) were produced with `--toolbox`, so each obligation carries an `already:` field marking whether `tlapm` resolved it from the fingerprint cache. A genuine cold run gives `already:true` **exactly once**, in `Synthesis.log` — that module states one obligation twice, so the second lookup hits the fingerprint the first just wrote — and **zero** in the other three. More than that means the cache was warm.
+>
+> The four instance logs have **no `already:` field at all**: they were not produced with `--toolbox`, so counting `already:true` in them is vacuous rather than reassuring. Their cold-run evidence is their first line, `(* fingerprints file ".tlacache/TLAPS.tlaps/fingerprints" removed *)` — `--cleanfp` erased the cache before the run. That line is present in all four.
 
 > **Fresh re-verification.** `tlapm` caches results in `specs/.tlacache/`. That directory is intentionally **not** shipped, so a clean clone re-proves every obligation from scratch. To force a fresh run on an existing checkout, delete `specs/.tlacache/` (or pass `--cleanfp` to `tlapm`) before `./prove.sh`.
 
@@ -101,7 +105,7 @@ These are **not** additional obligations; the totals above are unchanged. They a
 | hypotheses of `*_LeastExit`, `*_ZeroPrice` | asserted alongside the conclusion in each of the four, so those theorems are witnessed **non-vacuous** on a concrete model | ″ | TLC |
 | class membership | the instance modules' `ASSUME`s are enforced by TLC on each concrete model | ″ | TLC |
 | **Proposition 1** (the bound) | `O(|E| + Σ_S |Rel(S)|)` measured as an operation count: `ops/(|E|+Σ|Rel|)` **bounded by 2** up to `|E| = 10⁵` and `Σ|Rel| ≈ 2 × 10⁵` | `checker/scaling.py` | measurement |
-| **non-vacuity of the above** | one deliberately wrong value per model, **refused** by TLC | `./check.sh --negative` | TLC |
+| **non-vacuity of the above** | one deliberately wrong value in each witness certificate that names a least exit set (three of the four), **refused** by TLC | `./check.sh --negative` | TLC |
 
 Proposition 1's *proof* remains a paper argument (stated in the paper, proved in its appendix); what is added here is a measurement of the count it asserts, and a confirmation that the procedure it describes computes what the machine-checked theorems say it should.
 

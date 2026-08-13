@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MIT
 """Least-exit-set checker — Proposition 1's procedure, implemented.
 
-Every operator below mirrors a definition in ../../../anc/specs/Synthesis.tla
+Every operator below mirrors a definition in ../specs/Synthesis.tla
 (which EXTENDS Antagonism EXTENDS Notarization).  The TLA+ source of each is
-quoted above it so that the correspondence is auditable by eye; Phase 2 of
-PLAN.md replaces eye-auditing with TLC certification of this file's output.
+quoted above it so that the correspondence is auditable by eye; certify.py
+then replaces eye-auditing with TLC certification of this file's output.
 
 Stdlib only, by design: the artifact's stated requirements are tlapm + Java,
 and this adds Python 3 alone.
@@ -197,7 +197,7 @@ def report(model):
 
 
 # --------------------------------------------------------------------------
-# Models.  Mirrors of the witness modules in ../../../anc/specs/.
+# Models.  Mirrors of the witness modules in ../specs/.
 # --------------------------------------------------------------------------
 
 def m_auditlog():
@@ -230,7 +230,7 @@ def m_anonymity():
 
     NB the earlier hand-mirror of this model had inputs = {x:{g0}, w:{g0},
     r:{x,w}} and was WRONG; certify.py caught it.  Values below are read from
-    ../../../anc/specs/AnonymityWitness.tla verbatim."""
+    ../specs/AnonymityWitness.tla verbatim."""
     E = ["g0", "x", "y", "r"]
     lbl = {"g0": "k", "x": "k", "y": BOT, "r": BOT}
     inputs = {"g0": set(), "x": set(), "y": set(), "r": {"x", "y"}}

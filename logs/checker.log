@@ -33,11 +33,11 @@
 
 === Proposition 1 scaling: least exit set of the newest entry ===
         n     edges        ms   us/edge
-      100        99       0.0      0.44
-     1000       999       0.5      0.48
-     5000      4999       3.2      0.64
-    20000     19999      16.9      0.85
-    50000     49999      55.5      1.11
+      100        99       0.0      0.45
+     1000       999       0.5      0.54
+     5000      4999       3.4      0.69
+    20000     19999      16.1      0.81
+    50000     49999      47.1      0.94
   (least exit set = {'Chain'} at every size, as Audit_LeastExit says)
 
 ALL OK
@@ -89,18 +89,18 @@ confirmed by TLC against the instance module itself (no transcription).
 === family 1: |E| grows (hash-chained log, target = newest entry) ===
       |E|  sum|Rel|        ops  ops/(E+R)       ms  ms/prev size/prev
       100        99        298       1.50      0.0        -         -
-     1000       999       2998       1.50      0.4    13.8x     10.0x
-    10000      9999      29998       1.50      5.0    14.0x     10.0x
-    50000     49999     149998       1.50     43.7     8.8x      5.0x
-   100000     99999     299998       1.50    131.8     3.0x      2.0x
+     1000       999       2998       1.50      0.3    10.1x     10.0x
+    10000      9999      29998       1.50      5.4    20.1x     10.0x
+    50000     49999     149998       1.50     58.0    10.7x      5.0x
+   100000     99999     299998       1.50    163.4     2.8x      2.0x
 
 === family 2: |E| fixed at 2000, fan-in k grows (spend graph) ===
       |E|  sum|Rel|        ops  ops/(E+R)       ms  ms/prev size/prev
-     2000      1999       5998       1.50      0.7        -         -
-     2000      9985      21966       1.83      3.7     5.3x      3.0x
-     2000     39790      81561       1.95     15.1     4.0x      3.5x
-     2000     98725     199401       1.98     46.6     3.1x      2.4x
-     2000    194950     391801       1.99     79.3     1.7x      2.0x
+     2000      1999       5998       1.50      0.6        -         -
+     2000      9985      21966       1.83      4.9     7.7x      3.0x
+     2000     39790      81561       1.95     31.2     6.3x      3.5x
+     2000     98725     199401       1.98     50.8     1.6x      2.4x
+     2000    194950     391801       1.99     84.2     1.7x      2.0x
 
 READING THE TABLES
 
