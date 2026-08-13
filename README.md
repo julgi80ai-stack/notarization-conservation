@@ -2,7 +2,7 @@
 
 Machine-checked companion to the paper **"The Price of Non-Establishment: Least Exit Sets in Label-Independent Notarization, with Machine-Checked Instances."**
 
-This bundle is **self-contained** and reproduces **every** machine-checked claim in the paper with one command. Universals are *proven* (TLAPS, unbounded); existence/necessity are *checked* (TLC); the synthesis complexity propositions (paper §7.3) and the cryptographic dual (paper §9) are *paper-proved arguments*, not machine-checked, and are not part of this bundle.
+This bundle is **self-contained** and reproduces **every** machine-checked claim in the paper with one command. Universals are *proven* (TLAPS, unbounded); existence/necessity are *checked* (TLC); the synthesis complexity propositions and the cryptographic dual are *paper-proved arguments*, not machine-checked, and are not part of this bundle.
 
 ---
 
@@ -31,14 +31,14 @@ Expected output: **8× "All N obligations proved"** (TLAPS, 0 omitted/admitted) 
 ./check.sh --negative   # non-vacuity self-test: a wrong value must be REFUSED
 ```
 
-Proposition 1 (paper §7.3) says the least exit set is computable in
+Proposition 1 says the least exit set is computable in
 `O(|E| + Σ_S |Rel(S)|)`. `checker/` implements that procedure and then asserts
 its answers back into the specifications as TLC invariants — over modules it
 `EXTENDS` rather than copies. A pass is therefore *"an independent
 implementation computed this, and the artifact that owns the definitions
 confirmed it"*, not *"our tool says so"*.
 
-It also reproduces the paper's four-domain dividend table (§7.4) as tool output
+It also reproduces the paper's four-domain dividend table as tool output
 from concrete members of the four instance modules, and measures Proposition 1's
 bound — the paper's one non-machine-checked result — as an operation count.
 
@@ -97,13 +97,13 @@ These are **not** additional obligations; the totals above are unchanged. They a
 | Paper result | What `check.sh` establishes | Where | Tool |
 |---|---|---|---|
 | **Proposition 1** (procedure) | the least-exit-set procedure implemented independently; its output on every witness model asserted as an invariant over the **real** witness module and confirmed | `checker/certify.py` → `gen/*Cert.tla` | TLC, 4 certificates |
-| **Table 2 / §7.4** (four-domain dividend) | each row reproduced as **tool output** from a concrete member of its instance module — `EXTENDS DeniabilityInstance` / `AnonymityInstance` / `AuditLogInstance` / `SepClosureInstance`, constants fixed in the `.cfg`, **no definition copied** | `checker/concrete.py` → `gen3/*Concrete.tla` | TLC, 4 certificates |
+| **the four-domain dividend table** | each row reproduced as **tool output** from a concrete member of its instance module — `EXTENDS DeniabilityInstance` / `AnonymityInstance` / `AuditLogInstance` / `SepClosureInstance`, constants fixed in the `.cfg`, **no definition copied** | `checker/concrete.py` → `gen3/*Concrete.tla` | TLC, 4 certificates |
 | hypotheses of `*_LeastExit`, `*_ZeroPrice` | asserted alongside the conclusion in each of the four, so those theorems are witnessed **non-vacuous** on a concrete model | ″ | TLC |
 | class membership | the instance modules' `ASSUME`s are enforced by TLC on each concrete model | ″ | TLC |
 | **Proposition 1** (the bound) | `O(|E| + Σ_S |Rel(S)|)` measured as an operation count: `ops/(|E|+Σ|Rel|)` **bounded by 2** up to `|E| = 10⁵` and `Σ|Rel| ≈ 2 × 10⁵` | `checker/scaling.py` | measurement |
 | **non-vacuity of the above** | one deliberately wrong value per model, **refused** by TLC | `./check.sh --negative` | TLC |
 
-Proposition 1's *proof* remains a paper argument (paper §7.3, Appendix A); what is added here is a measurement of the count it asserts, and a confirmation that the procedure it describes computes what the machine-checked theorems say it should.
+Proposition 1's *proof* remains a paper argument (stated in the paper, proved in its appendix); what is added here is a measurement of the count it asserts, and a confirmation that the procedure it describes computes what the machine-checked theorems say it should.
 
 Per-module counts: `Notarization` 83, `Antagonism` 84, `Resilience` 11, `Synthesis` 324, `DeniabilityInstance` 151, `AnonymityInstance` 149, `AuditLogInstance` 174, `SepClosureInstance` 205.
 
@@ -111,7 +111,7 @@ Per-module counts: `Notarization` 83, `Antagonism` 84, `Resilience` 11, `Synthes
 
 ### New to this paper vs. reused (honest breakdown)
 - **New (the impossibility, the analysis, and the two new instances): 719 obligations** — `Antagonism` (84, incl. the orbit corollary) + `Resilience` (11) + `Synthesis` (324) + `DeniabilityInstance` (151) + `AnonymityInstance` (149).
-- **Modules originating in prior work: 462 obligations** — `Notarization` (83, the framework this paper builds on) + `AuditLogInstance` (174) + `SepClosureInstance` (205). They are included so the paper's §10 class table is reproducible end-to-end in one bundle, not to claim them as new. **But the label is by module, not by obligation, and the difference matters here:** of the erasure instance's 174, **52 are new to this paper** — `Audit_ZeroPrice` (29) and `Audit_GenesisUnsealed` (23) were written for it and have no counterpart in the prior development. Counted by obligation rather than by module the split is **771 new / 410 prior**. We give both because the module-level split is the one a reader can check by opening files, and the obligation-level split is the one that is true. **Further caveat:** the erasure instance is no longer purely reused — its chain surface was re-modelled for this paper from a height *pre-order* to a `prev`-pointer *adjacency*, and the governance instance's position surface `J1` likewise — which is what makes the closure genuinely multi-step (see `AuditLogWitness`) and the governance `I = 2` two surfaces rather than one counted twice (`J1_J2_Distinct`). The anonymity instance's `Graph` surface was likewise re-modelled, from a boolean exposure flag to **multi-input spend adjacency** (`inputs` is set-valued, so a transaction joins *all* of its inputs; see `AnonymityWitness`). The re-modelling and the wiring are new; the domain mappings are not.
+- **Modules originating in prior work: 462 obligations** — `Notarization` (83, the framework this paper builds on) + `AuditLogInstance` (174) + `SepClosureInstance` (205). They are included so the paper's class table is reproducible end-to-end in one bundle, not to claim them as new. **But the label is by module, not by obligation, and the difference matters here:** of the erasure instance's 174, **52 are new to this paper** — `Audit_ZeroPrice` (29) and `Audit_GenesisUnsealed` (23) were written for it and have no counterpart in the prior development. Counted by obligation rather than by module the split is **771 new / 410 prior**. We give both because the module-level split is the one a reader can check by opening files, and the obligation-level split is the one that is true. **Further caveat:** the erasure instance is no longer purely reused — its chain surface was re-modelled for this paper from a height *pre-order* to a `prev`-pointer *adjacency*, and the governance instance's position surface `J1` likewise — which is what makes the closure genuinely multi-step (see `AuditLogWitness`) and the governance `I = 2` two surfaces rather than one counted twice (`J1_J2_Distinct`). The anonymity instance's `Graph` surface was likewise re-modelled, from a boolean exposure flag to **multi-input spend adjacency** (`inputs` is set-valued, so a transaction joins *all* of its inputs; see `AnonymityWitness`). The re-modelling and the wiring are new; the domain mappings are not.
 
 ## 3b. Notation ↔ specification (what the paper's symbols are called here)
 
@@ -148,11 +148,11 @@ The paper writes mathematics; the modules write TLA⁺. This is the mapping, so 
 
 ---
 
-## 4. The synthesis layer (paper §7)
+## 4. The synthesis layer
 
-`Synthesis.tla` (EXTENDS `Antagonism`) turns the law into an *analysis*: given a target effect **that is not already on the established frontier `G`**, the minimum-cost exit achieving non-establishment is unique, definable, and equals the effect's residual label-independent pin set (`HandlesMinus`); its cost is bounded by the seal multiplicity `I(r)` and, for fresh effects, equals the effect's orbit-invariant (`SealedLI`) handle set — which that bound contains, and which coincides with `I(r)` exactly where the pin comes from the frontier itself. For an effect already in `G` there is no such exit **at any cost** (`EstablishmentIsFinal`) — the `r ∉ G` conjunct of `LeastExit` is a load-bearing hypothesis, not a side condition. The module proves `LeastExit`, `KeyDropDominance`, `OptimalSynthesis`, `PriceWithinIntegrity`, `FreshExactness`, `ZeroPriceIffUnsealed`, and `EstablishmentIsFinal`. The complexity propositions (P / NP-complete / Minimum Label Cut) are paper-proved in §7.3 and are not in this bundle.
+`Synthesis.tla` (EXTENDS `Antagonism`) turns the law into an *analysis*: given a target effect **that is not already on the established frontier `G`**, the minimum-cost exit achieving non-establishment is unique, definable, and equals the effect's residual label-independent pin set (`HandlesMinus`); its cost is bounded by the seal multiplicity `I(r)` and, for fresh effects, equals the effect's orbit-invariant (`SealedLI`) handle set — which that bound contains, and which coincides with `I(r)` exactly where the pin comes from the frontier itself. For an effect already in `G` there is no such exit **at any cost** (`EstablishmentIsFinal`) — the `r ∉ G` conjunct of `LeastExit` is a load-bearing hypothesis, not a side condition. The module proves `LeastExit`, `KeyDropDominance`, `OptimalSynthesis`, `PriceWithinIntegrity`, `FreshExactness`, `ZeroPriceIffUnsealed`, and `EstablishmentIsFinal`. The complexity propositions (P / NP-complete / Minimum Label Cut) are paper-proved and are not in this bundle.
 
-## 5. The four instances (paper §10) — honest scope
+## 5. The four instances — honest scope
 
 All four instances are `INSTANCE Synthesis WITH …` (hence of `Antagonism` and `Notarization`) and are **isomorphic** by design: each maps its domain's structural re-link to a label-independent surface and its privacy/identity binding to a label surface, then discharges the abstract `ASSUME`s, classifies its surfaces, *inherits* the impossibility, proves the "privacy move is futile" theorem, discharges the key-type split (`*_Dichotomy`), and computes its own least exit set (`*_LeastExit`). This isomorphism **is** the unification claimed in the paper — that independently-developed trade-offs share one structure under one predicate — and **not** a claim of depth in any single instance. The per-domain patterns are each community's own; what is new is that they are one law.
 
@@ -175,7 +175,7 @@ checker/
   README.md              what the checker establishes, and how to disbelieve it
   leastexit.py           Proposition 1's procedure, implemented
   certify.py             asserts its output back into the witness modules (TLC)
-  concrete.py            concrete members of all four instances -> the §7.4 table
+  concrete.py            concrete members of all four instances -> the dividend table
   scaling.py             Proposition 1's bound, measured as an operation count
 specs/
   Notarization.tla              the abstract label-independent notarization class
