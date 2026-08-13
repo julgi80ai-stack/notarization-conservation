@@ -64,4 +64,4 @@ done
 
 echo
 echo "Expected: 8x 'All N obligations proved' (TLAPS, 0 omitted) + 7x 'No error has been found' (TLC)."
-echo "Universal = proven (TLAPS); existence/necessity = checked (TLC); synthesis complexity (Sec. 7.3) & crypto dual (Sec. 9) = argued in paper."
+echo "Universal = proven (TLAPS); existence/necessity = checked (TLC); synthesis complexity & crypto dual = argued in paper."

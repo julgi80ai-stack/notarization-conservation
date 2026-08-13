@@ -3,11 +3,11 @@
 (* M9-S3 witness: THEOREM 7 IS A GENUINE UPPER BOUND, NOT AN EQUALITY IN   *)
 (* DISGUISE.                                                               *)
 (*                                                                         *)
-(* In the rest of the artifact every strict instance of Thm 7's inclusion  *)
+(* In the rest of the artifact every strict PriceWithinIntegrity inclusion *)
 (*      HandlesMinus(AllBot, r)  \subseteq  Handles(r)                     *)
 (* is the degenerate 0 < 1, and the one element with I = 2 (PriceWitness's *)
-(* s) has price exactly 2 -- so nothing witnessed that the BOUND (Thm 7)   *)
-(* and the EQUALITY (Cor 3, for sinks) say different things.               *)
+(* s) has price exactly 2 -- so nothing witnessed that PriceWithinIntegrity*)
+(* (the BOUND) and FreshExactness (the EQUALITY, for sinks) differ.        *)
 (*                                                                         *)
 (* This model separates them at I = 2:                                     *)
 (*                                                                         *)
@@ -20,7 +20,7 @@
 (*                                                                         *)
 (* Q's pin evaporates in the r-deleted closure because its source z is    *)
 (* fed by r itself -- a seal partly financed by the sealed record.  And r  *)
-(* is NOT a sink (it emits r --T--> z), so Cor 3's hypothesis fails,       *)
+(* is NOT a sink (it emits r --T--> z), so FreshExactness fails to apply,  *)
 (* which is exactly why the equality may fail while the bound holds: the   *)
 (* least exit set is {P} alone -- exiting P separates r even though the    *)
 (* seal counts two surfaces.                                               *)
@@ -101,11 +101,11 @@ Witness ==
   /\ "z" \in Reach
   /\ "z" \notin ReachExc(AllBot, "r")
 
-  \* ---- and r is outside Cor 3's hypothesis: not a sink ------------------
+  \* ---- and r is outside FreshExactness's hypothesis: not a sink ---------
   /\ ~Sink("r")
 
   \* ---- sanity: the published theorems hold here -------------------------
-  /\ \A e \in E : HandlesMinus(AllBot, e) \subseteq Handles(e)  \* Thm 7
-  /\ \A e \in E : ~(Sealed(e) /\ Separable(e))                  \* Thm 1
+  /\ \A e \in E : HandlesMinus(AllBot, e) \subseteq Handles(e)  \* PriceWithinIntegrity
+  /\ \A e \in E : ~(Sealed(e) /\ Separable(e))                  \* NoSealedSeparable
 
 ============================================================================

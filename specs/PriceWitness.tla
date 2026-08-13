@@ -87,11 +87,11 @@ Witness ==
   /\ "r" \notin ReachIn({"P"})               \* r needs the K step first
   /\ "r" \in ReachIn({"P", "K"})             \* ... so the path is g0->x->r
 
-  \* ---- GAP 2: a NON-DEGENERATE I(e) = 2  (Thm 4 / "graded" witness) -----
+  \* ---- GAP 2: NON-DEGENERATE I(e) = 2 (RedundancyResilient, "graded") ---
   /\ Handles("s") = {"P", "Q"} /\ Cardinality(Handles("s")) = 2
   /\ "s" \in ReachIn(Surfaces \ {"P"})       \* survives losing P, via Q
   /\ "s" \in ReachIn(Surfaces \ {"Q"})       \* and vice versa
-  /\ HandlesMinus(AllBot, "s") = {"P", "Q"}  \* price = 2 = I(s)   (Cor 3 holds)
+  /\ HandlesMinus(AllBot, "s") = {"P", "Q"}  \* price = 2 = I(s)   (FreshExactness)
   /\ Sink("s")
 
   \* ---- GAP 3: price < I(e)  -- the abstract's "equals" is FALSE ---------
@@ -100,7 +100,7 @@ Witness ==
   /\ HandlesMinus(AllBot, "r") = {}
   /\ Cardinality(HandlesMinus(AllBot,"r")) # Cardinality(Handles("r"))
 
-  \* ---- GAP 4: Thm 7's inclusion is STRICT somewhere (not vacuous) -------
+  \* ---- GAP 4: PriceWithinIntegrity's inclusion STRICT somewhere ---------
   /\ HandlesMinus(AllBot, "r") \subseteq Handles("r")
   /\ HandlesMinus(AllBot, "r") # Handles("r")
 
@@ -110,7 +110,7 @@ Witness ==
   /\ "s" \in ReachAt(lbl) /\ "s" \in ReachAt(AllBot)   \* SealedLI: orbit-stable
 
   \* ---- sanity: every published theorem still holds here ----------------
-  /\ \A e \in E : ~(Sealed(e) /\ Separable(e))          \* Thm 1
-  /\ \A e \in E : HandlesMinus(AllBot, e) \subseteq Handles(e)  \* Thm 7
+  /\ \A e \in E : ~(Sealed(e) /\ Separable(e))          \* NoSealedSeparable
+  /\ \A e \in E : HandlesMinus(AllBot, e) \subseteq Handles(e)  \* PriceWithinIntegrity
 
 ============================================================================

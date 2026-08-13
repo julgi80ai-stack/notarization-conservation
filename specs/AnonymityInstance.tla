@@ -45,7 +45,7 @@
 (*                                                                         *)
 (* M3 (wiring): INSTANCE Synthesis (the whole law inherited), abstract       *)
 (* ASSUMEs discharged (the Inst_ lemmas), impossibility proved BY            *)
-(* ColocBreaksSep, Dichotomy discharged, and the §7.4 dividend row computed  *)
+(* ColocBreaksSep, Dichotomy discharged, and the dividend row computed       *)
 (* (Anon_LeastExit; Anon_ZeroPrice added in M5-c).                          *)
 (***************************************************************************)
 EXTENDS Naturals, TLAPS
@@ -88,7 +88,7 @@ A == INSTANCE Synthesis
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* DISCHARGE THE ABSTRACT ASSUMEs (the "proof duty" of paper §10).          *)
+(* DISCHARGE THE ABSTRACT ASSUMEs (the "proof duty" every instance owes).   *)
 (***************************************************************************)
 LEMMA Inst_BotNotLabel == NoId \notin Idents
   BY NoIdFresh
@@ -162,7 +162,7 @@ THEOREM ClusteringFutile ==
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* DISCHARGE THE KEY-TYPE SPLIT (§7.1), machine-checked for this instance.  *)
+(* DISCHARGE THE KEY-TYPE SPLIT (Dichotomy) for this instance.              *)
 (***************************************************************************)
 LEMMA AllBotIsBot ==
   ASSUME NEW x \in Txs PROVE A!AllBot[x] = NoId
@@ -188,7 +188,7 @@ THEOREM Anon_Dichotomy == A!Dichotomy
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* THE §7.4 DIVIDEND ROW, AS A THEOREM.                                     *)
+(* THE DIVIDEND ROW, AS A THEOREM (Anon_LeastExit).                         *)
 (* "Anonymity | pseudonym rotation futile | exit the flow-analysis           *)
 (*  surfaces, keep pseudonym links"  --  computed, not asserted.            *)
 (***************************************************************************)
@@ -221,7 +221,7 @@ THEOREM Anon_LeastExit ==
 (* i.e. a coinbase / newly-minted tx that never entered the spend graph -- *)
 (* separates for free once the pseudonyms are dropped: the Graph surface   *)
 (* cannot pin a tx with no inputs, and the Pseud surface vanishes at the   *)
-(* all-Bot labelling.  Corollary 3 in domain dress: the privacy-coin       *)
+(* all-Bot labelling.  ZeroPriceIffUnsealed: the privacy-coin              *)
 (* design decision (keep the tx off the flow-analysis surface) as a        *)
 (* theorem.  The verbatim symmetric of Den_ZeroPrice / Audit_ZeroPrice.    *)
 THEOREM Anon_ZeroPrice ==

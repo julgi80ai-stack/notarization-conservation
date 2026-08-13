@@ -137,7 +137,7 @@ Witness ==
   /\ ReachLI(lbl) = {"g0"}                    \* the LI closure stops at G
   /\ "r" \in Reach /\ "r" \notin ReachLI(lbl)
 
-  \* ---- (4) price < integrity: strict inclusion of Thm 7, observed -------
+  \* ---- (4) price < integrity: PriceWithinIntegrity strict, observed -----
   /\ Sink("r")
   /\ HandlesMinus(AllBot, "r") = {}
   /\ HandlesMinus(AllBot, "r") \subseteq Handles("r")
@@ -156,7 +156,7 @@ Witness ==
   /\ "x" \in Reach
 
   \* ---- sanity: the published theorems hold here --------------------------
-  /\ \A e \in E : ~(Sealed(e) /\ Separable(e))                  \* Thm 1
-  /\ \A e \in E : HandlesMinus(AllBot, e) \subseteq Handles(e)  \* Thm 7
+  /\ \A e \in E : ~(Sealed(e) /\ Separable(e))                  \* NoSealedSeparable
+  /\ \A e \in E : HandlesMinus(AllBot, e) \subseteq Handles(e)  \* PriceWithinIntegrity
 
 ============================================================================

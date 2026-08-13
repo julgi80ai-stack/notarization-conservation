@@ -48,7 +48,7 @@ ClosedUnder(X) == \A x, y \in E : (x \in X /\ Edge(x, y)) => y \in X
 Reach == { e \in E : \A X \in SUBSET E :
                        (G \subseteq X /\ ClosedUnder(X)) => e \in X }
 
-\* Non-retroactive separation of an emitted event r (paper Definition 3).
+\* Non-retroactive separation of an emitted event r (paper: "separation").
 Sep(r) == r \notin Reach
 
 \* Drop r's correlation key (the NE strategy "key-drop").
@@ -125,7 +125,7 @@ THEOREM TA_excludes_NE ==
 (* Closure helper lemmas, then the one-step characterization                *)
 (*   r in Reach  <=>  r in G  \/  (\E x in Reach : Edge(x,r))               *)
 (* from which Sep decomposes.  The (=>) direction is least-fixpoint         *)
-(* minimality (the closure induction MASTER_PLAN Section 11 flags).         *)
+(* minimality -- a closure induction, not a one-step unfolding.             *)
 (***************************************************************************)
 LEMMA Reach_inE == Reach \subseteq E
   BY DEF Reach

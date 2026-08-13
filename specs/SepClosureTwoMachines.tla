@@ -1,7 +1,7 @@
 ------------------- MODULE SepClosureTwoMachines -------------------
 (***************************************************************************)
 (* Non-retroactive separation (Sep) as a closure property, machine-checked *)
-(* at the two design vertices of the trade-off (Proposition 1).            *)
+(* at the two design vertices of the prior bounded trade-off result.       *)
 (*                                                                         *)
 (* Question: is a reflex actuation effect e* UN-reachable from the         *)
 (* action log G under the closure of the re-linking operations             *)
@@ -109,7 +109,7 @@ Spec == Init /\ [][Next]_vars
 Sep == \A r \in Reflexes : (r \in emitted) => (r \notin linked)
 
 ====================================================================
-(*               TLC RESULTS (Proposition 1; see README)             *)
+(*                      TLC RESULTS (see README)                     *)
 (*  cfg: CorrIDs={c1} NONE=NoCorr Actions={a1} Reflexes={r1} INV Sep   *)
 (*                                                                   *)
 (*  sep_ACCT.cfg            (J1+J2 on)  -> VIOLATED via JoinByTime     *)

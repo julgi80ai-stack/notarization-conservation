@@ -39,7 +39,7 @@
 (* M3 (wiring): INSTANCE Synthesis (the whole law inherited), abstract      *)
 (* ASSUMEs discharged (the Inst_ lemmas), impossibility proved BY           *)
 (* ColocBreaksSep, erasure futility BY the inherited DecisiveLI, Dichotomy  *)
-(* discharged, and the §7.4 dividend row computed (Audit_LeastExit).        *)
+(* discharged, and the dividend row computed (Audit_LeastExit).             *)
 (*                                                                         *)
 (* Bounds: NONE.  Entries, Subjects arbitrary (possibly infinite).          *)
 (***************************************************************************)
@@ -85,7 +85,7 @@ A == INSTANCE Synthesis
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* DISCHARGE THE ABSTRACT ASSUMEs (the "proof duty" of paper §10).          *)
+(* DISCHARGE THE ABSTRACT ASSUMEs (the "proof duty" every instance owes).   *)
 (***************************************************************************)
 LEMMA Inst_BotNotLabel == NoSubj \notin Subjects
   BY NoSubjFresh
@@ -181,7 +181,7 @@ THEOREM ErasureFutile ==
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* DISCHARGE THE KEY-TYPE SPLIT (§7.1), machine-checked for this instance.  *)
+(* DISCHARGE THE KEY-TYPE SPLIT (Dichotomy) for this instance.              *)
 (***************************************************************************)
 LEMMA AllBotIsBot ==
   ASSUME NEW x \in Entries PROVE A!AllBot[x] = NoSubj
@@ -207,7 +207,7 @@ THEOREM Audit_Dichotomy == A!Dichotomy
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* THE §7.4 DIVIDEND ROW, AS A THEOREM.                                     *)
+(* THE DIVIDEND ROW, AS A THEOREM (Audit_LeastExit).                        *)
 (* "Erasure (RTBF) | key-erasure futile | exit the chain surface (unhook     *)
 (*  the record's prev-link), keep the subject index"  --  computed, not      *)
 (*  asserted: under the maximal key-drop the ONLY surviving pin on a         *)
@@ -243,8 +243,8 @@ THEOREM Audit_LeastExit ==
 (* names nothing, i.e. a record that never entered the chain linkage --     *)
 (* separates for free once the keys are dropped: the Chain surface cannot   *)
 (* pin an entry with no predecessor pointer into the chain, and the         *)
-(* Subject surface vanishes at the all-Bot labelling.  Corollary 3 in       *)
-(* domain dress: the "keep personal data off-chain" practice as a theorem.  *)
+(* Subject surface vanishes at the all-Bot labelling.  ZeroPriceIffUnsealed *)
+(* in domain dress: "keep personal data off-chain" practice as a theorem.   *)
 (* The verbatim symmetric of Den_ZeroPrice.  (M9-S1)                        *)
 THEOREM Audit_ZeroPrice ==
   ASSUME NEW e \in Entries, prev[e] = NoPrev

@@ -22,7 +22,7 @@
 (* M3 (wiring): INSTANCE Synthesis (the whole law inherited), abstract      *)
 (* ASSUMEs discharged (the Inst_ lemmas), impossibility proved BY           *)
 (* ColocBreaksSep, key-strip futility BY the inherited DecisiveLI,          *)
-(* Dichotomy discharged, and the §7.4 dividend row computed                 *)
+(* Dichotomy discharged, and the dividend row computed                      *)
 (* (Morph_LeastExit; Morph_ZeroPrice added in M5-c).                        *)
 (*                                                                         *)
 (* M5-b (J1/J2 de-duplication): an earlier revision modelled BOTH pipeline  *)
@@ -114,7 +114,7 @@ LEMMA MorphLblType == MorphLbl \in [EventIds -> CorrIDs \cup {NONE}]
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* DISCHARGE THE ABSTRACT ASSUMEs (the "proof duty" of paper §10).          *)
+(* DISCHARGE THE ABSTRACT ASSUMEs (the "proof duty" every instance owes).   *)
 (***************************************************************************)
 LEMMA Inst_BotNotLabel == NONE \notin CorrIDs
   BY NoneNotCorr
@@ -240,7 +240,7 @@ THEOREM AcctKeyStripFutile ==
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* DISCHARGE THE KEY-TYPE SPLIT (§7.1), machine-checked for this instance.  *)
+(* DISCHARGE THE KEY-TYPE SPLIT (Dichotomy) for this instance.              *)
 (***************************************************************************)
 LEMMA AllBotIsBot ==
   ASSUME NEW x \in EventIds PROVE N!AllBot[x] = NONE
@@ -269,13 +269,13 @@ THEOREM Morph_Dichotomy == N!Dichotomy
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* THE §7.4 DIVIDEND ROW, AS A THEOREM.                                     *)
+(* THE DIVIDEND ROW, AS A THEOREM (Morph_LeastExit).                        *)
 (* "Governance | key-strip futile | exit the sealing pipeline, keep the     *)
 (*  parent-key surface"  --  computed, not asserted: at the accountability  *)
 (*  vertex (both corr-agnostic sealing surfaces on), the least exit set of  *)
 (*  a sealed reflex is EXACTLY the pipeline {J1, J2}; the latent key        *)
 (*  traverser J4 costs nothing (it vanishes under the maximal key-drop).    *)
-(*  Proposition 1's "exit the pipeline AND drop the key", at per-effect     *)
+(*  The prior result's "exit the pipeline AND drop the key", at per-effect  *)
 (*  grain.  Since M5-b the two surfaces are DISTINCT relations              *)
 (*  (J1_J2_Distinct): the price 2 counts two real structures.               *)
 (***************************************************************************)

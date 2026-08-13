@@ -36,7 +36,7 @@
 (* just its definitions.  The five abstract ASSUMEs of Notarization are      *)
 (* DISCHARGED as the Inst_ lemmas, the impossibility is proved BY the        *)
 (* abstract theorem (ColocBreaksSep) instead of being re-derived locally,    *)
-(* the key-type split (Dichotomy) is discharged, and the §7.4 dividend row   *)
+(* the key-type split (Dichotomy) is discharged, and the dividend row        *)
 (* is computed as a theorem (Den_LeastExit / Den_ZeroPrice).                 *)
 (***************************************************************************)
 EXTENDS Naturals, TLAPS
@@ -80,7 +80,7 @@ D == INSTANCE Synthesis
 (* DISCHARGE THE ABSTRACT ASSUMEs.  TLAPS attaches the instantiated         *)
 (* assumptions of Notarization as HYPOTHESES of every inherited theorem,    *)
 (* so they must be proved before any abstract theorem can be applied.       *)
-(* This is the "proof duty" of paper §10.                                   *)
+(* This is the "proof duty" every instance owes the abstract module.        *)
 (***************************************************************************)
 LEMMA Inst_BotNotLabel == NoAuth \notin Authors
   BY NoAuthFresh
@@ -170,7 +170,7 @@ THEOREM RepudiationFutileOnSig ==
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* DISCHARGE THE KEY-TYPE SPLIT.  §7.1's "all four instances satisfy the    *)
+(* DISCHARGE THE KEY-TYPE SPLIT. Dichotomy: "all four instances satisfy the *)
 (* split", machine-checked for this instance.                               *)
 (***************************************************************************)
 LEMMA AllBotIsBot ==
@@ -197,7 +197,7 @@ THEOREM Den_Dichotomy == D!Dichotomy
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* THE §7.4 DIVIDEND ROW, AS A THEOREM.                                     *)
+(* THE DIVIDEND ROW, AS A THEOREM (Den_LeastExit).                          *)
 (* "Deniability | relabel phase futile | exit the transferable-signature    *)
 (*  surfaces, keep MACs"  --  computed, not asserted.                       *)
 (***************************************************************************)
@@ -228,7 +228,7 @@ THEOREM Den_LeastExit ==
   <1>4. QED BY <1>1, <1>2, <1>3 DEF DenSurfaces
 
 (* And the zero-price half: an unsigned message separates for free --      *)
-(* Corollary 3 in domain dress, i.e. OTR's design decision as a theorem.   *)
+(* ZeroPriceIffUnsealed: OTR's design decision as a theorem.               *)
 THEOREM Den_ZeroPrice ==
   ASSUME NEW m \in Msgs, ~signed[m]
   PROVE  D!HandlesMinus(D!AllBot, m) = {}
