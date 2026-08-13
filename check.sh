@@ -19,7 +19,7 @@
 #                   witness modules  ->  the specification certifies the tool
 #   3. instances    concrete finite members of all four domain instances,
 #                   EXTENDing the instance modules themselves (no definition
-#                   is copied)  ->  Table 2 of the paper, as tool output
+#                   is copied)  ->  the paper's four-domain dividend table, as tool output
 #   4. scaling      Proposition 1's O(|E| + sum_S |Rel(S)|), measured as a
 #                   step count (the paper's only non-machine-checked result)
 #
@@ -70,6 +70,6 @@ echo "================ 4. Proposition 1, measured ================"
 python3 scaling.py
 
 echo
-echo "Expected: 4x PASS (step 2) + 4x 'TLC PASS' (step 3), Table 2 reproduced,"
+echo "Expected: 4x PASS (step 2) + 4x 'TLC PASS' (step 3), dividend table reproduced,"
 echo "and ops/(|E|+sum|Rel|) bounded by 2 (step 4)."
 echo "Not convinced a PASS means anything?  Run:  ./check.sh --negative"

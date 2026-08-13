@@ -33,11 +33,11 @@
 
 === Proposition 1 scaling: least exit set of the newest entry ===
         n     edges        ms   us/edge
-      100        99       0.0      0.46
-     1000       999       0.5      0.49
-     5000      4999       3.5      0.70
-    20000     19999      16.3      0.82
-    50000     49999      49.6      0.99
+      100        99       0.0      0.41
+     1000       999       0.5      0.50
+     5000      4999       4.7      0.94
+    20000     19999      18.7      0.93
+    50000     49999      72.6      1.45
   (least exit set = {'Chain'} at every size, as Audit_LeastExit says)
 
 ALL OK
@@ -62,7 +62,7 @@ tlaps : tlaps
   SepClosureConcrete       checker ok   TLC PASS  No error has been found.
 
 ==============================================================================
-Table 2 (§7.4), reproduced as tool output
+The four-domain dividend table, reproduced as tool output
 ==============================================================================
 Instance      Adjudicator               least exit           price
 ------------------------------------------------------------------------------
@@ -80,7 +80,7 @@ Action gov.   auditor of the record     ['J1', 'J2']             2
   RTBF: [note] g0: in G — establishment is final (Cor 4), so {} is not a price at all
   Action gov.: [note] a: in G — establishment is final (Cor 4), so ['J2'] is not a price at all
 
-ALL FOUR DOMAINS CERTIFIED — each row of Table 2 is now a theorem AND a tool output,
+ALL FOUR DOMAINS CERTIFIED — each dividend row is now a theorem AND a tool output,
 confirmed by TLC against the instance module itself (no transcription).
 ================ 4. Proposition 1, measured ================
 === agreement with the certified implementation ===
@@ -89,18 +89,18 @@ confirmed by TLC against the instance module itself (no transcription).
 === family 1: |E| grows (hash-chained log, target = newest entry) ===
       |E|  sum|Rel|        ops  ops/(E+R)       ms  ms/prev size/prev
       100        99        298       1.50      0.0        -         -
-     1000       999       2998       1.50      0.3     9.6x     10.0x
-    10000      9999      29998       1.50      4.2    15.7x     10.0x
-    50000     49999     149998       1.50     49.6    11.9x      5.0x
-   100000     99999     299998       1.50    113.1     2.3x      2.0x
+     1000       999       2998       1.50      0.3     7.2x     10.0x
+    10000      9999      29998       1.50      5.1    18.1x     10.0x
+    50000     49999     149998       1.50     49.2     9.7x      5.0x
+   100000     99999     299998       1.50    134.2     2.7x      2.0x
 
 === family 2: |E| fixed at 2000, fan-in k grows (spend graph) ===
       |E|  sum|Rel|        ops  ops/(E+R)       ms  ms/prev size/prev
      2000      1999       5998       1.50      0.6        -         -
-     2000      9985      21966       1.83      1.8     3.1x      3.0x
-     2000     39790      81561       1.95      8.6     4.8x      3.5x
-     2000     98725     199401       1.98     47.8     5.5x      2.4x
-     2000    194950     391801       1.99     83.0     1.7x      2.0x
+     2000      9985      21966       1.83      1.8     3.2x      3.0x
+     2000     39790      81561       1.95     18.2    10.1x      3.5x
+     2000     98725     199401       1.98     48.1     2.6x      2.4x
+     2000    194950     391801       1.99     87.2     1.8x      2.0x
 
 READING THE TABLES
 
@@ -123,6 +123,6 @@ READING THE TABLES
   step count; a step count is what a contended or noisy machine cannot
   corrupt, and it is what this table therefore reports as the measurement.
 
-Expected: 4x PASS (step 2) + 4x 'TLC PASS' (step 3), Table 2 reproduced,
+Expected: 4x PASS (step 2) + 4x 'TLC PASS' (step 3), dividend table reproduced,
 and ops/(|E|+sum|Rel|) bounded by 2 (step 4).
 Not convinced a PASS means anything?  Run:  ./check.sh --negative

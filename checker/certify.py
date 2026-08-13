@@ -79,7 +79,7 @@ def build_cert(module, model, mutate=False):
     --negative` runs this path and requires TLC to REFUSE it.  The mutation is
     chosen to be semantically wrong but well-typed: the effect's full handle
     set is asserted where the least exit set -- a strict subset for some
-    effect in these models, by Theorem 7 -- belongs.
+    effect in these models, by PriceWithinIntegrity -- belongs.
     """
     caps = CAPS[module]
     ab = L.all_bot(model["E"])

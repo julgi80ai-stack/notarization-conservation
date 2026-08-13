@@ -22,7 +22,7 @@ Two further things come free from EXTENDS:
     `*_LeastExit` and `*_ZeroPrice` theorems, so the run also witnesses those
     hypotheses to be satisfiable -- the theorems are not vacuous.
 
-Together the four models reproduce Table 2 of the paper (§7.4).
+Together the four models reproduce the paper's four-domain dividend table.
 
     python3 concrete.py            # generate, check, certify, print the table
 
@@ -129,7 +129,8 @@ def c_deniability():
             "name": "Deniability (concrete)", "E": E, "G": {"g"}, "lbl": author,
             "surfaces": {
                 # DenRel("Sig", l) == {p : signed[p[2]]}  -- a CYLINDER: it
-                # never reads p[1].  The one that survives; §8 says so.
+                # never reads p[1].  It is the only one left in the artifact;
+                # AnonymityInstance.tla records why the others were replaced.
                 "Sig": {"li": True, "rel": lambda l: {
                     (a, b) for a, b in product(E, E) if signed[b]}},
                 "Mac": {"li": False, "rel": key_surface(E)},
@@ -291,11 +292,11 @@ def build(spec):
         claims.append(f'  /\\ {inst}!Handles("{e}") = '
                       f'{tla_set(L.handles(py, e))}')
 
-    # Corollary 4, live.  For a frontier effect the procedure still returns a
+    # EstablishmentIsFinal, live.  For a frontier effect the procedure still returns a
     # set, and that set is not a price: nothing separates it.  Asserting
     # ~Sep(e) alongside the returned value makes each frontier row a certified
     # counterexample to reading HandlesMinus without the r \notin G guard --
-    # the guard Theorem 5 carries and a reader may drop.
+    # the guard LeastExit carries and a reader may drop.
     for e in sorted(py["G"]):
         claims.append(f'  /\\ ~{inst}!Sep("{e}")')
 
@@ -402,7 +403,7 @@ def main():
               f"TLC {'PASS' if tlc_ok else 'FAIL'}  {msg}")
 
     print("\n" + "=" * 78)
-    print("Table 2 (§7.4), reproduced as tool output")
+    print("The four-domain dividend table, reproduced as tool output")
     print("=" * 78)
     print(f"{'Instance':<14}{'Adjudicator':<26}{'least exit':<20}{'price':>6}")
     print("-" * 78)
@@ -420,7 +421,7 @@ def main():
 
     print()
     if ok_all:
-        print("ALL FOUR DOMAINS CERTIFIED — each row of Table 2 is now a "
+        print("ALL FOUR DOMAINS CERTIFIED — each dividend row is now a "
               "theorem AND a tool output,\nconfirmed by TLC against the "
               "instance module itself (no transcription).")
     else:

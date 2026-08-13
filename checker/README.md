@@ -70,7 +70,7 @@ invariant TLC never evaluates. So the check is runnable:
 
 It regenerates each certificate with **one deliberately wrong value** — the
 effect's full handle set `Handles(r)` stated where the least exit set
-`HandlesMinus(⊥, r)` belongs, which Theorem 7 makes a strict subset in these
+`HandlesMinus(⊥, r)` belongs, which `PriceWithinIntegrity` makes a strict subset in these
 models — and requires TLC to reject it:
 
 ```
@@ -127,7 +127,7 @@ Reproduced (each row also a theorem of its own module):
 | Action governance | auditor of the record | `{J1, J2}` | 2 | not emitted → `{}` |
 
 The checker also prints a note for every effect on the frontier `G`:
-establishment is final (Corollary 4), so whatever `HandlesMinus` returns for
+establishment is final (`EstablishmentIsFinal`), so whatever `HandlesMinus` returns for
 such an effect is **not a price** — no exit set separates it at all. That note
 is not decoration; it is what a caller must not misread.
 

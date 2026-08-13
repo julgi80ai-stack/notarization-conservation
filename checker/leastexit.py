@@ -96,7 +96,7 @@ def handles_minus(model, lbl, r):
          HandlesMinus(l,r) == { S \\in Surfaces :
              \\E x \\in ReachExc(l,r) : <<x,r>> \\in Rel(S,l) }
 
-    This is the least exit set (Theorem 5) and its size is the price.
+    This is the least exit set (`LeastExit`) and its size is the price.
     """
     RE = reach_exc(model, lbl, r)
     out = set()
@@ -162,13 +162,13 @@ def check_model(model):
         hm, h = handles_minus(model, ab, r), handles(model, r)
         rows.append((r, hm, h, is_sink(model, r), r in model["G"]))
 
-        # Theorem 7: HandlesMinus(AllBot, r) subseteq Handles(r)
+        # PriceWithinIntegrity: HandlesMinus(AllBot, r) subseteq Handles(r)
         if not hm <= h:
             findings.append(f"  [FAIL] {r}: Thm 7 violated, {sorted(hm)} "
                             f"not subset of {sorted(h)}")
             ok = False
 
-        # Corollary 4 (EstablishmentIsFinal): r in G => NO exit set separates
+        # EstablishmentIsFinal: r in G => NO exit set separates
         # it, whatever HandlesMinus returns.  The caveat is about membership in
         # G, not about the computed set being empty: a non-empty value is no
         # more a price than an empty one is a licence.
