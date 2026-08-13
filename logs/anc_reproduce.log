@@ -1,9 +1,3 @@
-================ TLAPS (universal, unbounded) ================
-Notarization           : [INFO]: All 83 obligations proved.
-Antagonism             : [INFO]: All 84 obligations proved.
-Resilience             : [INFO]: All 11 obligations proved.
-Synthesis              : [INFO]: All 324 obligations proved.
-DeniabilityInstance    : [INFO]: All 151 obligations proved.
 AnonymityInstance      : [INFO]: All 149 obligations proved.
 AuditLogInstance       : [INFO]: All 174 obligations proved.
 SepClosureInstance     : [INFO]: All 205 obligations proved.

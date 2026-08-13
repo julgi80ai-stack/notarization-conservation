@@ -49,6 +49,8 @@ verify for yourself that a `PASS` is not vacuous, are in **`checker/README.md`**
 
 A verbatim run is in `logs/checker.log`.
 
+> **Reading the logs for cache reuse.** `tlapm` marks an obligation resolved from its fingerprint cache with `already:true`. A genuine cold run of this bundle produces **exactly one**, in `Synthesis.log`: that module states one obligation twice, so the second lookup hits the fingerprint the first just wrote. Every other log has **zero**. More than that means the cache was warm and the run does not demonstrate what it claims.
+
 > **Fresh re-verification.** `tlapm` caches results in `specs/.tlacache/`. That directory is intentionally **not** shipped, so a clean clone re-proves every obligation from scratch. To force a fresh run on an existing checkout, delete `specs/.tlacache/` (or pass `--cleanfp` to `tlapm`) before `./prove.sh`.
 
 ## 3. What is proved, and where (claim = proof, 1:1)

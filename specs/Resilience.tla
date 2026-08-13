@@ -1,9 +1,9 @@
 ------------------------------ MODULE Resilience ------------------------------
 (***************************************************************************)
-(* ACA-L2  Phase 2.2: integrity STRENGTH as handle redundancy, and its       *)
-(* RESILIENCE -- the strength axis of the conservation law.                  *)
+(* Seal MULTIPLICITY as handle redundancy, and its resilience -- the       *)
+(* strength axis of the conservation law.                                  *)
 (*                                                                         *)
-(* Integrity strength of an effect is the redundancy of the surfaces pinning *)
+(* Seal multiplicity of an effect is the redundancy of the surfaces pinning*)
 (* it to the frontier: more independent pins => harder to dislodge by single *)
 (* point tampering.  We make this precise by restricting the re-linking      *)
 (* closure to a SUB-set of surfaces (a surface compromised/removed) and       *)

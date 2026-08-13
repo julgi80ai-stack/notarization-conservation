@@ -2,7 +2,7 @@
 (***************************************************************************)
 (* ACA-L2  Phase 1: the CONSERVATION LAW, qualitative core.                 *)
 (*                                                                         *)
-(* Integrity strength (>= 1 label-independent handle pinning the effect to  *)
+(* Seal multiplicity (>= 1 label-independent handle pinning the effect to   *)
 (* the frontier-reachable set) and non-establishment capacity (the effect   *)
 (* is non-retroactively separable) are JOINTLY UNREACHABLE for a single     *)
 (* effect.  The reason is the Phase-0 touchstone identity: the label-       *)
@@ -24,7 +24,7 @@ Pins(S, e) == \E g \in Reach : <<g, e>> \in Rel(S, lbl)
 \* once the tamper-evidence carriers AND the re-link handles.
 Handles(e) == { S \in Surfaces : LabelIndep(S) /\ Pins(S, e) }
 
-\* Integrity strength >= 1 : robustly sealed by at least one LI surface.
+\* Seal multiplicity >= 1 : robustly sealed by at least one LI surface.
 Sealed(e)    == Handles(e) # {}
 \* Non-establishment capacity = 1 : non-retroactively separable (= L1/L2 Sep).
 Separable(e) == e \notin Reach
