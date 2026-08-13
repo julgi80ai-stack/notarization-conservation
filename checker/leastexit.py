@@ -164,7 +164,8 @@ def check_model(model):
 
         # PriceWithinIntegrity: HandlesMinus(AllBot, r) subseteq Handles(r)
         if not hm <= h:
-            findings.append(f"  [FAIL] {r}: Thm 7 violated, {sorted(hm)} "
+            findings.append(f"  [FAIL] {r}: PriceWithinIntegrity violated, "
+                            f"{sorted(hm)} "
                             f"not subset of {sorted(h)}")
             ok = False
 
@@ -174,7 +175,8 @@ def check_model(model):
         # more a price than an empty one is a licence.
         if r in model["G"]:
             findings.append(
-                f"  [note] {r}: in G — establishment is final (Cor 4), so "
+                f"  [note] {r}: in G — establishment is final "
+                f"(EstablishmentIsFinal), so "
                 f"{sorted(hm) if hm else '{}'} is not a price at all")
 
     return ok, rows, findings
@@ -250,7 +252,8 @@ def m_strictprice():
     """StrictPriceWitness.tla -- g0 --P--> r, r --T--> z, z --Q--> r.
     Handles(r) = {P,Q} (I = 2) but the least exit set is {P}: Q's source z is
     reachable only through r, so it drops out of the r-deleted closure.
-    Part of r's seal is procured by r.  r is not a sink -> outside Cor 3."""
+    Part of r's seal is procured by r.  r is not a sink -> outside
+    FreshExactness."""
     E = ["g0", "r", "z"]
     lbl = {e: BOT for e in E}
     rels = {"P": {("g0", "r")}, "Q": {("z", "r")}, "T": {("r", "z")}}

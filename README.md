@@ -63,10 +63,10 @@ A verbatim run is in `logs/checker.log`.
 | **Corollary 2** | antagonism over the label orbit (`OrbitInvariance`, `OrbitAntagonism`) | `Antagonism.tla` | TLAPS | ″ |
 | **Theorem 2** | `TA ⟹ ∀e ¬Separable(e)` (binary impossibility = degenerate corner) | `Antagonism.tla` | TLAPS | ″ |
 | **Theorem 3** | separation exits every surface (non-retroactive decomposition) | `Antagonism.tla` | TLAPS | ″ |
-| **Theorem 4** | redundancy ⟹ resilience (strength axis) | `Resilience.tla` | TLAPS | 11 |
-| **Theorem 5** | least exit set is unique & definable (`LeastExit`) | `Synthesis.tla` | TLAPS | 324 (module) |
-| **Theorem 6** | key-drop dominance; closed-form optimal synthesis | `Synthesis.tla` | TLAPS | ″ |
-| **Theorem 7** | separation price ⊆ seal multiplicity (`PriceWithinIntegrity`) | `Synthesis.tla` | TLAPS | ″ |
+| **Remark 1** | redundancy ⟹ resilience (strength axis) | `Resilience.tla` | TLAPS | 11 |
+| **Theorem 4** | least exit set is unique & definable (`LeastExit`) | `Synthesis.tla` | TLAPS | 324 (module) |
+| **Theorem 5** | key-drop dominance; closed-form optimal synthesis | `Synthesis.tla` | TLAPS | ″ |
+| **Theorem 6** | separation price ⊆ seal multiplicity (`PriceWithinIntegrity`) | `Synthesis.tla` | TLAPS | ″ |
 | **Corollary 3** | **establishment is final** — for `r ∈ G` no exit set separates, under any labelling (`EstablishmentIsFinal`) | `Synthesis.tla` | TLAPS | ″ |
 | **Corollary 4** | fresh effects: price = `SealedLI` handles; zero iff unsealed (`FreshExactness`, `ZeroPriceIffUnsealed`) | `Synthesis.tla` | TLAPS | ″ |
 | Non-vacuity | `Sealed`, `Separable` both realised | `AntagonismWitness.tla`+`.cfg` | TLC | — |
@@ -82,11 +82,11 @@ A verbatim run is in `logs/checker.log`.
 | Zero price, per instance | price `= {}` off the sealing surfaces | `*_ZeroPrice` in all four instances | TLAPS | (in the above) |
 | **`TA` false in the log** | a genesis entry has no `prev`, is never sealed, hence `¬TA` | `AuditLogInstance` (`Audit_GenesisUnsealed`) | TLAPS | (in the above) |
 | Distinct pins | `Rel(J1) ≠ Rel(J2)` — the governance `I = 2` is two surfaces, not one twice | `SepClosureInstance` (`J1_J2_Distinct`) | TLAPS | (in the above) |
-| **Non-degenerate strength** | `I(e) = 2` with two *distinct* surfaces, each survivable; strict Thm 7 inclusion | `PriceWitness.tla`+`.cfg` | TLC | — |
+| **Non-degenerate strength** | `I(e) = 2` with two *distinct* surfaces, each survivable; strict Thm 6 inclusion | `PriceWitness.tla`+`.cfg` | TLC | — |
 | **Thm 2 non-vacuous, and its price** | `TA` realised together with its conclusion — via a self-pinning root | `TAWitness.tla`+`.cfg` | TLC | — |
-| **Thm 7 strict above multiplicity 1** | `I(r) = 2`, price `1`, `r` not a sink — separates Thm 7 from Cor 4 | `StrictPriceWitness.tla`+`.cfg` | TLC | — |
+| **Thm 6 strict above multiplicity 1** | `I(r) = 2`, price `1`, `r` not a sink — separates Thm 6 from Cor 4 | `StrictPriceWitness.tla`+`.cfg` | TLC | — |
 
-> **On the numbering.** The numbers above are those of the full version. The conference version states redundancy-resilience as a remark rather than a numbered theorem, so from Theorem 4 onward its theorem numbers run one lower (its Theorem 4 is the least-exit theorem). Corollary numbering is the same in both. Every row also names the TLA⁺ theorem, which does not move.
+> **On the numbering.** These are the conference version's numbers. Every row also names the TLA⁺ theorem, which does not move when a version renumbers — prefer the name if you are holding a different version of the paper.
 
 **Total reproduced by `prove.sh`: 1,181 TLAPS obligations (0 omitted/admitted) + 7 TLC witnesses.**
 
@@ -180,8 +180,8 @@ checker/
 specs/
   Notarization.tla              the abstract label-independent notarization class
   Antagonism.tla                conservation law (Thm 1, Cor 1, Cor 2, Thm 2, Thm 3)
-  Resilience.tla                strength axis (Thm 4)
-  Synthesis.tla                 exit synthesis (Thm 5, Thm 6, Thm 7, Cor 3)
+  Resilience.tla                strength axis (Remark 1)
+  Synthesis.tla                 exit synthesis (Thm 4, Thm 5, Thm 6, Cor 3, Cor 4)
   DeniabilityInstance.tla       non-repudiation vs. deniability
   AnonymityInstance.tla         anonymity vs. accountability
   AuditLogInstance.tla          immutability vs. right-to-be-forgotten
@@ -195,11 +195,11 @@ specs/
   AnonymityWitness.tla/.cfg     TLC: a length-2 closure through a multi-input
                                 spend join; two distinct Graph in-edges
   PriceWitness.tla/.cfg         TLC: a non-degenerate I(e) = 2 on two distinct
-                                surfaces; Thm 7's inclusion strict
+                                surfaces; Thm 6's inclusion strict
   TAWitness.tla/.cfg            TLC: Thm 2's hypothesis TA is satisfiable —
                                 at the price of a self-pinning root
   StrictPriceWitness.tla/.cfg   TLC: I(r) = 2 with price 1 on a non-sink —
-                                Thm 7 (bound) separated from Cor 3 (identity)
+                                Thm 6 (bound) separated from Cor 4 (identity)
 LICENSE                       MIT
 ```
 

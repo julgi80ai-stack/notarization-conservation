@@ -91,7 +91,7 @@ def build_cert(module, model, mutate=False):
                 victim = r
                 break
         if victim is None:
-            raise SystemExit(f"{module}: no strict Thm 7 inclusion to mutate")
+            raise SystemExit(f"{module}: no strict inclusion to mutate")
 
     # Global: the closure under the actual labelling.
     lines.append(f"  /\\ Reach = {tla_set(L.reach(model, model['lbl']))}")

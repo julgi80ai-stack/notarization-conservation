@@ -9,8 +9,8 @@
 #   TLAPS (unbounded, machine-PROVEN):
 #     Notarization          framework lemmas (closure, decisive lemma)
 #     Antagonism            Thm 1, Cor 1, Cor 2 (orbit), Thm 2, Thm 3
-#     Resilience            Thm 4 (strength axis)
-#     Synthesis             exit synthesis (Thm 5, Thm 6, Thm 7, Cor 3,
+#     Resilience            Remark 1 (strength axis)
+#     Synthesis             exit synthesis (Thm 4, Thm 5, Thm 6, Cor 3,
 #                           Cor 4): LeastExit, KeyDropDominance,
 #                           OptimalSynthesis, PriceWithinIntegrity,
 #                           FreshExactness, ZeroPriceIffUnsealed,
@@ -29,11 +29,11 @@
 #                           the surface is neither a cylinder nor a
 #                           predecessor pointer (D-4b)
 #     PriceWitness          non-degenerate I = 2 (two DISTINCT LI handles),
-#                           price < integrity, strict Thm-7 inclusion (M5)
+#                           price < integrity, strict PriceWithinIntegrity
 #     TAWitness             TA satisfiable at class level -- via a root
 #                           self-pin (the trust-anchor convention) (M9)
-#     StrictPriceWitness    Thm 7 strictly a BOUND at I = 2: price 1 < 2
-#                           on a non-sink (outside Cor 3) (M9)
+#     StrictPriceWitness    PriceWithinIntegrity strictly a BOUND at I = 2:
+#                           price 1 < 2 on a non-sink (outside FreshExactness)
 #
 # The SYNTHESIS CHECKER is a separate, independent entry point: ./check.sh
 # (see README section 2b).  It cannot affect anything this script reports.
