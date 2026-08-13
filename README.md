@@ -113,6 +113,41 @@ Per-module counts: `Notarization` 83, `Antagonism` 84, `Resilience` 11, `Synthes
 - **New (the impossibility, the analysis, and the two new instances): 719 obligations** — `Antagonism` (84, incl. the orbit corollary) + `Resilience` (11) + `Synthesis` (324) + `DeniabilityInstance` (151) + `AnonymityInstance` (149).
 - **Modules originating in prior work: 462 obligations** — `Notarization` (83, the framework this paper builds on) + `AuditLogInstance` (174) + `SepClosureInstance` (205). They are included so the paper's §10 class table is reproducible end-to-end in one bundle, not to claim them as new. **But the label is by module, not by obligation, and the difference matters here:** of the erasure instance's 174, **52 are new to this paper** — `Audit_ZeroPrice` (29) and `Audit_GenesisUnsealed` (23) were written for it and have no counterpart in the prior development. Counted by obligation rather than by module the split is **771 new / 410 prior**. We give both because the module-level split is the one a reader can check by opening files, and the obligation-level split is the one that is true. **Further caveat:** the erasure instance is no longer purely reused — its chain surface was re-modelled for this paper from a height *pre-order* to a `prev`-pointer *adjacency*, and the governance instance's position surface `J1` likewise — which is what makes the closure genuinely multi-step (see `AuditLogWitness`) and the governance `I = 2` two surfaces rather than one counted twice (`J1_J2_Distinct`). The anonymity instance's `Graph` surface was likewise re-modelled, from a boolean exposure flag to **multi-input spend adjacency** (`inputs` is set-valued, so a transaction joins *all* of its inputs; see `AnonymityWitness`). The re-modelling and the wiring are new; the domain mappings are not.
 
+## 3b. Notation ↔ specification (what the paper's symbols are called here)
+
+The paper writes mathematics; the modules write TLA⁺. This is the mapping, so a claim in the paper can be located in the source without guessing. Every operator below is verbatim from `specs/`.
+
+| Paper | TLA⁺ | Defined in | Definition |
+|---|---|---|---|
+| `E`, `L`, `⊥` | `E`, `L`, `Bot` | `Notarization` (CONSTANT) | effects, labels, the absent label |
+| `lbl` | `lbl` | `Notarization` (CONSTANT) | the labelling; `Labelings == [E -> L \cup {Bot}]` |
+| `lbl_⊥` | `AllBot` | `Synthesis` | `[e \in E \|-> Bot]` — the maximal key drop |
+| `Surfaces`, `Rel(S,l)` | `Surfaces`, `Rel(S,l)` | `Notarization` (CONSTANT) | surfaces; `S`'s links **under labelling `l`** |
+| `G` | `G` | `Notarization` (CONSTANT) | the established frontier |
+| `LabelIndep(S)` | `LabelIndep(S)` | `Notarization` | `\A l1, l2 : Rel(S,l1) = Rel(S,l2)` |
+| `Edge(x,y)` | `Edge(x,y)` | `Notarization` | `\E S : <<x,y>> \in Rel(S,lbl)` |
+| `Reach` | `Reach` | `Notarization` | least `Edge`-closed superset of `G` |
+| `Sep(e)` | `Sep(e)` — **and** `Separable(e)` | `Notarization` / `Antagonism` | both are `e \notin Reach`. Two names, one predicate: `Sep` is the framework's, `Separable` reads better beside `Sealed` |
+| `Pins(S,e)` | `Pins(S,e)` | `Antagonism` | `\E g \in Reach : <<g,e>> \in Rel(S,lbl)` |
+| `Handles(e)` | `Handles(e)` | `Antagonism` | `{S : LabelIndep(S) /\ Pins(S,e)}` |
+| `I(e)` | *(no operator)* | — | `Cardinality(Handles(e))`. The seal multiplicity is **counted, not defined** — deliberately: counting needs finiteness, and the theorems are unbounded |
+| `Sealed(e)` | `Sealed(e)` | `Antagonism` | `Handles(e) # {}` |
+| `Reach_LI(l)` | `ReachLI(l)` | `Antagonism` | closure of `G` under the **label-independent** surfaces only |
+| `SealedLI(e)` | `SealedLI(e)` | `Antagonism` | `\E S : LabelIndep(S) /\ PinsLI(S,e)` — pinned **from the LI closure**. Strictly stronger than `Sealed` |
+| `TA` | `TA` | `Antagonism` | `\A x \in E : Sealed(x)` — total accountability |
+| `Handles⁻(l,r)` | `HandlesMinus(l,r)` | `Synthesis` | `{S : \E x \in ReachExc(l,r) : <<x,r>> \in Rel(S,l)}` — **the least exit set** |
+| `Reach^{-r}(l)` | `ReachExc(l,r)` | `Synthesis` | closure of `G` with every edge incident to `r` deleted |
+| — | `SepAch(l,r,XS)` | `Synthesis` | separation of `r` is achieved under labelling `l` by exiting surface set `XS` |
+| `Sink(r)` (*fresh*) | `Sink(r)` | `Synthesis` | `r` emits no link of its own — Corollary 4's hypothesis |
+| key-type split | `Dichotomy` | `Synthesis` | `\A S : LabelIndep(S) \/ Rel(S,AllBot) = {}` |
+| — | `ReachIn(SS)` | `Resilience` | closure restricted to a **subset** `SS` of surfaces (a surface removed) |
+
+> **Two things worth knowing before reading the source.**
+> `Rel` takes the labelling as an argument, so a surface *may* read the label; `LabelIndep` is the predicate saying it does not — the split is proved per instance (`*_Dichotomy`), never assumed.
+> `Reach` and `ReachLI` are different closures, and so are `Sealed` and `SealedLI`. Conflating either pair is the mistake this development has had to correct before; `AuditLogWitness` exists to show they come apart.
+
+---
+
 ## 4. The synthesis layer (paper §7)
 
 `Synthesis.tla` (EXTENDS `Antagonism`) turns the law into an *analysis*: given a target effect **that is not already on the established frontier `G`**, the minimum-cost exit achieving non-establishment is unique, definable, and equals the effect's residual label-independent pin set (`HandlesMinus`); its cost is bounded by the seal multiplicity `I(r)` and, for fresh effects, equals the effect's orbit-invariant (`SealedLI`) handle set — which that bound contains, and which coincides with `I(r)` exactly where the pin comes from the frontier itself. For an effect already in `G` there is no such exit **at any cost** (`EstablishmentIsFinal`) — the `r ∉ G` conjunct of `LeastExit` is a load-bearing hypothesis, not a side condition. The module proves `LeastExit`, `KeyDropDominance`, `OptimalSynthesis`, `PriceWithinIntegrity`, `FreshExactness`, `ZeroPriceIffUnsealed`, and `EstablishmentIsFinal`. The complexity propositions (P / NP-complete / Minimum Label Cut) are paper-proved in §7.3 and are not in this bundle.
