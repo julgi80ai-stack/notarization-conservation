@@ -1,758 +1,276 @@
-
-\* TLAPM version 1.5.0
-\* launched at 2026-06-13 11:08:13 with command line:
-\* tlapm --toolbox 0 0 AnonymityInstance.tla
-
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:0
-@!!END
-
+(* fingerprints file ".tlacache/TLAPS.tlaps/fingerprints" removed *)
 (* created new ".tlacache/TLAPS.tlaps/TLAPS.thy" *)
 (* fingerprints written in ".tlacache/TLAPS.tlaps/fingerprints" *)
 File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362, character 77:
 [INFO]: All 0 obligation proved.
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:0
-@!!END
-
+(* fingerprints file ".tlacache/Notarization.tlaps/fingerprints" removed *)
 (* created new ".tlacache/Notarization.tlaps/Notarization.thy" *)
 (* fingerprints written in ".tlacache/Notarization.tlaps/fingerprints" *)
 File "./Notarization.tla", line 1, character 1 to line 197, character 74:
 [INFO]: All 0 obligation proved.
-(* loading fingerprints in ".tlacache/AnonymityInstance.tlaps/fingerprints" *)
-@!!BEGIN
-@!!type:obligation
-@!!id:1
-@!!loc:58:3:58:5
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:2
-@!!loc:70:13:70:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:3
-@!!loc:70:16:70:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:4
-@!!loc:70:22:70:26
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:5
-@!!loc:61:33:61:35
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:6
-@!!loc:61:36:61:44
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:7
-@!!loc:64:19:64:21
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:8
-@!!loc:64:22:64:31
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:9
-@!!loc:65:50:65:52
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:10
-@!!loc:66:31:66:33
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:11
-@!!loc:66:34:66:39
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:12
-@!!loc:67:43:67:45
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:13
-@!!loc:67:46:67:50
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:14
-@!!loc:67:52:67:56
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:15
-@!!loc:68:46:68:48
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:16
-@!!loc:68:49:68:53
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:17
-@!!loc:69:53:69:55
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:18
-@!!loc:69:56:69:60
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:19
-@!!loc:69:62:69:66
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:20
-@!!loc:89:13:89:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:21
-@!!loc:89:16:89:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:22
-@!!loc:78:19:78:21
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:23
-@!!loc:78:22:78:31
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:24
-@!!loc:79:58:79:60
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:25
-@!!loc:79:61:79:65
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:26
-@!!loc:80:46:80:48
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:27
-@!!loc:80:49:80:53
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:28
-@!!loc:81:34:81:36
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:29
-@!!loc:88:15:88:17
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:30
-@!!loc:88:18:88:22
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:31
-@!!loc:88:24:88:28
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:32
-@!!loc:88:30:88:34
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:33
-@!!loc:85:9:85:11
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:34
-@!!loc:86:19:86:21
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:35
-@!!loc:86:22:86:26
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:36
-@!!loc:87:24:87:26
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:37
-@!!loc:87:27:87:31
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:38
-@!!loc:87:33:87:37
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:39
-@!!loc:101:13:101:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:40
-@!!loc:101:16:101:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:41
-@!!loc:99:19:99:21
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:42
-@!!loc:99:22:99:31
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:43
-@!!loc:100:58:100:60
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:44
-@!!loc:100:61:100:65
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:44
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:1
-@!!loc:58:3:58:5
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:2
-@!!loc:70:13:70:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:3
-@!!loc:70:16:70:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:4
-@!!loc:70:22:70:26
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:5
-@!!loc:61:33:61:35
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:6
-@!!loc:61:36:61:44
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:7
-@!!loc:64:19:64:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:8
-@!!loc:64:22:64:31
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:9
-@!!loc:65:50:65:52
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:10
-@!!loc:66:31:66:33
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:11
-@!!loc:66:34:66:39
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:12
-@!!loc:67:43:67:45
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:13
-@!!loc:67:46:67:50
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:14
-@!!loc:67:52:67:56
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:15
-@!!loc:68:46:68:48
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:16
-@!!loc:68:49:68:53
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:17
-@!!loc:69:53:69:55
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:18
-@!!loc:69:56:69:60
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:19
-@!!loc:69:62:69:66
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:20
-@!!loc:89:13:89:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:21
-@!!loc:89:16:89:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:22
-@!!loc:78:19:78:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:23
-@!!loc:78:22:78:31
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:24
-@!!loc:79:58:79:60
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:25
-@!!loc:79:61:79:65
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:26
-@!!loc:80:46:80:48
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:27
-@!!loc:80:49:80:53
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:28
-@!!loc:81:34:81:36
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:29
-@!!loc:88:15:88:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:30
-@!!loc:88:18:88:22
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:31
-@!!loc:88:24:88:28
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:32
-@!!loc:88:30:88:34
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:33
-@!!loc:85:9:85:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:34
-@!!loc:86:19:86:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:35
-@!!loc:86:22:86:26
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:36
-@!!loc:87:24:87:26
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:37
-@!!loc:87:27:87:31
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:38
-@!!loc:87:33:87:37
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:39
-@!!loc:101:13:101:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:40
-@!!loc:101:16:101:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:41
-@!!loc:99:19:99:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:42
-@!!loc:99:22:99:31
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:43
-@!!loc:100:58:100:60
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:44
-@!!loc:100:61:100:65
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
+(* fingerprints file ".tlacache/Antagonism.tlaps/fingerprints" removed *)
+(* created new ".tlacache/Antagonism.tlaps/Antagonism.thy" *)
+(* fingerprints written in ".tlacache/Antagonism.tlaps/fingerprints" *)
+File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
+[INFO]: All 0 obligation proved.
+(* fingerprints file ".tlacache/Synthesis.tlaps/fingerprints" removed *)
+(* created new ".tlacache/Synthesis.tlaps/Synthesis.thy" *)
+(* fingerprints written in ".tlacache/Synthesis.tlaps/fingerprints" *)
+File "./Synthesis.tla", line 1, character 1 to line 504, character 76:
+[INFO]: All 0 obligation proved.
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_AnonMem_, CONSTANT_A!Labelings_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_AnonMem_, CONSTANT_A!Labelings_, CONSTANT_AnonSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] CONSTANT_S_ = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_l_[CONSTANT_p_[1]] = CONSTANT_l_[CONSTANT_p_[2]]
+          /\ CONSTANT_l_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_A!Labelings_, CONSTANT_AnonSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] CONSTANT_S_ = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_l_[CONSTANT_p_[1]] = CONSTANT_l_[CONSTANT_p_[2]]
+          /\ CONSTANT_l_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_A!Labelings_, CONSTANT_AnonSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Graph" = "Graph" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AnonMem_("Graph") \X CONSTANT_AnonMem_("Graph") :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Graph" = "Pseud" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AnonMem_("Pseud") \X CONSTANT_AnonMem_("Pseud") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_AnonMem_, CONSTANT_A!Labelings_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!Labelings_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "Pseud" = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Pseud" = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          [CONSTANT_t_ \in CONSTANT_Txs_ |-> CONSTANT_i0_][CONSTANT_p_[1]]
+          = [CONSTANT_t_ \in CONSTANT_Txs_ |-> CONSTANT_i0_][CONSTANT_p_[2]]
+          /\ [CONSTANT_t_ \in CONSTANT_Txs_ |-> CONSTANT_i0_][CONSTANT_p_[1]]
+             # CONSTANT_NoId_}
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "Pseud" = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Pseud" = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          [CONSTANT_t_ \in CONSTANT_Txs_ |-> CONSTANT_NoId_][CONSTANT_p_[1]]
+          = [CONSTANT_t_ \in CONSTANT_Txs_ |-> CONSTANT_NoId_][CONSTANT_p_[2]]
+          /\ [CONSTANT_t_ \in CONSTANT_Txs_ |-> CONSTANT_NoId_][CONSTANT_p_[1]]
+             # CONSTANT_NoId_}
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_AnonRel_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_AnonMem_, CONSTANT_A!Labelings_, CONSTANT_A!Sep_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "Graph" = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Graph" = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_ident_[CONSTANT_p_[1]] = CONSTANT_ident_[CONSTANT_p_[2]]
+          /\ CONSTANT_ident_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!Strip_
+
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "Graph" = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Graph" = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_ident_[CONSTANT_p_[1]] = CONSTANT_ident_[CONSTANT_p_[2]]
+          /\ CONSTANT_ident_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "Graph" = "Graph" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AnonMem_("Graph") \X CONSTANT_AnonMem_("Graph") :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Graph" = "Pseud" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AnonMem_("Pseud") \X CONSTANT_AnonMem_("Pseud") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_AnonMem_, CONSTANT_A!Labelings_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_AnonMem_, CONSTANT_A!Strip_, CONSTANT_A!LabelIndep_, CONSTANT_A!Labelings_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!AllBot_, CONSTANT_A!LabelIndep_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!AllBot_, CONSTANT_A!LabelIndep_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!AllBot_, CONSTANT_A!LabelIndep_, CONSTANT_AnonSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Graph" = "Graph" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AnonMem_("Graph") \X CONSTANT_AnonMem_("Graph") :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Graph" = "Pseud" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AnonMem_("Pseud") \X CONSTANT_AnonMem_("Pseud") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_AnonMem_, CONSTANT_A!Labelings_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!AllBot_, CONSTANT_A!LabelIndep_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!AllBot_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!AllBot_, CONSTANT_AnonSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Pseud" = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Pseud" = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!AllBot_, CONSTANT_AnonSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Pseud" = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Pseud" = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_AnonMem_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_A!Labelings_, CONSTANT_AnonSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Graph" = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Graph" = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!HandlesMinus_, CONSTANT_AnonMem_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_A!Labelings_, CONSTANT_AnonSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Pseud" = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] "Pseud" = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_AnonRel_, CONSTANT_A!HandlesMinus_, CONSTANT_AnonMem_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_A!Labelings_, CONSTANT_AnonSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] CONSTANT_S_ = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "Graph" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_p_[1] \in CONSTANT_inputs_[CONSTANT_p_[2]]}
+  [] CONSTANT_S_ = "Pseud" ->
+       {CONSTANT_p_ \in CONSTANT_Txs_ \X CONSTANT_Txs_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoId_}
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
 
 (* created new ".tlacache/AnonymityInstance.tlaps/AnonymityInstance.thy" *)
 (* fingerprints written in ".tlacache/AnonymityInstance.tlaps/fingerprints" *)
-File "./AnonymityInstance.tla", line 1, character 1 to line 103, character 76:
-[INFO]: All 44 obligations proved.
+File "./AnonymityInstance.tla", line 1, character 1 to line 247, character 76:
+[INFO]: All 149 obligations proved.

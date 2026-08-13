@@ -1,758 +1,308 @@
-
-\* TLAPM version 1.5.0
-\* launched at 2026-06-13 11:08:14 with command line:
-\* tlapm --toolbox 0 0 AuditLogInstance.tla
-
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:0
-@!!END
-
+(* fingerprints file ".tlacache/TLAPS.tlaps/fingerprints" removed *)
 (* created new ".tlacache/TLAPS.tlaps/TLAPS.thy" *)
 (* fingerprints written in ".tlacache/TLAPS.tlaps/fingerprints" *)
 File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362, character 77:
 [INFO]: All 0 obligation proved.
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:0
-@!!END
-
+(* fingerprints file ".tlacache/Notarization.tlaps/fingerprints" removed *)
 (* created new ".tlacache/Notarization.tlaps/Notarization.thy" *)
 (* fingerprints written in ".tlacache/Notarization.tlaps/fingerprints" *)
 File "./Notarization.tla", line 1, character 1 to line 197, character 74:
 [INFO]: All 0 obligation proved.
-(* loading fingerprints in ".tlacache/AuditLogInstance.tlaps/fingerprints" *)
-@!!BEGIN
-@!!type:obligation
-@!!id:1
-@!!loc:71:3:71:5
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:2
-@!!loc:88:13:88:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:3
-@!!loc:88:16:88:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:4
-@!!loc:88:22:88:26
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:5
-@!!loc:75:35:75:37
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:6
-@!!loc:75:38:75:48
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:7
-@!!loc:78:21:78:23
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:8
-@!!loc:78:24:78:35
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:9
-@!!loc:80:5:80:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:10
-@!!loc:81:35:81:37
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:11
-@!!loc:81:38:81:47
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:12
-@!!loc:83:5:83:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:13
-@!!loc:83:8:83:12
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:14
-@!!loc:83:14:83:18
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:15
-@!!loc:85:5:85:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:16
-@!!loc:85:8:85:12
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:17
-@!!loc:87:5:87:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:18
-@!!loc:87:8:87:12
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:19
-@!!loc:87:14:87:18
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:20
-@!!loc:115:13:115:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:21
-@!!loc:115:16:115:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:22
-@!!loc:101:23:101:25
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:23
-@!!loc:101:26:101:35
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:24
-@!!loc:103:5:103:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:25
-@!!loc:103:8:103:12
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:26
-@!!loc:105:5:105:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:27
-@!!loc:105:8:105:12
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:28
-@!!loc:106:35:106:37
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:29
-@!!loc:114:15:114:17
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:30
-@!!loc:114:18:114:22
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:31
-@!!loc:114:24:114:28
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:32
-@!!loc:114:30:114:34
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:33
-@!!loc:111:9:111:11
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:34
-@!!loc:112:19:112:21
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:35
-@!!loc:112:22:112:26
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:36
-@!!loc:113:24:113:26
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:37
-@!!loc:113:27:113:31
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:38
-@!!loc:113:33:113:37
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:39
-@!!loc:134:13:134:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:40
-@!!loc:134:16:134:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:41
-@!!loc:129:23:129:25
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:42
-@!!loc:129:26:129:35
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:43
-@!!loc:131:5:131:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:44
-@!!loc:131:8:131:12
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:44
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:1
-@!!loc:71:3:71:5
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:2
-@!!loc:88:13:88:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:3
-@!!loc:88:16:88:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:4
-@!!loc:88:22:88:26
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:5
-@!!loc:75:35:75:37
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:6
-@!!loc:75:38:75:48
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:7
-@!!loc:78:21:78:23
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:8
-@!!loc:78:24:78:35
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:9
-@!!loc:80:5:80:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:10
-@!!loc:81:35:81:37
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:11
-@!!loc:81:38:81:47
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:12
-@!!loc:83:5:83:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:13
-@!!loc:83:8:83:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:14
-@!!loc:83:14:83:18
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:15
-@!!loc:85:5:85:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:16
-@!!loc:85:8:85:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:17
-@!!loc:87:5:87:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:18
-@!!loc:87:8:87:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:19
-@!!loc:87:14:87:18
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:20
-@!!loc:115:13:115:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:21
-@!!loc:115:16:115:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:22
-@!!loc:101:23:101:25
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:23
-@!!loc:101:26:101:35
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:24
-@!!loc:103:5:103:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:25
-@!!loc:103:8:103:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:26
-@!!loc:105:5:105:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:27
-@!!loc:105:8:105:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:28
-@!!loc:106:35:106:37
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:29
-@!!loc:114:15:114:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:30
-@!!loc:114:18:114:22
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:31
-@!!loc:114:24:114:28
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:32
-@!!loc:114:30:114:34
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:33
-@!!loc:111:9:111:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:34
-@!!loc:112:19:112:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:35
-@!!loc:112:22:112:26
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:36
-@!!loc:113:24:113:26
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:37
-@!!loc:113:27:113:31
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:38
-@!!loc:113:33:113:37
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:39
-@!!loc:134:13:134:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:40
-@!!loc:134:16:134:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:41
-@!!loc:129:23:129:25
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:42
-@!!loc:129:26:129:35
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:43
-@!!loc:131:5:131:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:44
-@!!loc:131:8:131:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
+(* fingerprints file ".tlacache/Antagonism.tlaps/fingerprints" removed *)
+(* created new ".tlacache/Antagonism.tlaps/Antagonism.thy" *)
+(* fingerprints written in ".tlacache/Antagonism.tlaps/fingerprints" *)
+File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
+[INFO]: All 0 obligation proved.
+(* fingerprints file ".tlacache/Synthesis.tlaps/fingerprints" removed *)
+(* created new ".tlacache/Synthesis.tlaps/Synthesis.thy" *)
+(* fingerprints written in ".tlacache/Synthesis.tlaps/fingerprints" *)
+File "./Synthesis.tla", line 1, character 1 to line 504, character 76:
+[INFO]: All 0 obligation proved.
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_AuditMem_, CONSTANT_AuditRel_, CONSTANT_A!Labelings_
+
+** Unexpanded symbols: CONSTANT_AuditMem_, CONSTANT_AuditRel_, CONSTANT_A!Labelings_, CONSTANT_AuditSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] CONSTANT_S_ = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_l_[CONSTANT_p_[1]] = CONSTANT_l_[CONSTANT_p_[2]]
+          /\ CONSTANT_l_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_A!Labelings_, CONSTANT_AuditSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] CONSTANT_S_ = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_l_[CONSTANT_p_[1]] = CONSTANT_l_[CONSTANT_p_[2]]
+          /\ CONSTANT_l_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_A!Labelings_, CONSTANT_AuditSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Chain" = "Chain" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AuditMem_("Chain") \X CONSTANT_AuditMem_("Chain") :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Chain" = "Subject" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AuditMem_("Subject") \X CONSTANT_AuditMem_("Subject") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_AuditMem_, CONSTANT_A!Labelings_
+
+** Unexpanded symbols: CONSTANT_AuditRel_, CONSTANT_A!Labelings_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "Subject" = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Subject" = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          [CONSTANT_e_ \in CONSTANT_Entries_ |-> CONSTANT_s0_][CONSTANT_p_[1]]
+          = [CONSTANT_e_ \in CONSTANT_Entries_ |-> CONSTANT_s0_][CONSTANT_p_[2]]
+          /\ [CONSTANT_e_ \in CONSTANT_Entries_ |-> CONSTANT_s0_][CONSTANT_p_[1]]
+             # CONSTANT_NoSubj_}
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "Subject" = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Subject" = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          [CONSTANT_e_ \in CONSTANT_Entries_ |-> CONSTANT_NoSubj_][CONSTANT_p_[1]]
+          = [CONSTANT_e_ \in CONSTANT_Entries_ |-> CONSTANT_NoSubj_][CONSTANT_p_[2]]
+          /\ [CONSTANT_e_ \in CONSTANT_Entries_ |-> CONSTANT_NoSubj_][CONSTANT_p_[1]]
+             # CONSTANT_NoSubj_}
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_AuditRel_
+
+** Unexpanded symbols: CONSTANT_AuditMem_, CONSTANT_AuditRel_, CONSTANT_A!Labelings_, CONSTANT_A!Sep_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "Chain" = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Chain" = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_subj_[CONSTANT_p_[1]] = CONSTANT_subj_[CONSTANT_p_[2]]
+          /\ CONSTANT_subj_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_A!Strip_, CONSTANT_AuditRel_
+
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "Chain" = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Chain" = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_subj_[CONSTANT_p_[1]] = CONSTANT_subj_[CONSTANT_p_[2]]
+          /\ CONSTANT_subj_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "Chain" = "Chain" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AuditMem_("Chain") \X CONSTANT_AuditMem_("Chain") :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Chain" = "Subject" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AuditMem_("Subject") \X CONSTANT_AuditMem_("Subject") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_AuditMem_, CONSTANT_A!Labelings_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_AuditMem_, CONSTANT_A!Strip_, CONSTANT_AuditRel_, CONSTANT_A!LabelIndep_, CONSTANT_A!Labelings_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_A!LabelIndep_
+
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_A!LabelIndep_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_A!LabelIndep_, CONSTANT_AuditSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Chain" = "Chain" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AuditMem_("Chain") \X CONSTANT_AuditMem_("Chain") :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Chain" = "Subject" ->
+       {CONSTANT_p_ \in
+          CONSTANT_AuditMem_("Subject") \X CONSTANT_AuditMem_("Subject") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_AuditMem_, CONSTANT_A!Labelings_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_A!LabelIndep_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_AuditSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Subject" = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Subject" = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_AuditSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Subject" = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Subject" = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_A!AllBot_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AuditRel_
+
+** Unexpanded symbols: CONSTANT_AuditMem_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_A!Labelings_, CONSTANT_AuditSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Chain" = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Chain" = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_AuditMem_, CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_A!Labelings_, CONSTANT_AuditSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Subject" = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Subject" = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_AuditMem_, CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_, CONSTANT_AuditRel_, CONSTANT_A!Labelings_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] CONSTANT_S_ = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] CONSTANT_S_ = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_A!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_A!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_A!AllBot_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_A!HandlesMinus_, CONSTANT_A!ReachExc_, CONSTANT_A!AllBot_
+
+** Unexpanded symbols: CONSTANT_A!Sealed_
+
+** Unexpanded symbols: CONSTANT_A!Pins_, CONSTANT_A!LabelIndep_, CONSTANT_A!Sealed_
+
+** Unexpanded symbols: CONSTANT_A!Sealed_
+
+** Unexpanded symbols: CONSTANT_A!Pins_, CONSTANT_A!LabelIndep_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!Reach_, CONSTANT_A!Sealed_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!Reach_, CONSTANT_AuditRel_, CONSTANT_A!LabelIndep_, CONSTANT_A!Sealed_, CONSTANT_AuditSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Chain" = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Chain" = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_subj_[CONSTANT_p_[1]] = CONSTANT_subj_[CONSTANT_p_[2]]
+          /\ CONSTANT_subj_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_A!Reach_, CONSTANT_A!Sealed_, CONSTANT_AuditSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "Chain" = "Chain" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_prev_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+  [] "Chain" = "Subject" ->
+       {CONSTANT_p_ \in CONSTANT_Entries_ \X CONSTANT_Entries_ :
+          CONSTANT_subj_[CONSTANT_p_[1]] = CONSTANT_subj_[CONSTANT_p_[2]]
+          /\ CONSTANT_subj_[CONSTANT_p_[1]] # CONSTANT_NoSubj_}
+** Unexpanded symbols: CONSTANT_A!Reach_, CONSTANT_A!Sealed_, CONSTANT_AuditSurfaces_
+
+** Unexpanded symbols: CONSTANT_A!Pins_, CONSTANT_A!LabelIndep_, CONSTANT_A!Sealed_, CONSTANT_AuditSurfaces_
 
 (* created new ".tlacache/AuditLogInstance.tlaps/AuditLogInstance.thy" *)
 (* fingerprints written in ".tlacache/AuditLogInstance.tlaps/fingerprints" *)
-File "./AuditLogInstance.tla", line 1, character 1 to line 136, character 74:
-[INFO]: All 44 obligations proved.
+File "./AuditLogInstance.tla", line 1, character 1 to line 302, character 74:
+[INFO]: All 174 obligations proved.

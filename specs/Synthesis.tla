@@ -259,6 +259,28 @@ THEOREM LeastExit ==
   PROVE  SepAch(l, r, XS) <=> (r \notin G /\ HandlesMinus(l, r) \subseteq XS)
   BY ExitNecessity, ExitSufficiency
 
+(***************************************************************************)
+(* S1c -- ESTABLISHMENT IS FINAL.  The `r \notin G' conjunct of LeastExit    *)
+(* is not a side condition: it says that membership of the established      *)
+(* frontier CANNOT BE BOUGHT BACK.  For an effect already in G no exit set  *)
+(* achieves separation -- not the least one, not the largest one, not       *)
+(* Surfaces itself -- and no relabelling helps either, since l is           *)
+(* universally quantified here.  Price is defined only before establishment;*)
+(* after it, the separation problem has no solution at any price.           *)
+(*                                                                         *)
+(* This is the static form of an ordering statement the framework cannot    *)
+(* otherwise make: it carries no notion of time, yet this theorem is what   *)
+(* an architecture means when it puts a decision point BEFORE the record.   *)
+(***************************************************************************)
+THEOREM EstablishmentIsFinal ==
+  ASSUME NEW l \in Labelings, NEW r \in G, NEW XS \in SUBSET Surfaces
+  PROVE  ~SepAch(l, r, XS)
+  <1> SUFFICES ASSUME SepAch(l, r, XS) PROVE FALSE
+      OBVIOUS
+  <1>1. r \in E BY G_inE
+  <1>2. r \notin G BY <1>1, ExitNecessity
+  <1>3. QED BY <1>2
+
 ----------------------------------------------------------------------------
 (* Under the key-type split, an AllBot-edge is an LI edge of the actual    *)
 (* labelling -- the algorithmic content of Lemma 1.                        *)

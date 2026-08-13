@@ -1,0 +1,128 @@
+================ 1. the procedure, run ================
+=== AuditLogWitness ===
+  effect price  least exit             I(e)   sink  in G
+  g0         0  []                        0  False  True
+  x          0  []                        0  False False
+  r          0  []                        1   True False
+  [note] g0: in G — establishment is final (Cor 4), so {} is not a price at all
+  --> OK
+
+=== AnonymityWitness ===
+  effect price  least exit             I(e)   sink  in G
+  g0         0  []                        0  False  True
+  x          0  []                        0  False False
+  y          0  []                        0  False False
+  r          0  []                        1   True False
+  [note] g0: in G — establishment is final (Cor 4), so {} is not a price at all
+  --> OK
+
+=== StrictPriceWitness ===
+  effect price  least exit             I(e)   sink  in G
+  g0         0  []                        0  False  True
+  r          1  ['P']                     2  False False
+  z          1  ['T']                     1  False False
+  [note] g0: in G — establishment is final (Cor 4), so {} is not a price at all
+  --> OK
+
+=== TAWitness ===
+  effect price  least exit             I(e)   sink  in G
+  a          1  ['C']                     1  False  True
+  b          1  ['C']                     1   True False
+  [note] a: in G — establishment is final (Cor 4), so ['C'] is not a price at all
+  --> OK
+
+=== Proposition 1 scaling: least exit set of the newest entry ===
+        n     edges        ms   us/edge
+      100        99       0.0      0.46
+     1000       999       0.5      0.49
+     5000      4999       3.5      0.70
+    20000     19999      16.3      0.82
+    50000     49999      49.6      0.99
+  (least exit set = {'Chain'} at every size, as Audit_LeastExit says)
+
+ALL OK
+================ 2. the specification certifies it ================
+specs : ../specs
+jar   : tla2tools.jar
+
+  AuditLogWitnessCert        PASS  No error has been found.
+  AnonymityWitnessCert       PASS  No error has been found.
+  StrictPriceWitnessCert     PASS  No error has been found.
+  TAWitnessCert              PASS  No error has been found.
+
+ALL CERTIFIED — the specification confirms the checker's output on every witness model.
+================ 3. the four instances, made concrete ================
+specs : ../specs
+jar   : tla2tools.jar
+tlaps : tlaps
+
+  DeniabilityConcrete      checker ok   TLC PASS  No error has been found.
+  AnonymityConcrete        checker ok   TLC PASS  No error has been found.
+  AuditLogConcrete         checker ok   TLC PASS  No error has been found.
+  SepClosureConcrete       checker ok   TLC PASS  No error has been found.
+
+==============================================================================
+Table 2 (§7.4), reproduced as tool output
+==============================================================================
+Instance      Adjudicator               least exit           price
+------------------------------------------------------------------------------
+Deniability   third party (judge)       ['Sig']                  1
+              (pre-/unlinked case)      []                       0
+Unlinkability de-anonymising analyst    ['Graph']                1
+              (pre-/unlinked case)      []                       0
+RTBF          chain verifier            ['Chain']                1
+              (pre-/unlinked case)      []                       0
+Action gov.   auditor of the record     ['J1', 'J2']             2
+              (pre-/unlinked case)      []                       0
+------------------------------------------------------------------------------
+  Deniability: [note] g: in G — establishment is final (Cor 4), so ['Sig'] is not a price at all
+  Unlinkability: [note] g: in G — establishment is final (Cor 4), so {} is not a price at all
+  RTBF: [note] g0: in G — establishment is final (Cor 4), so {} is not a price at all
+  Action gov.: [note] a: in G — establishment is final (Cor 4), so ['J2'] is not a price at all
+
+ALL FOUR DOMAINS CERTIFIED — each row of Table 2 is now a theorem AND a tool output,
+confirmed by TLC against the instance module itself (no transcription).
+================ 4. Proposition 1, measured ================
+=== agreement with the certified implementation ===
+  counted implementation agrees with the TLC-certified one on 24/24 effects across 8 models
+
+=== family 1: |E| grows (hash-chained log, target = newest entry) ===
+      |E|  sum|Rel|        ops  ops/(E+R)       ms  ms/prev size/prev
+      100        99        298       1.50      0.0        -         -
+     1000       999       2998       1.50      0.3     9.6x     10.0x
+    10000      9999      29998       1.50      4.2    15.7x     10.0x
+    50000     49999     149998       1.50     49.6    11.9x      5.0x
+   100000     99999     299998       1.50    113.1     2.3x      2.0x
+
+=== family 2: |E| fixed at 2000, fan-in k grows (spend graph) ===
+      |E|  sum|Rel|        ops  ops/(E+R)       ms  ms/prev size/prev
+     2000      1999       5998       1.50      0.6        -         -
+     2000      9985      21966       1.83      1.8     3.1x      3.0x
+     2000     39790      81561       1.95      8.6     4.8x      3.5x
+     2000     98725     199401       1.98     47.8     5.5x      2.4x
+     2000    194950     391801       1.99     83.0     1.7x      2.0x
+
+READING THE TABLES
+
+  ops/(|E|+sum|Rel|) is bounded by 2 and rises toward it as edges come to
+  dominate nodes (1.50 on the chain, where |Rel| ~ |E|; 1.99 at fan-in 100).
+  That is the constant the proof implies, not a coincidence: step (1) touches
+  every edge once and step (2) traverses it once, plus one settle per node.
+  So the OPERATION COUNT is linear in |E| + sum_S |Rel(S)| -- Proposition 1's
+  bound, measured.
+
+  WALL TIME tracks size/prev at the large end (about 2x for 2x on both
+  families) and overshoots in the middle.  By how much is not reproducible:
+  the same 10x input at |E|=10^4 has measured anywhere from 14x to 26x across
+  runs of this script, on the same machine, while the ops column is identical
+  to the digit every time.  Attributing that spread to the procedure would be
+  a mistake -- it belongs to Python dict and set resizing, timer resolution
+  on a sub-millisecond base, and whatever else the host is doing.
+
+  That instability is the argument for counting.  Proposition 1 asserts a
+  step count; a step count is what a contended or noisy machine cannot
+  corrupt, and it is what this table therefore reports as the measurement.
+
+Expected: 4x PASS (step 2) + 4x 'TLC PASS' (step 3), Table 2 reproduced,
+and ops/(|E|+sum|Rel|) bounded by 2 (step 4).
+Not convinced a PASS means anything?  Run:  ./check.sh --negative

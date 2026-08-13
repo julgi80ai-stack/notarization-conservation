@@ -30,6 +30,14 @@
 (* impossibility then IS  non-repudiation ⊥ deniability, and a signature      *)
 (* cannot be repudiated away (RepudiationFutileOnSig) exactly as a chained    *)
 (* record cannot be erased away (AuditLogInstance.ErasureFutile).            *)
+(*                                                                         *)
+(* M3 (wiring): the instance now INSTANCEs Synthesis -- which EXTENDS        *)
+(* Antagonism EXTENDS Notarization -- so the WHOLE law is inherited, not      *)
+(* just its definitions.  The five abstract ASSUMEs of Notarization are      *)
+(* DISCHARGED as the Inst_ lemmas, the impossibility is proved BY the        *)
+(* abstract theorem (ColocBreaksSep) instead of being re-derived locally,    *)
+(* the key-type split (Dichotomy) is discharged, and the §7.4 dividend row   *)
+(* is computed as a theorem (Den_LeastExit / Den_ZeroPrice).                 *)
 (***************************************************************************)
 EXTENDS Naturals, TLAPS
 
@@ -41,6 +49,10 @@ ASSUME AuthorType  == author \in [Msgs -> Authors \cup {NoAuth}]
 ASSUME SignedType  == signed \in [Msgs -> BOOLEAN]
 ASSUME MsgsNE      == Msgs    # {}
 ASSUME AuthorsNE   == Authors # {}
+ASSUME AttrNE      == Attributed # {}   \* non-vacuity: the judge has
+                                        \* established SOMETHING; otherwise
+                                        \* Reach = {} and every message
+                                        \* separates for free
 
 ----------------------------------------------------------------------------
 DenSurfaces == {"Sig", "Mac"}
@@ -55,12 +67,42 @@ DenRel(S, l) ==
                          l[p[1]] = l[p[2]] /\ l[p[1]] # NoAuth }
 
 ----------------------------------------------------------------------------
-\* The instance.  Named (D!) to avoid clashes.
-D == INSTANCE Notarization
+\* The instance.  Named (D!) to avoid clashes.  Synthesis EXTENDS Antagonism
+\* EXTENDS Notarization, so D! carries the entire law, theorems included.
+D == INSTANCE Synthesis
        WITH E   <- Msgs,       L   <- Authors,  Bot <- NoAuth,
             Surfaces <- DenSurfaces,
             Mem <- DenMem,      Rel <- DenRel,
             G   <- Attributed,  lbl <- author
+
+----------------------------------------------------------------------------
+(***************************************************************************)
+(* DISCHARGE THE ABSTRACT ASSUMEs.  TLAPS attaches the instantiated         *)
+(* assumptions of Notarization as HYPOTHESES of every inherited theorem,    *)
+(* so they must be proved before any abstract theorem can be applied.       *)
+(* This is the "proof duty" of paper §10.                                   *)
+(***************************************************************************)
+LEMMA Inst_BotNotLabel == NoAuth \notin Authors
+  BY NoAuthFresh
+
+LEMMA Inst_G_inE == Attributed \subseteq Msgs
+  BY AttrInE
+
+LEMMA Inst_LblType == author \in D!Labelings
+  BY AuthorType DEF D!Labelings
+
+LEMMA Inst_MemType == \A S \in DenSurfaces : DenMem(S) \subseteq Msgs
+  BY DEF DenMem
+
+LEMMA Inst_RelType ==
+  \A S \in DenSurfaces, l \in D!Labelings :
+     DenRel(S, l) \subseteq DenMem(S) \X DenMem(S)
+  <1> SUFFICES ASSUME NEW S \in DenSurfaces, NEW l \in D!Labelings
+               PROVE  DenRel(S, l) \subseteq DenMem(S) \X DenMem(S)
+      OBVIOUS
+  <1>1. CASE S = "Sig" BY <1>1 DEF DenRel, DenMem
+  <1>2. CASE S = "Mac" BY <1>2 DEF DenRel, DenMem
+  <1>3. QED BY <1>1, <1>2 DEF DenSurfaces
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
@@ -89,42 +131,121 @@ THEOREM Mac_NotLabelIndep == ~ D!LabelIndep("Mac")
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* IMPOSSIBILITY in crypto-messaging language.  A SIGNED message reachable   *)
-(* from an attributed sender is NOT separable -- non-repudiation holds, the   *)
-(* message is NOT deniable.  (Sealed by the transferable signature pin.)     *)
+(* IMPOSSIBILITY in crypto-messaging language, INHERITED.  A SIGNED message  *)
+(* reachable from an attributed sender is NOT separable -- non-repudiation   *)
+(* holds, the message is NOT deniable.  No local re-derivation of the        *)
+(* closure: the abstract theorem ColocBreaksSep is applied directly.         *)
 (***************************************************************************)
 THEOREM NonRepudiationPins ==
   ASSUME NEW g \in Attributed, NEW m \in Msgs, signed[m]
   PROVE  ~ D!Sep(m)
   <1>1. g \in Msgs BY AttrInE
-  <1>2. g \in DenMem("Sig") /\ m \in DenMem("Sig") BY <1>1 DEF DenMem
-  <1>3. <<g, m>> \in DenRel("Sig", author) BY <1>2 DEF DenRel
-  <1>4. "Sig" \in DenSurfaces BY DEF DenSurfaces
-  <1>5. m \in D!Reach
-    <2> SUFFICES ASSUME NEW X \in SUBSET Msgs, Attributed \subseteq X,
-                        D!ClosedUnder(X)
-                 PROVE  m \in X
-        BY DEF D!Reach
-    <2>1. g \in X BY <1>1
-    <2>2. D!Edge(g, m) BY <1>3, <1>4 DEF D!Edge
-    <2>3. QED BY <2>1, <2>2, <1>1 DEF D!ClosedUnder
-  <1>6. QED BY <1>5 DEF D!Sep
+  <1>2. <<g, m>> \in DenRel("Sig", author)
+    BY <1>1 DEF DenRel, DenMem
+  <1>3. "Sig" \in DenSurfaces BY DEF DenSurfaces
+  <1>4. QED BY <1>2, <1>3, Inst_BotNotLabel, Inst_G_inE, Inst_LblType,
+           Inst_MemType, Inst_RelType, D!ColocBreaksSep
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
 (* THE SIGNATURE-DEFEATS-REPUDIATION THEOREM (the deniability analogue of     *)
-(* AuditLogInstance.ErasureFutile).                                          *)
+(* AuditLogInstance.ErasureFutile), via the INHERITED Lemma 1 (DecisiveLI).  *)
 (* Repudiating -- stripping the message's author label (author[m] := NoAuth) *)
 (* -- does NOT remove the Sig link, because Sig is label-independent (it      *)
 (* reads the signature artifact, not the author label).  So a signed message *)
 (* stays reachable from the attributed frontier: non-repudiation SURVIVES     *)
-(* the sender's denial.  This is the abstract DecisiveLI, concretely.        *)
+(* the sender's denial.                                                      *)
 (***************************************************************************)
 THEOREM RepudiationFutileOnSig ==
   ASSUME NEW g \in Attributed, NEW m \in Msgs, signed[m]
   PROVE  <<g, m>> \in DenRel("Sig", D!Strip(author, m))
   <1>1. g \in Msgs BY AttrInE
-  <1>2. g \in DenMem("Sig") /\ m \in DenMem("Sig") BY <1>1 DEF DenMem
-  <1>3. QED BY <1>2 DEF DenRel
+  <1>2. <<g, m>> \in DenRel("Sig", author) BY <1>1 DEF DenRel, DenMem
+  <1>3. D!LabelIndep("Sig") BY DEF D!LabelIndep, DenRel
+  <1>4. "Sig" \in DenSurfaces BY DEF DenSurfaces
+  <1>5. DenRel("Sig", author) = DenRel("Sig", D!Strip(author, m))
+    BY <1>3, <1>4, Inst_BotNotLabel, Inst_G_inE, Inst_LblType,
+       Inst_MemType, Inst_RelType, D!DecisiveLI
+  <1>6. QED BY <1>2, <1>5
+
+----------------------------------------------------------------------------
+(***************************************************************************)
+(* DISCHARGE THE KEY-TYPE SPLIT.  §7.1's "all four instances satisfy the    *)
+(* split", machine-checked for this instance.                               *)
+(***************************************************************************)
+LEMMA AllBotIsBot ==
+  ASSUME NEW x \in Msgs PROVE D!AllBot[x] = NoAuth
+  BY DEF D!AllBot
+
+THEOREM Den_Dichotomy == D!Dichotomy
+  <1> SUFFICES ASSUME NEW S \in DenSurfaces
+               PROVE  D!LabelIndep(S) \/ DenRel(S, D!AllBot) = {}
+      BY DEF D!Dichotomy
+  <1>1. CASE S = "Sig"
+    <2>1. D!LabelIndep("Sig") BY DEF D!LabelIndep, DenRel
+    <2>2. QED BY <1>1, <2>1
+  <1>2. CASE S = "Mac"
+    <2>1. DenRel("Mac", D!AllBot) = {}
+      <3> SUFFICES ASSUME NEW p \in DenRel("Mac", D!AllBot) PROVE FALSE
+          OBVIOUS
+      <3>1. p \in Msgs \X Msgs BY DEF DenRel, DenMem
+      <3>2. p[1] \in Msgs BY <3>1
+      <3>3. D!AllBot[p[1]] # NoAuth BY DEF DenRel, DenMem
+      <3>4. QED BY <3>2, <3>3, AllBotIsBot
+    <2>2. QED BY <1>2, <2>1
+  <1>3. QED BY <1>1, <1>2 DEF DenSurfaces
+
+----------------------------------------------------------------------------
+(***************************************************************************)
+(* THE §7.4 DIVIDEND ROW, AS A THEOREM.                                     *)
+(* "Deniability | relabel phase futile | exit the transferable-signature    *)
+(*  surfaces, keep MACs"  --  computed, not asserted.                       *)
+(***************************************************************************)
+THEOREM Den_LeastExit ==
+  ASSUME NEW m \in Msgs, m \notin Attributed, signed[m]
+  PROVE  D!HandlesMinus(D!AllBot, m) = {"Sig"}
+  <1>1. "Sig" \in D!HandlesMinus(D!AllBot, m)
+    <2>1. PICK g \in Attributed : TRUE BY AttrNE
+    <2>2. g \in Msgs BY <2>1, AttrInE
+    <2>3. g \in D!ReachExc(D!AllBot, m)
+      BY <2>1, Inst_BotNotLabel, Inst_G_inE, Inst_LblType,
+         Inst_MemType, Inst_RelType, D!G_sub_ReachExc
+    <2>4. <<g, m>> \in DenRel("Sig", D!AllBot) BY <2>2 DEF DenRel, DenMem
+    <2>5. QED BY <2>3, <2>4 DEF D!HandlesMinus, DenSurfaces
+  <1>2. "Mac" \notin D!HandlesMinus(D!AllBot, m)
+    <2> SUFFICES ASSUME "Mac" \in D!HandlesMinus(D!AllBot, m) PROVE FALSE
+        OBVIOUS
+    <2>1. PICK x \in D!ReachExc(D!AllBot, m) :
+            <<x, m>> \in DenRel("Mac", D!AllBot)
+        BY DEF D!HandlesMinus
+    <2>2. x \in Msgs
+      BY <2>1, Inst_BotNotLabel, Inst_G_inE, Inst_LblType,
+         Inst_MemType, Inst_RelType, D!ReachExc_inE
+    <2>3. D!AllBot[x] # NoAuth BY <2>1 DEF DenRel, DenMem
+    <2>4. QED BY <2>2, <2>3, AllBotIsBot
+  <1>3. D!HandlesMinus(D!AllBot, m) \subseteq DenSurfaces
+    BY DEF D!HandlesMinus
+  <1>4. QED BY <1>1, <1>2, <1>3 DEF DenSurfaces
+
+(* And the zero-price half: an unsigned message separates for free --      *)
+(* Corollary 3 in domain dress, i.e. OTR's design decision as a theorem.   *)
+THEOREM Den_ZeroPrice ==
+  ASSUME NEW m \in Msgs, ~signed[m]
+  PROVE  D!HandlesMinus(D!AllBot, m) = {}
+  <1> SUFFICES ASSUME NEW S \in D!HandlesMinus(D!AllBot, m) PROVE FALSE
+      OBVIOUS
+  <1>1. S \in DenSurfaces BY DEF D!HandlesMinus
+  <1>2. PICK x \in D!ReachExc(D!AllBot, m) :
+          <<x, m>> \in DenRel(S, D!AllBot)
+      BY DEF D!HandlesMinus
+  <1>3. x \in Msgs
+    BY <1>2, Inst_BotNotLabel, Inst_G_inE, Inst_LblType,
+       Inst_MemType, Inst_RelType, D!ReachExc_inE
+  <1>4. CASE S = "Sig"
+    BY <1>2, <1>4 DEF DenRel, DenMem
+  <1>5. CASE S = "Mac"
+    <2>1. D!AllBot[x] # NoAuth BY <1>2, <1>5 DEF DenRel, DenMem
+    <2>2. QED BY <1>3, <2>1, AllBotIsBot
+  <1>6. QED BY <1>1, <1>4, <1>5 DEF DenSurfaces
 
 ============================================================================

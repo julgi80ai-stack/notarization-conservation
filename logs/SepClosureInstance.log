@@ -1,924 +1,1086 @@
-
-\* TLAPM version 1.5.0
-\* launched at 2026-06-13 11:08:14 with command line:
-\* tlapm --toolbox 0 0 SepClosureInstance.tla
-
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:0
-@!!END
-
-(* created new ".tlacache/FiniteSets.tlaps/FiniteSets.thy" *)
-(* fingerprints written in ".tlacache/FiniteSets.tlaps/fingerprints" *)
-File "/home/morpheus/tlaps/lib/tlaps/FiniteSets.tla", line 1, character 1 to line 23, character 77:
-[INFO]: All 0 obligation proved.
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:0
-@!!END
-
+(* fingerprints file ".tlacache/TLAPS.tlaps/fingerprints" removed *)
 (* created new ".tlacache/TLAPS.tlaps/TLAPS.thy" *)
 (* fingerprints written in ".tlacache/TLAPS.tlaps/fingerprints" *)
 File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362, character 77:
 [INFO]: All 0 obligation proved.
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:0
-@!!END
-
+(* fingerprints file ".tlacache/Notarization.tlaps/fingerprints" removed *)
 (* created new ".tlacache/Notarization.tlaps/Notarization.thy" *)
 (* fingerprints written in ".tlacache/Notarization.tlaps/fingerprints" *)
 File "./Notarization.tla", line 1, character 1 to line 197, character 74:
 [INFO]: All 0 obligation proved.
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:0
-@!!END
-
+(* fingerprints file ".tlacache/Antagonism.tlaps/fingerprints" removed *)
+(* created new ".tlacache/Antagonism.tlaps/Antagonism.thy" *)
+(* fingerprints written in ".tlacache/Antagonism.tlaps/fingerprints" *)
+File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
+[INFO]: All 0 obligation proved.
+(* created new ".tlacache/FiniteSets.tlaps/FiniteSets.thy" *)
+(* fingerprints written in ".tlacache/FiniteSets.tlaps/fingerprints" *)
+File "/home/morpheus/tlaps/lib/tlaps/FiniteSets.tla", line 1, character 1 to line 23, character 77:
+[INFO]: All 0 obligation proved.
 (* created new ".tlacache/SepClosureTwoMachines.tlaps/SepClosureTwoMachines.thy" *)
 (* fingerprints written in ".tlacache/SepClosureTwoMachines.tlaps/fingerprints" *)
 File "./SepClosureTwoMachines.tla", line 1, character 1 to line 111, character 68:
 [INFO]: All 0 obligation proved.
-(* loading fingerprints in ".tlacache/SepClosureInstance.tlaps/fingerprints" *)
-@!!BEGIN
-@!!type:obligation
-@!!id:1
-@!!loc:71:13:71:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:2
-@!!loc:71:16:71:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:3
-@!!loc:71:22:71:33
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:4
-@!!loc:70:27:70:29
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:5
-@!!loc:70:30:70:42
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:6
-@!!loc:76:3:76:5
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:7
-@!!loc:76:6:76:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:8
-@!!loc:79:3:79:5
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:9
-@!!loc:79:6:79:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:10
-@!!loc:87:3:87:5
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:11
-@!!loc:90:3:90:5
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:12
-@!!loc:105:13:105:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:13
-@!!loc:105:16:105:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:14
-@!!loc:105:22:105:26
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:15
-@!!loc:97:5:97:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:16
-@!!loc:97:8:97:17
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:17
-@!!loc:98:36:98:38
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:18
-@!!loc:98:39:98:50
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:19
-@!!loc:100:5:100:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:20
-@!!loc:100:8:100:12
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:21
-@!!loc:100:14:100:23
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:22
-@!!loc:102:5:102:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:23
-@!!loc:102:8:102:12
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:24
-@!!loc:102:14:102:25
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:25
-@!!loc:104:5:104:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:26
-@!!loc:104:8:104:12
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:27
-@!!loc:104:14:104:18
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:28
-@!!loc:141:13:141:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:29
-@!!loc:141:16:141:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:30
-@!!loc:121:22:121:24
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:31
-@!!loc:122:24:122:26
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:32
-@!!loc:123:32:123:34
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:33
-@!!loc:126:5:126:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:34
-@!!loc:126:8:126:21
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:35
-@!!loc:128:5:128:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:36
-@!!loc:128:8:128:12
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:37
-@!!loc:140:15:140:17
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:38
-@!!loc:140:18:140:22
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:39
-@!!loc:140:24:140:28
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:40
-@!!loc:140:30:140:34
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:41
-@!!loc:136:9:136:11
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:42
-@!!loc:136:12:136:16
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:43
-@!!loc:137:19:137:21
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:44
-@!!loc:137:22:137:26
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:45
-@!!loc:138:24:138:26
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:46
-@!!loc:138:27:138:31
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:47
-@!!loc:138:33:138:37
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:48
-@!!loc:139:44:139:46
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:49
-@!!loc:139:47:139:51
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:50
-@!!loc:154:13:154:15
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:51
-@!!loc:154:16:154:20
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:52
-@!!loc:153:5:153:7
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:53
-@!!loc:153:8:153:21
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligationsnumber
-@!!count:53
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:1
-@!!loc:71:13:71:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:2
-@!!loc:71:16:71:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:3
-@!!loc:71:22:71:33
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:4
-@!!loc:70:27:70:29
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:5
-@!!loc:70:30:70:42
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:6
-@!!loc:76:3:76:5
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:7
-@!!loc:76:6:76:15
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:8
-@!!loc:79:3:79:5
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:9
-@!!loc:79:6:79:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:10
-@!!loc:87:3:87:5
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:11
-@!!loc:90:3:90:5
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:12
-@!!loc:105:13:105:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:13
-@!!loc:105:16:105:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:14
-@!!loc:105:22:105:26
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:15
-@!!loc:97:5:97:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:16
-@!!loc:97:8:97:17
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:17
-@!!loc:98:36:98:38
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:18
-@!!loc:98:39:98:50
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:19
-@!!loc:100:5:100:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:20
-@!!loc:100:8:100:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:21
-@!!loc:100:14:100:23
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:22
-@!!loc:102:5:102:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:23
-@!!loc:102:8:102:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:24
-@!!loc:102:14:102:25
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:25
-@!!loc:104:5:104:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:26
-@!!loc:104:8:104:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:27
-@!!loc:104:14:104:18
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:28
-@!!loc:141:13:141:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:29
-@!!loc:141:16:141:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:30
-@!!loc:121:22:121:24
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:31
-@!!loc:122:24:122:26
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:32
-@!!loc:123:32:123:34
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:33
-@!!loc:126:5:126:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:34
-@!!loc:126:8:126:21
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:35
-@!!loc:128:5:128:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:36
-@!!loc:128:8:128:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:37
-@!!loc:140:15:140:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:38
-@!!loc:140:18:140:22
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:39
-@!!loc:140:24:140:28
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:40
-@!!loc:140:30:140:34
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:41
-@!!loc:136:9:136:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:42
-@!!loc:136:12:136:16
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:43
-@!!loc:137:19:137:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:44
-@!!loc:137:22:137:26
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:45
-@!!loc:138:24:138:26
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:46
-@!!loc:138:27:138:31
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:47
-@!!loc:138:33:138:37
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:48
-@!!loc:139:44:139:46
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:49
-@!!loc:139:47:139:51
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:50
-@!!loc:154:13:154:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:51
-@!!loc:154:16:154:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:52
-@!!loc:153:5:153:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5
-@!!already:true
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:53
-@!!loc:153:8:153:21
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
+(* fingerprints file ".tlacache/Synthesis.tlaps/fingerprints" removed *)
+(* created new ".tlacache/Synthesis.tlaps/Synthesis.thy" *)
+(* fingerprints written in ".tlacache/Synthesis.tlaps/fingerprints" *)
+File "./Synthesis.tla", line 1, character 1 to line 504, character 76:
+[INFO]: All 0 obligation proved.
+** Unexpanded symbols: CONSTANT_ACorr_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_ACorr_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_CorrAssign_, CONSTANT_EventIds_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_MorphLbl_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_MorphMem_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphMem_, CONSTANT_EventIds_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "J2" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] CONSTANT_S_ = "J1" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] CONSTANT_S_ = "J4" -> CONSTANT_EventIds_
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_PipeS_, CONSTANT_EventIds_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "J2" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] CONSTANT_S_ = "J1" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] CONSTANT_S_ = "J4" -> CONSTANT_EventIds_
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_PipeS_, CONSTANT_EventIds_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "J2" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] CONSTANT_S_ = "J1" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] CONSTANT_S_ = "J4" -> CONSTANT_EventIds_
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_PipeS_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_MorphMem_, CONSTANT_MorphRel_, CONSTANT_N!Labelings_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphMem_, CONSTANT_MorphRel_, CONSTANT_N!Labelings_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN (CASE "J2" = "J2" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J1" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J4" -> CONSTANT_EventIds_)
+              \X (CASE "J2" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J4" -> CONSTANT_EventIds_)
+         ELSE {}
+  [] CONSTANT_S_ = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 (CASE "J1" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J4" -> CONSTANT_EventIds_)
+                 \X (CASE "J1" = "J2" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J1" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J4" -> CONSTANT_EventIds_) :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] CONSTANT_S_ = "J4" ->
+       {CONSTANT_p_ \in
+          (CASE "J4" = "J2" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J1" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J4" -> CONSTANT_EventIds_)
+          \X (CASE "J4" = "J2" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J1" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J4" -> CONSTANT_EventIds_) :
+          CONSTANT_l_[CONSTANT_p_[1]] = CONSTANT_l_[CONSTANT_p_[2]]
+          /\ CONSTANT_l_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_N!Labelings_, CONSTANT_EventIds_, CONSTANT_PipeS_, CONSTANT_MorphSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN (CASE "J2" = "J2" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J1" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J4" -> CONSTANT_EventIds_)
+              \X (CASE "J2" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J4" -> CONSTANT_EventIds_)
+         ELSE {}
+  [] CONSTANT_S_ = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 (CASE "J1" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J4" -> CONSTANT_EventIds_)
+                 \X (CASE "J1" = "J2" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J1" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J4" -> CONSTANT_EventIds_) :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] CONSTANT_S_ = "J4" ->
+       {CONSTANT_p_ \in
+          (CASE "J4" = "J2" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J1" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J4" -> CONSTANT_EventIds_)
+          \X (CASE "J4" = "J2" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J1" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J4" -> CONSTANT_EventIds_) :
+          CONSTANT_l_[CONSTANT_p_[1]] = CONSTANT_l_[CONSTANT_p_[2]]
+          /\ CONSTANT_l_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_N!Labelings_, CONSTANT_EventIds_, CONSTANT_PipeS_, CONSTANT_MorphSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN (CASE "J2" = "J2" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J1" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J4" -> CONSTANT_EventIds_)
+              \X (CASE "J2" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J4" -> CONSTANT_EventIds_)
+         ELSE {}
+  [] CONSTANT_S_ = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 (CASE "J1" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J4" -> CONSTANT_EventIds_)
+                 \X (CASE "J1" = "J2" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J1" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J4" -> CONSTANT_EventIds_) :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] CONSTANT_S_ = "J4" ->
+       {CONSTANT_p_ \in
+          (CASE "J4" = "J2" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J1" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J4" -> CONSTANT_EventIds_)
+          \X (CASE "J4" = "J2" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J1" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J4" -> CONSTANT_EventIds_) :
+          CONSTANT_l_[CONSTANT_p_[1]] = CONSTANT_l_[CONSTANT_p_[2]]
+          /\ CONSTANT_l_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_N!Labelings_, CONSTANT_EventIds_, CONSTANT_PipeS_, CONSTANT_MorphSurfaces_
+
+!! Constraint generation. Expression not supported: 
+CASE "J2" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] "J2" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J2" = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_MorphMem_, CONSTANT_N!Labelings_
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] "J1" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J1" = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_MorphMem_, CONSTANT_N!Labelings_
+
+** Unexpanded symbols: CONSTANT_MorphRel_, CONSTANT_N!Labelings_, CONSTANT_ACorr_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_ACorr_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_EventIds_
+
+!! Constraint generation. Expression not supported: 
+CASE "J4" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN (CASE "J2" = "J2" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J1" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J4" -> CONSTANT_EventIds_)
+              \X (CASE "J2" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J4" -> CONSTANT_EventIds_)
+         ELSE {}
+  [] "J4" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 (CASE "J1" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J4" -> CONSTANT_EventIds_)
+                 \X (CASE "J1" = "J2" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J1" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J4" -> CONSTANT_EventIds_) :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J4" = "J4" ->
+       {CONSTANT_p_ \in
+          (CASE "J4" = "J2" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J1" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J4" -> CONSTANT_EventIds_)
+          \X (CASE "J4" = "J2" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J1" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J4" -> CONSTANT_EventIds_) :
+          [CONSTANT_e_ \in CONSTANT_EventIds_ |-> CONSTANT_ACorr_][CONSTANT_p_[1]]
+          = [CONSTANT_e_ \in CONSTANT_EventIds_ |-> CONSTANT_ACorr_][CONSTANT_p_[2]]
+          /\ [CONSTANT_e_ \in CONSTANT_EventIds_ |-> CONSTANT_ACorr_][CONSTANT_p_[1]]
+             # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_ACorr_, CONSTANT_EventIds_, CONSTANT_PipeS_
+
+!! Constraint generation. Expression not supported: 
+CASE "J4" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN (CASE "J2" = "J2" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J1" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J4" -> CONSTANT_EventIds_)
+              \X (CASE "J2" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J4" -> CONSTANT_EventIds_)
+         ELSE {}
+  [] "J4" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 (CASE "J1" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J4" -> CONSTANT_EventIds_)
+                 \X (CASE "J1" = "J2" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J1" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J4" -> CONSTANT_EventIds_) :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J4" = "J4" ->
+       {CONSTANT_p_ \in
+          (CASE "J4" = "J2" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J1" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J4" -> CONSTANT_EventIds_)
+          \X (CASE "J4" = "J2" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J1" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J4" -> CONSTANT_EventIds_) :
+          [CONSTANT_e_ \in CONSTANT_EventIds_ |-> CONSTANT_NONE_][CONSTANT_p_[1]]
+          = [CONSTANT_e_ \in CONSTANT_EventIds_ |-> CONSTANT_NONE_][CONSTANT_p_[2]]
+          /\ [CONSTANT_e_ \in CONSTANT_EventIds_ |-> CONSTANT_NONE_][CONSTANT_p_[1]]
+             # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_EventIds_, CONSTANT_PipeS_
+
+** Unexpanded symbols: CONSTANT_MorphRel_, CONSTANT_ACorr_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_MorphRel_, CONSTANT_PipeS_, CONSTANT_MorphLbl_, CONSTANT_EventIds_
+
+!! Constraint generation. Expression not supported: 
+CASE "J2" = "J2" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] "J2" = "J1" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] "J2" = "J4" -> CONSTANT_EventIds_
+** Unexpanded symbols: CONSTANT_PipeS_, CONSTANT_EventIds_
+
+!! Constraint generation. Expression not supported: 
+CASE "J2" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] "J2" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J2" = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_MorphLbl_[CONSTANT_p_[1]]
+          = CONSTANT_MorphLbl_[CONSTANT_p_[2]]
+          /\ CONSTANT_MorphLbl_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_MorphMem_, CONSTANT_PipeS_, CONSTANT_MorphLbl_, CONSTANT_EventIds_
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN (CASE "J2" = "J2" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J1" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J4" -> CONSTANT_EventIds_)
+              \X (CASE "J2" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J4" -> CONSTANT_EventIds_)
+         ELSE {}
+  [] "J1" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 (CASE "J1" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J4" -> CONSTANT_EventIds_)
+                 \X (CASE "J1" = "J2" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J1" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J4" -> CONSTANT_EventIds_) :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J1" = "J4" ->
+       {CONSTANT_p_ \in
+          (CASE "J4" = "J2" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J1" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J4" -> CONSTANT_EventIds_)
+          \X (CASE "J4" = "J2" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J1" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J4" -> CONSTANT_EventIds_) :
+          CONSTANT_MorphLbl_[CONSTANT_p_[1]]
+          = CONSTANT_MorphLbl_[CONSTANT_p_[2]]
+          /\ CONSTANT_MorphLbl_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_EventIds_, CONSTANT_PipeS_, CONSTANT_MorphLbl_
+
+** Unexpanded symbols: CONSTANT_MorphG_, CONSTANT_N!Labelings_, CONSTANT_MorphMem_, CONSTANT_EventIds_, CONSTANT_MorphRel_, CONSTANT_N!Sep_, CONSTANT_MorphSurfaces_, CONSTANT_MorphLbl_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       {CONSTANT_e_ \in CONSTANT_Actions_ \cup CONSTANT_Reflexes_ :
+          CONSTANT_e_ \in CONSTANT_Emitted_
+          /\ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                 THEN "ACTION"
+                 ELSE "REFLEX")
+              = "ACTION"
+              \/ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                     THEN "ACTION"
+                     ELSE "REFLEX")
+                  = "REFLEX" /\ CONSTANT_Machine_ = "ACCT"))}
+  [] "J1" = "J1" ->
+       {CONSTANT_e_ \in CONSTANT_Actions_ \cup CONSTANT_Reflexes_ :
+          CONSTANT_e_ \in CONSTANT_Emitted_
+          /\ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                 THEN "ACTION"
+                 ELSE "REFLEX")
+              = "ACTION"
+              \/ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                     THEN "ACTION"
+                     ELSE "REFLEX")
+                  = "REFLEX" /\ CONSTANT_Machine_ = "ACCT"))}
+  [] "J1" = "J4" -> CONSTANT_Actions_ \cup CONSTANT_Reflexes_
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] "J1" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J1" = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_MorphLbl_[CONSTANT_p_[1]]
+          = CONSTANT_MorphLbl_[CONSTANT_p_[2]]
+          /\ CONSTANT_MorphLbl_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_MorphMem_, CONSTANT_MorphLbl_
+
+** Unexpanded symbols: CONSTANT_N!Strip_, CONSTANT_MorphRel_, CONSTANT_MorphLbl_
+
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       {CONSTANT_e_ \in CONSTANT_Actions_ \cup CONSTANT_Reflexes_ :
+          CONSTANT_e_ \in CONSTANT_Emitted_
+          /\ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                 THEN "ACTION"
+                 ELSE "REFLEX")
+              = "ACTION"
+              \/ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                     THEN "ACTION"
+                     ELSE "REFLEX")
+                  = "REFLEX" /\ CONSTANT_Machine_ = "ACCT"))}
+  [] "J1" = "J1" ->
+       {CONSTANT_e_ \in CONSTANT_Actions_ \cup CONSTANT_Reflexes_ :
+          CONSTANT_e_ \in CONSTANT_Emitted_
+          /\ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                 THEN "ACTION"
+                 ELSE "REFLEX")
+              = "ACTION"
+              \/ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                     THEN "ACTION"
+                     ELSE "REFLEX")
+                  = "REFLEX" /\ CONSTANT_Machine_ = "ACCT"))}
+  [] "J1" = "J4" -> CONSTANT_Actions_ \cup CONSTANT_Reflexes_
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] "J1" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J1" = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_MorphLbl_[CONSTANT_p_[1]]
+          = CONSTANT_MorphLbl_[CONSTANT_p_[2]]
+          /\ CONSTANT_MorphLbl_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_MorphMem_, CONSTANT_MorphLbl_
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] "J1" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J1" = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_MorphMem_, CONSTANT_N!Labelings_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_N!Strip_, CONSTANT_MorphG_, CONSTANT_N!Labelings_, CONSTANT_MorphMem_, CONSTANT_EventIds_, CONSTANT_MorphRel_, CONSTANT_MorphSurfaces_, CONSTANT_MorphLbl_, CONSTANT_N!LabelIndep_
+
+** Unexpanded symbols: CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_MorphRel_, CONSTANT_N!AllBot_, CONSTANT_N!LabelIndep_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_, CONSTANT_N!LabelIndep_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_, CONSTANT_N!LabelIndep_
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] "J1" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J1" = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphMem_, CONSTANT_N!Labelings_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_, CONSTANT_N!LabelIndep_
+
+!! Constraint generation. Expression not supported: 
+CASE "J2" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] "J2" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J2" = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_l1_[CONSTANT_p_[1]] = CONSTANT_l1_[CONSTANT_p_[2]]
+          /\ CONSTANT_l1_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphMem_, CONSTANT_N!Labelings_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_, CONSTANT_N!LabelIndep_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_
+
+!! Constraint generation. Expression not supported: 
+CASE "J4" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN (CASE "J2" = "J2" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J1" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J4" -> CONSTANT_EventIds_)
+              \X (CASE "J2" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J4" -> CONSTANT_EventIds_)
+         ELSE {}
+  [] "J4" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 (CASE "J1" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J4" -> CONSTANT_EventIds_)
+                 \X (CASE "J1" = "J2" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J1" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J4" -> CONSTANT_EventIds_) :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J4" = "J4" ->
+       {CONSTANT_p_ \in
+          (CASE "J4" = "J2" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J1" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J4" -> CONSTANT_EventIds_)
+          \X (CASE "J4" = "J2" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J1" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J4" -> CONSTANT_EventIds_) :
+          CONSTANT_N!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_N!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_N!AllBot_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_EventIds_, CONSTANT_PipeS_, CONSTANT_MorphSurfaces_, CONSTANT_N!AllBot_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_, CONSTANT_EventIds_
+
+!! Constraint generation. Expression not supported: 
+CASE "J4" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN (CASE "J2" = "J2" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J1" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J4" -> CONSTANT_EventIds_)
+              \X (CASE "J2" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J4" -> CONSTANT_EventIds_)
+         ELSE {}
+  [] "J4" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 (CASE "J1" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J4" -> CONSTANT_EventIds_)
+                 \X (CASE "J1" = "J2" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J1" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J4" -> CONSTANT_EventIds_) :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J4" = "J4" ->
+       {CONSTANT_p_ \in
+          (CASE "J4" = "J2" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J1" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J4" -> CONSTANT_EventIds_)
+          \X (CASE "J4" = "J2" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J1" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J4" -> CONSTANT_EventIds_) :
+          CONSTANT_N!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_N!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_N!AllBot_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_EventIds_, CONSTANT_PipeS_, CONSTANT_MorphSurfaces_, CONSTANT_N!AllBot_
+
+** Unexpanded symbols: CONSTANT_N!AllBot_, CONSTANT_N!HandlesMinus_
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_MorphG_, CONSTANT_N!Labelings_, CONSTANT_MorphMem_, CONSTANT_MorphRel_, CONSTANT_MorphSurfaces_, CONSTANT_MorphLbl_, CONSTANT_N!AllBot_, CONSTANT_EventIds_
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       {CONSTANT_e_ \in CONSTANT_Actions_ \cup CONSTANT_Reflexes_ :
+          CONSTANT_e_ \in CONSTANT_Emitted_
+          /\ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                 THEN "ACTION"
+                 ELSE "REFLEX")
+              = "ACTION"
+              \/ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                     THEN "ACTION"
+                     ELSE "REFLEX")
+                  = "REFLEX" /\ CONSTANT_Machine_ = "ACCT"))}
+  [] "J1" = "J1" ->
+       {CONSTANT_e_ \in CONSTANT_Actions_ \cup CONSTANT_Reflexes_ :
+          CONSTANT_e_ \in CONSTANT_Emitted_
+          /\ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                 THEN "ACTION"
+                 ELSE "REFLEX")
+              = "ACTION"
+              \/ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                     THEN "ACTION"
+                     ELSE "REFLEX")
+                  = "REFLEX" /\ CONSTANT_Machine_ = "ACCT"))}
+  [] "J1" = "J4" -> CONSTANT_Actions_ \cup CONSTANT_Reflexes_
+** Unexpanded symbols: ---
+
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] "J1" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J1" = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_N!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_N!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_N!AllBot_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_MorphMem_, CONSTANT_N!AllBot_
+
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_
+
+!! Constraint generation. Expression not supported: 
+CASE "J2" = "J2" ->
+       {CONSTANT_e_ \in CONSTANT_Actions_ \cup CONSTANT_Reflexes_ :
+          CONSTANT_e_ \in CONSTANT_Emitted_
+          /\ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                 THEN "ACTION"
+                 ELSE "REFLEX")
+              = "ACTION"
+              \/ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                     THEN "ACTION"
+                     ELSE "REFLEX")
+                  = "REFLEX" /\ CONSTANT_Machine_ = "ACCT"))}
+  [] "J2" = "J1" ->
+       {CONSTANT_e_ \in CONSTANT_Actions_ \cup CONSTANT_Reflexes_ :
+          CONSTANT_e_ \in CONSTANT_Emitted_
+          /\ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                 THEN "ACTION"
+                 ELSE "REFLEX")
+              = "ACTION"
+              \/ ((IF CONSTANT_e_ \in CONSTANT_Actions_
+                     THEN "ACTION"
+                     ELSE "REFLEX")
+                  = "REFLEX" /\ CONSTANT_Machine_ = "ACCT"))}
+  [] "J2" = "J4" -> CONSTANT_Actions_ \cup CONSTANT_Reflexes_
+** Unexpanded symbols: ---
+
+!! Constraint generation. Expression not supported: 
+CASE "J2" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] "J2" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J2" = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_N!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_N!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_N!AllBot_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_MorphMem_, CONSTANT_N!AllBot_
+
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_N!AllBot_, CONSTANT_EventIds_, CONSTANT_N!HandlesMinus_
+
+** Unexpanded symbols: CONSTANT_N!AllBot_, CONSTANT_N!HandlesMinus_
+
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_MorphSurfaces_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_
+
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_MorphG_, CONSTANT_N!Labelings_, CONSTANT_MorphMem_, CONSTANT_EventIds_, CONSTANT_N!HandlesMinus_, CONSTANT_MorphRel_, CONSTANT_MorphSurfaces_, CONSTANT_MorphLbl_, CONSTANT_N!AllBot_
+
+!! Constraint generation. Expression not supported: 
+CASE "J4" = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN (CASE "J2" = "J2" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J1" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J4" -> CONSTANT_EventIds_)
+              \X (CASE "J2" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J4" -> CONSTANT_EventIds_)
+         ELSE {}
+  [] "J4" = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 (CASE "J1" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J4" -> CONSTANT_EventIds_)
+                 \X (CASE "J1" = "J2" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J1" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J4" -> CONSTANT_EventIds_) :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] "J4" = "J4" ->
+       {CONSTANT_p_ \in
+          (CASE "J4" = "J2" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J1" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J4" -> CONSTANT_EventIds_)
+          \X (CASE "J4" = "J2" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J1" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J4" -> CONSTANT_EventIds_) :
+          CONSTANT_N!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_N!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_N!AllBot_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_EventIds_, CONSTANT_N!HandlesMinus_, CONSTANT_PipeS_, CONSTANT_N!AllBot_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_N!ReachExc_, CONSTANT_MorphRel_, CONSTANT_N!AllBot_
+
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_PipeS_, CONSTANT_N!AllBot_, CONSTANT_N!HandlesMinus_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_PipeS_, CONSTANT_N!AllBot_, CONSTANT_N!HandlesMinus_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_MorphSurfaces_, CONSTANT_N!ReachExc_, CONSTANT_MorphRel_, CONSTANT_PipeS_, CONSTANT_N!AllBot_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_MorphSurfaces_, CONSTANT_MorphRel_, CONSTANT_PipeS_, CONSTANT_N!AllBot_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_MorphG_, CONSTANT_N!Labelings_, CONSTANT_MorphMem_, CONSTANT_EventIds_, CONSTANT_N!HandlesMinus_, CONSTANT_MorphRel_, CONSTANT_PipeS_, CONSTANT_MorphSurfaces_, CONSTANT_MorphLbl_, CONSTANT_N!AllBot_
+
+!! Constraint generation. Expression not supported: 
+CASE "J1" = "J2" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] "J1" = "J1" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] "J1" = "J4" -> CONSTANT_EventIds_
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_PipeS_, CONSTANT_N!AllBot_, CONSTANT_EventIds_, CONSTANT_N!HandlesMinus_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] CONSTANT_S_ = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] CONSTANT_S_ = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_N!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_N!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_N!AllBot_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_MorphMem_, CONSTANT_PipeS_, CONSTANT_N!AllBot_, CONSTANT_N!HandlesMinus_, CONSTANT_EventIds_
+
+!! Constraint generation. Expression not supported: 
+CASE "J2" = "J2" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] "J2" = "J1" ->
+       {CONSTANT_e_ \in CONSTANT_EventIds_ :
+          ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+  [] "J2" = "J4" -> CONSTANT_EventIds_
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_PipeS_, CONSTANT_N!AllBot_, CONSTANT_EventIds_, CONSTANT_N!HandlesMinus_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN CONSTANT_MorphMem_("J2") \X CONSTANT_MorphMem_("J2")
+         ELSE {}
+  [] CONSTANT_S_ = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 CONSTANT_MorphMem_("J1") \X CONSTANT_MorphMem_("J1") :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] CONSTANT_S_ = "J4" ->
+       {CONSTANT_p_ \in CONSTANT_MorphMem_("J4") \X CONSTANT_MorphMem_("J4") :
+          CONSTANT_N!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_N!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_N!AllBot_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_MorphMem_, CONSTANT_PipeS_, CONSTANT_N!AllBot_, CONSTANT_N!HandlesMinus_, CONSTANT_EventIds_
+
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_PipeS_, CONSTANT_N!AllBot_, CONSTANT_EventIds_, CONSTANT_N!HandlesMinus_
+
+!! Constraint generation. Expression not supported: 
+CASE CONSTANT_S_ = "J2" ->
+       IF ?boolify(CONSTANT_EnableByTime_)
+         THEN (CASE "J2" = "J2" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J1" ->
+                      {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                         ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                 [] "J2" = "J4" -> CONSTANT_EventIds_)
+              \X (CASE "J2" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J2" = "J4" -> CONSTANT_EventIds_)
+         ELSE {}
+  [] CONSTANT_S_ = "J1" ->
+       IF ?boolify(CONSTANT_EnableByPosition_)
+         THEN {CONSTANT_p_ \in
+                 (CASE "J1" = "J2" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J1" ->
+                         {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                            ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                    [] "J1" = "J4" -> CONSTANT_EventIds_)
+                 \X (CASE "J1" = "J2" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J1" ->
+                            {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                               ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                       [] "J1" = "J4" -> CONSTANT_EventIds_) :
+                 CONSTANT_prevEv_[CONSTANT_p_[2]] = CONSTANT_p_[1]}
+         ELSE {}
+  [] CONSTANT_S_ = "J4" ->
+       {CONSTANT_p_ \in
+          (CASE "J4" = "J2" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J1" ->
+                  {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                     ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+             [] "J4" = "J4" -> CONSTANT_EventIds_)
+          \X (CASE "J4" = "J2" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J1" ->
+                     {CONSTANT_e_ \in CONSTANT_EventIds_ :
+                        ?boolify(CONSTANT_PipeS_(CONSTANT_e_))}
+                [] "J4" = "J4" -> CONSTANT_EventIds_) :
+          CONSTANT_N!AllBot_[CONSTANT_p_[1]]
+          = CONSTANT_N!AllBot_[CONSTANT_p_[2]]
+          /\ CONSTANT_N!AllBot_[CONSTANT_p_[1]] # CONSTANT_NONE_}
+** Unexpanded symbols: CONSTANT_N!ReachExc_, CONSTANT_EventIds_, CONSTANT_N!HandlesMinus_, CONSTANT_PipeS_, CONSTANT_N!AllBot_
 
 (* created new ".tlacache/SepClosureInstance.tlaps/SepClosureInstance.thy" *)
 (* fingerprints written in ".tlacache/SepClosureInstance.tlaps/fingerprints" *)
-File "./SepClosureInstance.tla", line 1, character 1 to line 156, character 74:
-[INFO]: All 53 obligations proved.
+File "./SepClosureInstance.tla", line 1, character 1 to line 351, character 74:
+[INFO]: All 205 obligations proved.

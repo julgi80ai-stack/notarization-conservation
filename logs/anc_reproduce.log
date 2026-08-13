@@ -2,14 +2,19 @@
 Notarization           : [INFO]: All 83 obligations proved.
 Antagonism             : [INFO]: All 84 obligations proved.
 Resilience             : [INFO]: All 11 obligations proved.
-Synthesis              : [INFO]: All 316 obligations proved.
-DeniabilityInstance    : [INFO]: All 44 obligations proved.
-AnonymityInstance      : [INFO]: All 44 obligations proved.
-AuditLogInstance       : [INFO]: All 44 obligations proved.
-SepClosureInstance     : [INFO]: All 53 obligations proved.
+Synthesis              : [INFO]: All 324 obligations proved.
+DeniabilityInstance    : [INFO]: All 151 obligations proved.
+AnonymityInstance      : [INFO]: All 149 obligations proved.
+AuditLogInstance       : [INFO]: All 174 obligations proved.
+SepClosureInstance     : [INFO]: All 205 obligations proved.
 ================ TLC (existence / necessity) ================
 AntagonismWitness      : Model checking completed. No error has been found.
 NecessityWitness       : Model checking completed. No error has been found.
+AuditLogWitness        : Model checking completed. No error has been found.
+AnonymityWitness       : Model checking completed. No error has been found.
+PriceWitness           : Model checking completed. No error has been found.
+TAWitness              : Model checking completed. No error has been found.
+StrictPriceWitness     : Model checking completed. No error has been found.
 
-Expected: 8x 'All N obligations proved' (TLAPS, 0 omitted) + 2x 'No error has been found' (TLC).
-Universal = proven (TLAPS); existence/necessity = checked (TLC); crypto dual = argued in paper Sec. 8.
+Expected: 8x 'All N obligations proved' (TLAPS, 0 omitted) + 7x 'No error has been found' (TLC).
+Universal = proven (TLAPS); existence/necessity = checked (TLC); synthesis complexity (Sec. 7.3) & crypto dual (Sec. 9) = argued in paper.
