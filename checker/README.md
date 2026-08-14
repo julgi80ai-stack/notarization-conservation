@@ -68,15 +68,21 @@ invariant TLC never evaluates. So the check is runnable:
 ./check.sh --negative
 ```
 
-It regenerates each certificate with **one deliberately wrong value** — the
-effect's full handle set `Handles(r)` stated where the least exit set
-`HandlesMinus(⊥, r)` belongs, which `PriceWithinIntegrity` makes a strict subset in these
-models — and requires TLC to reject it:
+It regenerates each certificate with **deliberately wrong values, in two
+modes** — `superset`: the effect's full handle set `Handles(r)` stated where
+the least exit set `HandlesMinus(⊥, r)` belongs, wrong exactly where
+`PriceWithinIntegrity` makes the inclusion strict; and `subset`: a non-empty
+least exit set minus one element, wrong by the necessity direction of
+`LeastExit`. A mode with no valid victim refuses to run rather than pass
+vacuously. TLC must reject every certificate that is generated:
 
 ```
-  AuditLogWitness      good  TLC refused it: Error: The invariant of CheckerOutput is equal to FALSE
-  AnonymityWitness     good  TLC refused it: Error: The invariant of CheckerOutput is equal to FALSE
-  StrictPriceWitness   good  TLC refused it: Error: The invariant of CheckerOutput is equal to FALSE
+  AuditLogWitness [superset]        good  TLC refused it: Error: The invariant of CheckerOutput is equal to FALSE
+  AuditLogWitness [subset]          skipped (AuditLogWitness: no non-empty least exit set to mutate)
+  AnonymityWitness [superset]       good  TLC refused it: Error: The invariant of CheckerOutput is equal to FALSE
+  AnonymityWitness [subset]         skipped (AnonymityWitness: no non-empty least exit set to mutate)
+  StrictPriceWitness [superset]     good  TLC refused it: Error: The invariant of CheckerOutput is equal to FALSE
+  StrictPriceWitness [subset]       good  TLC refused it: Error: The invariant of CheckerOutput is equal to FALSE
 ```
 
 The true certificates are restored automatically afterwards.

@@ -71,27 +71,51 @@ def tla_set(items):
         f'"{i}"' for i in sorted(items)) + "}"
 
 
-def build_cert(module, model, mutate=False):
+def build_cert(module, model, mutate=None):
     """When `mutate` is set, deliberately state ONE wrong value.
 
     A certification that only ever passes proves nothing about the checker; it
     could equally be reporting an invariant TLC never evaluates.  `check.sh
-    --negative` runs this path and requires TLC to REFUSE it.  The mutation is
-    chosen to be semantically wrong but well-typed: the effect's full handle
-    set is asserted where the least exit set -- a strict subset for some
-    effect in these models, by PriceWithinIntegrity -- belongs.
+    --negative` runs this path and requires TLC to REFUSE it, in two modes,
+    each semantically wrong but well-typed:
+
+      "superset"  the effect's full handle set is asserted where the least
+                  exit set belongs -- wrong exactly where the inclusion of
+                  PriceWithinIntegrity is strict; where it is an equality this
+                  mode REFUSES TO RUN rather than passing vacuously;
+      "subset"    a non-empty least exit set is asserted minus one element --
+                  wrong by the necessity direction of LeastExit, and valid
+                  whenever the least exit set is non-empty at all.
+
+    The union covers every model: where "superset" finds no strict inclusion,
+    the sets coincide, so any non-empty least exit set gives "subset" its
+    victim.  `mutate=True` is accepted as "superset" for backward
+    compatibility.
     """
+    if mutate is True:
+        mutate = "superset"
     caps = CAPS[module]
     ab = L.all_bot(model["E"])
     lines = []
     victim = None
-    if mutate:
+    removed = None
+    if mutate == "superset":
         for r in sorted(model["E"]):
             if L.handles_minus(model, ab, r) != L.handles(model, r):
                 victim = r
                 break
         if victim is None:
             raise SystemExit(f"{module}: no strict inclusion to mutate")
+    elif mutate == "subset":
+        for r in sorted(model["E"]):
+            if L.handles_minus(model, ab, r):
+                victim = r
+                removed = sorted(L.handles_minus(model, ab, r))[0]
+                break
+        if victim is None:
+            raise SystemExit(f"{module}: no non-empty least exit set to mutate")
+    elif mutate:
+        raise ValueError(f"unknown mutation mode: {mutate!r}")
 
     # Global: the closure under the actual labelling.
     lines.append(f"  /\\ Reach = {tla_set(L.reach(model, model['lbl']))}")
@@ -100,8 +124,10 @@ def build_cert(module, model, mutate=False):
         h = L.handles(model, r)
         lines.append(f'  /\\ Handles("{r}") = {tla_set(h)}')
         if caps["handles_minus"]:
-            hm = L.handles(model, r) if r == victim \
-                else L.handles_minus(model, ab, r)
+            hm = L.handles_minus(model, ab, r)
+            if r == victim:
+                hm = L.handles(model, r) if mutate == "superset" \
+                    else hm - {removed}
             lines.append(f'  /\\ HandlesMinus(AllBot, "{r}") = {tla_set(hm)}')
 
     if caps["ta"]:
@@ -133,14 +159,15 @@ CheckerOutput ==
 CFG = "SPECIFICATION Spec\nINVARIANT CheckerOutput\n"
 
 
-def run_tlc(name):
+def run_tlc(name, tag=None):
     # -metadir per run: TLC names its scratch directory by a whole-second
     # timestamp, and these models finish in under a second, so consecutive
     # runs collide and one of them dies with a stack trace that looks like a
     # verification failure.  It is not one -- but a tool whose failures are
     # indistinguishable from its findings is useless, so give each run its own.
+    # `tag` separates runs that share a module name (the two negative modes).
     cmd = ["java", "-XX:+UseParallelGC", "-cp", TLC_JAR, "tlc2.TLC",
-           "-metadir", os.path.join("states", name),
+           "-metadir", os.path.join("states", tag or name),
            "-config", f"{name}.cfg", f"{name}.tla"]
     p = subprocess.run(cmd, cwd=GEN, capture_output=True, text=True,
                        env={**os.environ, "CLASSPATH": TLC_JAR})
@@ -159,29 +186,38 @@ def run_tlc(name):
 
 
 def negative():
-    """Require TLC to reject a deliberately wrong certificate."""
+    """Require TLC to reject deliberately wrong certificates, in two modes.
+
+    "superset" is wrong where PriceWithinIntegrity's inclusion is strict;
+    "subset" is wrong -- by the necessity direction of LeastExit -- wherever
+    the least exit set is non-empty.  Their union covers every case: where
+    the first mode refuses to run the sets coincide, so the second has a
+    victim whenever there is a least exit set to test at all.
+    """
     print("NEGATIVE CONTROL — a wrong value must be refused\n")
     ok_all = True
     for module, factory in BY_MODULE.items():
         if not CAPS[module]["handles_minus"]:
             continue
         model = factory()
-        try:
-            tla = build_cert(module, model, mutate=True)
-        except SystemExit as e:
-            print(f"  {module:<22} skipped ({e})")
-            continue
-        name = module + "Cert"
-        with open(os.path.join(GEN, name + ".tla"), "w") as f:
-            f.write(tla)
-        with open(os.path.join(GEN, name + ".cfg"), "w") as f:
-            f.write(CFG)
-        accepted, msg = run_tlc(name)
-        if accepted:
-            ok_all = False
-            print(f"  {module:<22} BAD   TLC accepted a wrong value")
-        else:
-            print(f"  {module:<22} good  TLC refused it: {msg}")
+        for mode in ("superset", "subset"):
+            label = f"{module} [{mode}]"
+            try:
+                tla = build_cert(module, model, mutate=mode)
+            except SystemExit as e:
+                print(f"  {label:<33} skipped ({e})")
+                continue
+            name = module + "Cert"
+            with open(os.path.join(GEN, name + ".tla"), "w") as f:
+                f.write(tla)
+            with open(os.path.join(GEN, name + ".cfg"), "w") as f:
+                f.write(CFG)
+            accepted, msg = run_tlc(name, tag=f"{name}_{mode}")
+            if accepted:
+                ok_all = False
+                print(f"  {label:<33} BAD   TLC accepted a wrong value")
+            else:
+                print(f"  {label:<33} good  TLC refused it: {msg}")
     print()
     if ok_all:
         print("The certification is NOT vacuous: every wrong value was "

@@ -28,7 +28,7 @@ Expected output: **8× "All N obligations proved"** (TLAPS, 0 omitted/admitted) 
 
 ```sh
 ./check.sh              # run the procedure; the specifications confirm it
-./check.sh --negative   # non-vacuity self-test: a wrong value must be REFUSED
+./check.sh --negative   # non-vacuity self-test: wrong values must be REFUSED
 ```
 
 Proposition 1 says the least exit set is computable in
@@ -105,7 +105,7 @@ These are **not** additional obligations; the totals above are unchanged. They a
 | hypotheses of `*_LeastExit`, `*_ZeroPrice` | asserted alongside the conclusion in each of the four, so those theorems are witnessed **non-vacuous** on a concrete model | ″ | TLC |
 | class membership | the instance modules' `ASSUME`s are enforced by TLC on each concrete model | ″ | TLC |
 | **Proposition 1** (the bound) | `O(|E| + Σ_S |Rel(S)|)` measured as an operation count: `ops/(|E|+Σ|Rel|)` **bounded by 2** up to `|E| = 10⁵` and `Σ|Rel| ≈ 2 × 10⁵` | `checker/scaling.py` | measurement |
-| **non-vacuity of the above** | one deliberately wrong value in each witness certificate that names a least exit set (three of the four), **refused** by TLC | `./check.sh --negative` | TLC |
+| **non-vacuity of the above** | two deliberately wrong values per witness certificate that names a least exit set (three of the four): the effect's full handle set where the least exit set belongs (`superset`), and a non-empty least exit set minus one element (`subset`). Measured: four wrong certificates generated, **all four refused** by TLC; the two models whose least exit sets are all empty refuse the `subset` run instead of passing it vacuously | `./check.sh --negative` | TLC |
 
 Proposition 1's *proof* remains a paper argument (stated in the paper, proved in its appendix); what is added here is a measurement of the count it asserts, and a confirmation that the procedure it describes computes what the machine-checked theorems say it should.
 

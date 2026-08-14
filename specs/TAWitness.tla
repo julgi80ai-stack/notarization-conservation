@@ -23,7 +23,8 @@
 (* LI in-edge from Reach, and a root can only get one from itself (or a    *)
 (* cycle).  That is exactly the TRUST-ANCHOR convention of real systems:   *)
 (* a hardcoded genesis hash, a self-signed root certificate.  Total        *)
-(* accountability is purchasable only by self-certification at the root.   *)
+(* accountability is purchasable only by a self-certifying cycle -- a      *)
+(* self-pinning root in the smallest case.                                 *)
 (*                                                                         *)
 (* Definitions copied VERBATIM from Notarization.tla / Antagonism.tla /    *)
 (* Synthesis.tla (the PriceWitness.tla pattern); only the CONSTANTS are    *)
@@ -72,10 +73,10 @@ Witness ==
   /\ Dichotomy
   /\ LabelIndep("C")
 
-  \* ---- TA is REALISED, and Theorem 2 is non-vacuous here ---------------
+  \* ---- TA is REALISED, and Theorem 2 (BinaryIsDegenerate) is non-vacuous ----
   /\ TA
   /\ Sealed("a") /\ Sealed("b")
-  /\ \A e \in E : ~Separable(e)        \* Thm 2's conclusion, realised
+  /\ \A e \in E : ~Separable(e)        \* the conclusion of Thm 2 (BinaryIsDegenerate), realised
   /\ Reach = E
 
   \* ---- and the honest price of TA: the root pins itself ----------------

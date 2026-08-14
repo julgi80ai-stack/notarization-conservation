@@ -1,7 +1,7 @@
 ----------------------- MODULE SepClosureInstance -----------------------
 (***************************************************************************)
-(* Phase 2.5 / 2.6: Morpheus (SepClosureTwoMachines) as an INSTANCE of the  *)
-(* abstract notarization class (Notarization.tla).                         *)
+(* Phase 2.5 / 2.6: the audited governance system (SepClosureTwoMachines)  *)
+(* as an INSTANCE of the abstract notarization class (Notarization.tla).   *)
 (*                                                                         *)
 (* The abstract frame is STATIC (fixed G, lbl, Rel; Reach = closure) while  *)
 (* the TLC model is DYNAMIC (emitted/linked grow under Next).  A CONSTANT    *)
@@ -14,7 +14,7 @@
 (*   2.5  the substitution discharges the abstract ASSUMEs (instance        *)
 (*        obligations) AND classifies the surfaces:                        *)
 (*           LabelIndep("J1"), LabelIndep("J2"), ~LabelIndep("J4").         *)
-(*        => Morpheus IS a member of the class; J4 is the unique            *)
+(*        => the audited system IS a member of the class; J4 is the unique *)
 (*           key-equality (label-DEPENDENT) surface.                       *)
 (*   2.6  inhabitation: a non-degenerate witness so the class theorems are  *)
 (*        not vacuous on this instance.                                     *)
@@ -89,7 +89,7 @@ MorphG   == Emitted \cap Actions
 ASSUME MorphGNE == MorphG # {}
 
 ----------------------------------------------------------------------------
-\* The instance.  Named (N!) to avoid clashing with Morpheus's own `Sep`.
+\* The instance.  Named (N!) to avoid clashing with the system's own `Sep`.
 \* Synthesis EXTENDS Antagonism EXTENDS Notarization, so N! carries the
 \* entire law, theorems included.
 N == INSTANCE Synthesis
@@ -148,7 +148,7 @@ LEMMA Inst_RelType ==
 ----------------------------------------------------------------------------
 (***************************************************************************)
 (* 2.5  SURFACE CLASSIFICATION.  This is the structural fact that makes      *)
-(* Morpheus a member of the abstract class.                                 *)
+(* the audited system a member of the abstract class.                      *)
 (***************************************************************************)
 THEOREM J2_LabelIndep == N!LabelIndep("J2")
   BY DEF N!LabelIndep, MorphRel

@@ -92,7 +92,8 @@ THEOREM SeparableExitsAllSurfaces ==
 
 ----------------------------------------------------------------------------
 (***************************************************************************)
-(* Revision R2 -- the ORBIT corollary (paper Cor 2).                         *)
+(* Revision R2 -- the ORBIT corollary (paper Cor 2: OrbitInvariance +      *)
+(* OrbitAntagonism).                                                       *)
 (* The closure restricted to LABEL-INDEPENDENT surfaces is a fixed point of  *)
 (* the entire label orbit: relabelling (key drop, pseudonym rotation,        *)
 (* anonymisation) acts trivially on it.  Hence an effect pinned through      *)

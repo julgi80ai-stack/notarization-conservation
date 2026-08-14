@@ -1,9 +1,8 @@
 
 \* TLAPM version 1.5.0
-\* launched at 2026-08-13 10:25:47 with command line:
+\* launched at 2026-08-14 20:13:16 with command line:
 \* tlapm --cleanfp --toolbox 0 0 Notarization.tla
 
-(* fingerprints file ".tlacache/TLAPS.tlaps/fingerprints" removed *)
 @!!BEGIN
 @!!type:obligationsnumber
 @!!count:0
@@ -11,9 +10,8 @@
 
 (* created new ".tlacache/TLAPS.tlaps/TLAPS.thy" *)
 (* fingerprints written in ".tlacache/TLAPS.tlaps/fingerprints" *)
-File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362, character 77:
+File "/tmp/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362, character 77:
 [INFO]: All 0 obligation proved.
-(* fingerprints file ".tlacache/Notarization.tlaps/fingerprints" removed *)
 @!!BEGIN
 @!!type:obligation
 @!!id:1
@@ -764,7 +762,7 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!loc:69:13:69:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (7%)
+@!!meth:time-limit: 5; time-used: 0.7 (14%)
 @!!already:false
 @!!END
 
@@ -772,11 +770,11 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 @!!BEGIN
 @!!type:obligation
-@!!id:6
-@!!loc:68:30:68:37
+@!!id:4
+@!!loc:67:37:67:39
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -793,15 +791,13 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 @!!BEGIN
 @!!type:obligation
-@!!id:4
-@!!loc:67:37:67:39
+@!!id:12
+@!!loc:88:20:88:22
 @!!status:proved
 @!!prover:smt
 @!!meth:time-limit: 5; time-used: 0.1 (2%)
 @!!already:false
 @!!END
-
-** Unexpanded symbols: CONSTANT_Edge_, CONSTANT_Reach_
 
 @!!BEGIN
 @!!type:obligation
@@ -809,9 +805,31 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!loc:95:13:95:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:7
+@!!loc:74:3:74:5
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:6
+@!!loc:68:30:68:37
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+** Unexpanded symbols: CONSTANT_Edge_, CONSTANT_Reach_
 
 @!!BEGIN
 @!!type:obligation
@@ -824,49 +842,19 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 ** Unexpanded symbols: CONSTANT_ClosedUnder_, CONSTANT_Edge_, CONSTANT_Reach_
 
-@!!BEGIN
-@!!type:obligation
-@!!id:7
-@!!loc:74:3:74:5
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
 ** Unexpanded symbols: CONSTANT_ClosedUnder_, CONSTANT_Edge_
 
-@!!BEGIN
-@!!type:obligation
-@!!id:16
-@!!loc:92:9:92:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:13
-@!!loc:94:15:94:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:12
-@!!loc:88:20:88:22
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
 ** Unexpanded symbols: CONSTANT_Edge_, CONSTANT_Reach_
+
+@!!BEGIN
+@!!type:obligation
+@!!id:17
+@!!loc:93:19:93:21
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
 
 @!!BEGIN
 @!!type:obligation
@@ -887,6 +875,26 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!END
 
 ** Unexpanded symbols: CONSTANT_Edge_, CONSTANT_Reach_
+
+@!!BEGIN
+@!!type:obligation
+@!!id:16
+@!!loc:92:9:92:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:13
+@!!loc:94:15:94:17
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
 
 @!!BEGIN
 @!!type:obligation
@@ -919,46 +927,6 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 @!!BEGIN
 @!!type:obligation
-@!!id:23
-@!!loc:131:3:131:5
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:21
-@!!loc:120:3:120:5
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:19
-@!!loc:108:3:108:5
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:17
-@!!loc:93:19:93:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
 @!!id:46
 @!!loc:158:27:158:31
 @!!status:trivial
@@ -976,6 +944,16 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!END
 
 ** Unexpanded symbols: CONSTANT_Edge_, CONSTANT_Reach_
+
+@!!BEGIN
+@!!type:obligation
+@!!id:24
+@!!loc:139:13:139:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
 
 @!!BEGIN
 @!!type:obligation
@@ -1008,6 +986,56 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 @!!BEGIN
 @!!type:obligation
+@!!id:28
+@!!loc:136:17:136:19
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:27
+@!!loc:135:7:135:14
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:23
+@!!loc:131:3:131:5
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:21
+@!!loc:120:3:120:5
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:19
+@!!loc:108:3:108:5
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
 @!!id:53
 @!!loc:160:46:160:50
 @!!status:trivial
@@ -1027,46 +1055,6 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!END
 
 ** Unexpanded symbols: CONSTANT_Reach_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:30
-@!!loc:138:7:138:14
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:28
-@!!loc:136:17:136:19
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:27
-@!!loc:135:7:135:14
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:24
-@!!loc:139:13:139:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
 
 @!!BEGIN
 @!!type:obligation
@@ -1112,6 +1100,26 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 @!!BEGIN
 @!!type:obligation
+@!!id:31
+@!!loc:151:13:151:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:30
+@!!loc:138:7:138:14
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
 @!!id:64
 @!!loc:177:20:177:24
 @!!status:trivial
@@ -1130,15 +1138,7 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 ** Unexpanded symbols: CONSTANT_Edge_, CONSTANT_Reach_
 
-@!!BEGIN
-@!!type:obligation
-@!!id:37
-@!!loc:149:19:149:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
+** Unexpanded symbols: CONSTANT_Edge_, CONSTANT_Reach_
 
 @!!BEGIN
 @!!type:obligation
@@ -1146,7 +1146,7 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!loc:150:15:150:17
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -1156,21 +1156,9 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!loc:144:7:144:9
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:31
-@!!loc:151:13:151:15
-@!!status:proved
-@!!prover:smt
 @!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
-
-** Unexpanded symbols: CONSTANT_Edge_, CONSTANT_Reach_
 
 ** Unexpanded symbols: CONSTANT_Edge_, CONSTANT_Reach_
 
@@ -1205,6 +1193,46 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 @!!BEGIN
 @!!type:obligation
+@!!id:41
+@!!loc:163:15:163:17
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:38
+@!!loc:180:13:180:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:37
+@!!loc:149:19:149:21
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:36
+@!!loc:148:9:148:16
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
 @!!id:73
 @!!loc:176:22:176:26
 @!!status:trivial
@@ -1222,56 +1250,6 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!END
 
 ** Unexpanded symbols: CONSTANT_ClosedUnder_, CONSTANT_Edge_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:48
-@!!loc:162:17:162:19
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:45
-@!!loc:158:24:158:26
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:41
-@!!loc:163:15:163:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:38
-@!!loc:180:13:180:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:36
-@!!loc:148:9:148:16
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
-@!!already:false
-@!!END
 
 @!!BEGIN
 @!!type:obligation
@@ -1333,21 +1311,11 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 @!!BEGIN
 @!!type:obligation
-@!!id:58
-@!!loc:168:26:168:28
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
 @!!id:56
 @!!loc:179:15:179:17
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -1357,7 +1325,7 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!loc:161:21:161:23
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -1373,11 +1341,31 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 @!!BEGIN
 @!!type:obligation
-@!!id:63
-@!!loc:177:17:177:19
+@!!id:48
+@!!loc:162:17:162:19
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:45
+@!!loc:158:24:158:26
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:58
+@!!loc:168:26:168:28
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -1393,8 +1381,8 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 @!!BEGIN
 @!!type:obligation
-@!!id:66
-@!!loc:173:11:173:13
+@!!id:67
+@!!loc:174:25:174:27
 @!!status:proved
 @!!prover:smt
 @!!meth:time-limit: 5; time-used: 0.1 (2%)
@@ -1403,8 +1391,18 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 
 @!!BEGIN
 @!!type:obligation
-@!!id:67
-@!!loc:174:25:174:27
+@!!id:63
+@!!loc:177:17:177:19
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:66
+@!!loc:173:11:173:13
 @!!status:proved
 @!!prover:smt
 @!!meth:time-limit: 5; time-used: 0.1 (2%)
@@ -1427,7 +1425,7 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!loc:175:25:175:27
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -1437,7 +1435,7 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!loc:178:19:178:21
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -1447,7 +1445,7 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 @!!loc:196:7:196:9
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -1484,7 +1482,7 @@ PROVE  r \notin Reach
 @!!loc:197:13:197:15
 @!!status:failed
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 5.1 (103%)
+@!!meth:time-limit: 5; time-used: 5.0 (100%)
 @!!reason:timeout
 @!!already:false
 @!!obl:

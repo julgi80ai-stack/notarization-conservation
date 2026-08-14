@@ -381,8 +381,9 @@ LEMMA ReachExcAllBot_sub_Reach ==
 (* S2 -- THE PRICE IS INTEGRITY.  The least exit set is contained in       *)
 (* Handles(r): every surface the separation must escape is one of the      *)
 (* label-independent links measured by seal multiplicity I(r).  The        *)
-(* antagonism of Theorem 1, read as a price: separation is purchased       *)
-(* surface-for-surface out of the integrity carrier.                       *)
+(* antagonism of Theorem 1 (NoSealedSeparable), read as a price:           *)
+(* separation is purchased surface-for-surface out of the integrity        *)
+(* carrier.                                                                *)
 (***************************************************************************)
 THEOREM PriceWithinIntegrity ==
   ASSUME Dichotomy, NEW r \in E
@@ -419,7 +420,8 @@ LEMMA ReachExcAllBot_sub_ReachLI ==
 (* S2' -- FRESH EXACTNESS.  For a fresh effect (a sink: it emits no link   *)
 (* of its own, typical of the newest persisted record) the bound is an     *)
 (* identity: the least exit set is EXACTLY the SealedLI handle set of      *)
-(* Corollary 2.  The synthesis layer and the orbit layer meet.             *)
+(* Corollary 2 (OrbitAntagonism).  The synthesis layer and the orbit       *)
+(* layer meet.                                                             *)
 (***************************************************************************)
 THEOREM FreshExactness ==
   ASSUME Dichotomy, NEW r \in E, Sink(r)
@@ -486,7 +488,8 @@ THEOREM FreshExactness ==
 (***************************************************************************)
 (* The zero-price corollary: a fresh effect separates for free exactly     *)
 (* when it is not LI-sealed -- the synthesis-layer restatement of the      *)
-(* conservation law's puncture (Cor 1) at the orbit level (Cor 2).         *)
+(* conservation law's puncture (Cor 1, CapacityRequiresPuncture) at the    *)
+(* orbit level (Cor 2, OrbitAntagonism).                                   *)
 (***************************************************************************)
 THEOREM ZeroPriceIffUnsealed ==
   ASSUME Dichotomy, NEW r \in E, Sink(r)

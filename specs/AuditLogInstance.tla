@@ -7,7 +7,7 @@
 (*                                                                         *)
 (* The point of this module is to turn the paper's "breadth claim" into a    *)
 (* breadth THEOREM: the class is inhabited by at least two structurally      *)
-(* unrelated systems (Morpheus's three-surface governance pipeline AND a    *)
+(* unrelated systems (the audited three-surface governance pipeline AND a  *)
 (* generic tamper-evident log), so the impossibility is a class law, not a  *)
 (* one-robot artifact.                                                      *)
 (*                                                                         *)

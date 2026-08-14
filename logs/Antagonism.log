@@ -1,6 +1,6 @@
 
 \* TLAPM version 1.5.0
-\* launched at 2026-08-13 10:25:54 with command line:
+\* launched at 2026-08-14 20:13:23 with command line:
 \* tlapm --cleanfp --toolbox 0 0 Antagonism.tla
 
 (* fingerprints file ".tlacache/TLAPS.tlaps/fingerprints" removed *)
@@ -11,7 +11,7 @@
 
 (* created new ".tlacache/TLAPS.tlaps/TLAPS.thy" *)
 (* fingerprints written in ".tlacache/TLAPS.tlaps/fingerprints" *)
-File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362, character 77:
+File "/tmp/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362, character 77:
 [INFO]: All 0 obligation proved.
 (* fingerprints file ".tlacache/Notarization.tlaps/fingerprints" removed *)
 @!!BEGIN
@@ -23,7 +23,6 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 (* fingerprints written in ".tlacache/Notarization.tlaps/fingerprints" *)
 File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 [INFO]: All 0 obligation proved.
-(* fingerprints file ".tlacache/Antagonism.tlaps/fingerprints" removed *)
 @!!BEGIN
 @!!type:obligation
 @!!id:1
@@ -251,364 +250,364 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:33
-@!!loc:118:3:118:5
+@!!loc:119:3:119:5
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:34
-@!!loc:118:6:118:13
+@!!loc:119:6:119:13
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:35
-@!!loc:127:13:127:15
+@!!loc:128:13:128:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:36
-@!!loc:127:16:127:20
+@!!loc:128:16:128:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:37
-@!!loc:127:22:127:39
+@!!loc:128:22:128:39
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:38
-@!!loc:124:5:124:7
+@!!loc:125:5:125:7
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:39
-@!!loc:124:8:124:20
+@!!loc:125:8:125:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:40
-@!!loc:126:5:126:7
+@!!loc:127:5:127:7
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:41
-@!!loc:126:8:126:12
+@!!loc:127:8:127:12
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:42
-@!!loc:130:3:130:5
+@!!loc:131:3:131:5
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:43
-@!!loc:143:13:143:15
+@!!loc:144:13:144:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:44
-@!!loc:143:16:143:20
+@!!loc:144:16:144:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:45
-@!!loc:136:7:136:9
+@!!loc:137:7:137:9
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:46
-@!!loc:142:15:142:17
+@!!loc:143:15:143:17
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:47
-@!!loc:142:18:142:22
+@!!loc:143:18:143:22
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:48
-@!!loc:140:9:140:16
+@!!loc:141:9:141:16
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:49
-@!!loc:141:19:141:21
+@!!loc:142:19:142:21
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:50
-@!!loc:151:13:151:15
+@!!loc:152:13:152:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:51
-@!!loc:151:16:151:20
+@!!loc:152:16:152:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:52
-@!!loc:151:22:151:26
+@!!loc:152:22:152:26
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:53
-@!!loc:147:7:147:14
+@!!loc:148:7:148:14
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:54
-@!!loc:149:5:149:7
+@!!loc:150:5:150:7
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:55
-@!!loc:150:17:150:19
+@!!loc:151:17:151:19
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:56
-@!!loc:162:13:162:15
+@!!loc:163:13:163:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:57
-@!!loc:162:16:162:20
+@!!loc:163:16:163:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:58
-@!!loc:162:22:162:26
+@!!loc:163:22:163:26
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:59
-@!!loc:157:5:157:7
+@!!loc:158:5:158:7
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:60
-@!!loc:159:5:159:7
+@!!loc:160:5:160:7
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:61
-@!!loc:159:8:159:12
+@!!loc:160:8:160:12
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:62
-@!!loc:160:21:160:23
+@!!loc:161:21:161:23
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:63
-@!!loc:160:24:160:28
+@!!loc:161:24:161:28
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:64
-@!!loc:160:30:160:47
+@!!loc:161:30:161:47
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:65
-@!!loc:161:20:161:22
+@!!loc:162:20:162:22
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:66
-@!!loc:161:23:161:27
+@!!loc:162:23:162:27
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:67
-@!!loc:161:29:161:33
+@!!loc:162:29:162:33
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:68
-@!!loc:175:13:175:15
+@!!loc:176:13:176:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:69
-@!!loc:175:16:175:20
+@!!loc:176:16:176:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:70
-@!!loc:175:22:175:37
+@!!loc:176:22:176:37
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:71
-@!!loc:168:5:168:7
+@!!loc:169:5:169:7
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:72
-@!!loc:170:5:170:7
+@!!loc:171:5:171:7
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:73
-@!!loc:170:8:170:12
+@!!loc:171:8:171:12
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:74
-@!!loc:171:17:171:19
+@!!loc:172:17:172:19
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:75
-@!!loc:171:20:171:24
+@!!loc:172:20:172:24
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:76
-@!!loc:171:26:171:37
+@!!loc:172:26:172:37
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:77
-@!!loc:172:27:172:29
+@!!loc:173:27:173:29
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:78
-@!!loc:172:30:172:34
+@!!loc:173:30:173:34
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:79
-@!!loc:172:36:172:40
+@!!loc:173:36:173:40
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:80
-@!!loc:174:5:174:7
+@!!loc:175:5:175:7
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:81
-@!!loc:174:8:174:12
+@!!loc:175:8:175:12
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:82
-@!!loc:174:14:174:18
+@!!loc:175:14:175:18
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:83
-@!!loc:174:20:174:24
+@!!loc:175:20:175:24
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:84
-@!!loc:174:26:174:40
+@!!loc:175:26:175:40
 @!!status:to be proved
 @!!END
 
@@ -812,7 +811,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:34
-@!!loc:118:6:118:13
+@!!loc:119:6:119:13
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -826,7 +825,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:49:17:49:19
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -836,7 +835,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:48:20:48:22
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -846,7 +845,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:47:5:47:7
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -856,7 +855,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:45:5:45:7
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -866,7 +865,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:43:7:43:14
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -876,14 +875,14 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:51:13:51:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (9%)
+@!!meth:time-limit: 5; time-used: 0.8 (15%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:36
-@!!loc:127:16:127:20
+@!!loc:128:16:128:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -892,7 +891,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:37
-@!!loc:127:22:127:39
+@!!loc:128:22:128:39
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -903,7 +902,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:39
-@!!loc:124:8:124:20
+@!!loc:125:8:125:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -914,7 +913,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:41
-@!!loc:126:8:126:12
+@!!loc:127:8:127:12
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -927,7 +926,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:44
-@!!loc:143:16:143:20
+@!!loc:144:16:144:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -943,7 +942,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:91:13:91:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -953,7 +952,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:75:19:75:21
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -963,7 +962,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:76:13:76:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -973,7 +972,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:63:20:63:22
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -983,7 +982,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:62:37:62:44
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -993,7 +992,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:64:13:64:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -1003,14 +1002,14 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:50:21:50:23
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:47
-@!!loc:142:18:142:22
+@!!loc:143:18:143:22
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1025,7 +1024,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:51
-@!!loc:151:16:151:20
+@!!loc:152:16:152:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1034,7 +1033,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:52
-@!!loc:151:22:151:26
+@!!loc:152:22:152:26
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1050,71 +1049,51 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 
 @!!BEGIN
 @!!type:obligation
-@!!id:45
-@!!loc:136:7:136:9
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:43
-@!!loc:143:13:143:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
 @!!id:42
-@!!loc:130:3:130:5
+@!!loc:131:3:131:5
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:40
-@!!loc:126:5:126:7
+@!!loc:127:5:127:7
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:38
-@!!loc:124:5:124:7
+@!!loc:125:5:125:7
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:35
-@!!loc:127:13:127:15
+@!!loc:128:13:128:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:33
-@!!loc:118:3:118:5
+@!!loc:119:3:119:5
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -1124,14 +1103,14 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!loc:90:16:90:18
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:57
-@!!loc:162:16:162:20
+@!!loc:163:16:163:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1140,7 +1119,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:58
-@!!loc:162:22:162:26
+@!!loc:163:22:163:26
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1153,7 +1132,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:61
-@!!loc:159:8:159:12
+@!!loc:160:8:160:12
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1164,7 +1143,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:63
-@!!loc:160:24:160:28
+@!!loc:161:24:161:28
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1173,7 +1152,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:64
-@!!loc:160:30:160:47
+@!!loc:161:30:161:47
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1184,7 +1163,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:66
-@!!loc:161:23:161:27
+@!!loc:162:23:162:27
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1193,7 +1172,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:67
-@!!loc:161:29:161:33
+@!!loc:162:29:162:33
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1204,7 +1183,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:69
-@!!loc:175:16:175:20
+@!!loc:176:16:176:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1213,7 +1192,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:70
-@!!loc:175:22:175:37
+@!!loc:176:22:176:37
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1221,83 +1200,10 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 
 ** Unexpanded symbols: CONSTANT_LabelIndep_, CONSTANT_PinsLI_, CONSTANT_Labelings_
 
-** Unexpanded symbols: CONSTANT_LabelIndep_, CONSTANT_ReachLI_, CONSTANT_SealedLI_, CONSTANT_Labelings_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:73
-@!!loc:170:8:170:12
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-** Unexpanded symbols: CONSTANT_ReachLI_, CONSTANT_SealedLI_, CONSTANT_Labelings_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:60
-@!!loc:159:5:159:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:59
-@!!loc:157:5:157:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:56
-@!!loc:162:13:162:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:55
-@!!loc:150:17:150:19
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:54
-@!!loc:149:5:149:7
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:53
-@!!loc:147:7:147:14
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
-
 @!!BEGIN
 @!!type:obligation
 @!!id:50
-@!!loc:151:13:151:15
+@!!loc:152:13:152:15
 @!!status:proved
 @!!prover:smt
 @!!meth:time-limit: 5; time-used: 0.2 (3%)
@@ -1307,27 +1213,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:49
-@!!loc:141:19:141:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:48
-@!!loc:140:9:140:16
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:46
-@!!loc:142:15:142:17
+@!!loc:142:19:142:21
 @!!status:proved
 @!!prover:smt
 @!!meth:time-limit: 5; time-used: 0.2 (4%)
@@ -1336,8 +1222,61 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 
 @!!BEGIN
 @!!type:obligation
+@!!id:48
+@!!loc:141:9:141:16
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:46
+@!!loc:143:15:143:17
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:45
+@!!loc:137:7:137:9
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:43
+@!!loc:144:13:144:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!already:false
+@!!END
+
+** Unexpanded symbols: CONSTANT_LabelIndep_, CONSTANT_ReachLI_, CONSTANT_SealedLI_, CONSTANT_Labelings_
+
+@!!BEGIN
+@!!type:obligation
+@!!id:73
+@!!loc:171:8:171:12
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+** Unexpanded symbols: CONSTANT_ReachLI_, CONSTANT_SealedLI_, CONSTANT_Labelings_
+
+@!!BEGIN
+@!!type:obligation
 @!!id:75
-@!!loc:171:20:171:24
+@!!loc:172:20:172:24
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1346,7 +1285,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:76
-@!!loc:171:26:171:37
+@!!loc:172:26:172:37
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1357,7 +1296,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:78
-@!!loc:172:30:172:34
+@!!loc:173:30:173:34
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1366,7 +1305,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:79
-@!!loc:172:36:172:40
+@!!loc:173:36:173:40
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1377,7 +1316,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:81
-@!!loc:174:8:174:12
+@!!loc:175:8:175:12
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1386,7 +1325,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:82
-@!!loc:174:14:174:18
+@!!loc:175:14:175:18
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1395,7 +1334,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:83
-@!!loc:174:20:174:24
+@!!loc:175:20:175:24
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1404,7 +1343,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:84
-@!!loc:174:26:174:40
+@!!loc:175:26:175:40
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -1412,38 +1351,108 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 
 @!!BEGIN
 @!!type:obligation
-@!!id:71
-@!!loc:168:5:168:7
+@!!id:62
+@!!loc:161:21:161:23
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (1%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
-@!!id:68
-@!!loc:175:13:175:15
+@!!id:60
+@!!loc:160:5:160:7
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:59
+@!!loc:158:5:158:7
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:56
+@!!loc:163:13:163:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:55
+@!!loc:151:17:151:19
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:54
+@!!loc:150:5:150:7
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:53
+@!!loc:148:7:148:14
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:65
-@!!loc:161:20:161:22
+@!!loc:162:20:162:22
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
-@!!id:62
-@!!loc:160:21:160:23
+@!!id:68
+@!!loc:176:13:176:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:71
+@!!loc:169:5:169:7
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:74
+@!!loc:172:17:172:19
 @!!status:proved
 @!!prover:smt
 @!!meth:time-limit: 5; time-used: 0.1 (2%)
@@ -1453,44 +1462,34 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 @!!BEGIN
 @!!type:obligation
 @!!id:72
-@!!loc:170:5:170:7
+@!!loc:171:5:171:7
 @!!status:proved
 @!!prover:smt
 @!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:74
-@!!loc:171:17:171:19
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (1%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:77
-@!!loc:172:27:172:29
+@!!loc:173:27:173:29
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:80
-@!!loc:174:5:174:7
+@!!loc:175:5:175:7
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (1%)
+@!!meth:time-limit: 5; time-used: 0.1 (2%)
 @!!already:false
 @!!END
 
 (* created new ".tlacache/Antagonism.tlaps/Antagonism.thy" *)
 (* fingerprints written in ".tlacache/Antagonism.tlaps/fingerprints" *)
-File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
+File "./Antagonism.tla", line 1, character 1 to line 178, character 76:
 [INFO]: All 84 obligations proved.

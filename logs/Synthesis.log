@@ -1,8 +1,9 @@
 
 \* TLAPM version 1.5.0
-\* launched at 2026-08-13 10:26:30 with command line:
+\* launched at 2026-08-14 20:13:26 with command line:
 \* tlapm --cleanfp --toolbox 0 0 Synthesis.tla
 
+(* fingerprints file ".tlacache/TLAPS.tlaps/fingerprints" removed *)
 @!!BEGIN
 @!!type:obligationsnumber
 @!!count:0
@@ -10,8 +11,9 @@
 
 (* created new ".tlacache/TLAPS.tlaps/TLAPS.thy" *)
 (* fingerprints written in ".tlacache/TLAPS.tlaps/fingerprints" *)
-File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362, character 77:
+File "/tmp/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362, character 77:
 [INFO]: All 0 obligation proved.
+(* fingerprints file ".tlacache/Notarization.tlaps/fingerprints" removed *)
 @!!BEGIN
 @!!type:obligationsnumber
 @!!count:0
@@ -21,6 +23,7 @@ File "/home/morpheus/tlaps/lib/tlaps/TLAPS.tla", line 1, character 1 to line 362
 (* fingerprints written in ".tlacache/Notarization.tlaps/fingerprints" *)
 File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 [INFO]: All 0 obligation proved.
+(* fingerprints file ".tlacache/Antagonism.tlaps/fingerprints" removed *)
 @!!BEGIN
 @!!type:obligationsnumber
 @!!count:0
@@ -28,7 +31,7 @@ File "./Notarization.tla", line 1, character 1 to line 199, character 74:
 
 (* created new ".tlacache/Antagonism.tlaps/Antagonism.thy" *)
 (* fingerprints written in ".tlacache/Antagonism.tlaps/fingerprints" *)
-File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
+File "./Antagonism.tla", line 1, character 1 to line 178, character 76:
 [INFO]: All 0 obligation proved.
 @!!BEGIN
 @!!type:obligation
@@ -1440,861 +1443,861 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:202
-@!!loc:400:13:400:15
+@!!loc:401:13:401:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:203
-@!!loc:400:16:400:20
+@!!loc:401:16:401:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:204
-@!!loc:400:22:400:26
+@!!loc:401:22:401:26
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:205
-@!!loc:392:7:392:9
+@!!loc:393:7:393:9
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:206
-@!!loc:394:7:394:9
+@!!loc:395:7:395:9
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:207
-@!!loc:395:17:395:19
+@!!loc:396:17:396:19
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:208
-@!!loc:395:20:395:32
+@!!loc:396:20:396:32
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:209
-@!!loc:397:7:397:9
+@!!loc:398:7:398:9
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:210
-@!!loc:397:10:397:14
+@!!loc:398:10:398:14
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:211
-@!!loc:397:16:397:20
+@!!loc:398:16:398:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:212
-@!!loc:397:22:397:34
+@!!loc:398:22:398:34
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:213
-@!!loc:398:21:398:23
+@!!loc:399:21:399:23
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:214
-@!!loc:398:24:398:28
+@!!loc:399:24:399:28
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:215
-@!!loc:398:30:398:54
+@!!loc:399:30:399:54
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:216
-@!!loc:399:20:399:22
+@!!loc:400:20:400:22
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:217
-@!!loc:399:23:399:27
+@!!loc:400:23:400:27
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:218
-@!!loc:399:29:399:33
+@!!loc:400:29:400:33
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:219
-@!!loc:416:13:416:15
+@!!loc:417:13:417:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:220
-@!!loc:416:16:416:20
+@!!loc:417:16:417:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:221
-@!!loc:415:15:415:17
+@!!loc:416:15:416:17
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:222
-@!!loc:415:18:415:22
+@!!loc:416:18:416:22
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:223
-@!!loc:411:9:411:11
+@!!loc:412:9:412:11
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:224
-@!!loc:412:61:412:63
+@!!loc:413:61:413:63
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:225
-@!!loc:413:53:413:55
+@!!loc:414:53:414:55
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:226
-@!!loc:413:56:413:60
+@!!loc:414:56:414:60
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:227
-@!!loc:413:62:413:74
+@!!loc:414:62:414:74
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:228
-@!!loc:414:29:414:31
+@!!loc:415:29:415:31
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:229
-@!!loc:414:32:414:36
+@!!loc:415:32:415:36
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:230
-@!!loc:484:13:484:15
+@!!loc:486:13:486:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:231
-@!!loc:484:16:484:20
+@!!loc:486:16:486:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:232
-@!!loc:484:22:484:39
+@!!loc:486:22:486:39
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:233
-@!!loc:437:15:437:17
+@!!loc:439:15:439:17
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:234
-@!!loc:437:18:437:22
+@!!loc:439:18:439:22
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:235
-@!!loc:437:24:437:28
+@!!loc:439:24:439:28
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:236
-@!!loc:431:9:431:11
+@!!loc:433:9:433:11
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:237
-@!!loc:431:12:431:16
+@!!loc:433:12:433:16
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:238
-@!!loc:432:19:432:21
+@!!loc:434:19:434:21
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:239
-@!!loc:432:22:432:34
+@!!loc:434:22:434:34
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:240
-@!!loc:434:9:434:11
+@!!loc:436:9:436:11
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:241
-@!!loc:434:12:434:16
+@!!loc:436:12:436:16
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:242
-@!!loc:434:18:434:22
+@!!loc:436:18:436:22
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:243
-@!!loc:434:24:434:36
+@!!loc:436:24:436:36
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:244
-@!!loc:435:30:435:32
+@!!loc:437:30:437:32
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:245
-@!!loc:435:33:435:37
+@!!loc:437:33:437:37
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:246
-@!!loc:435:39:435:65
+@!!loc:437:39:437:65
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:247
-@!!loc:436:24:436:26
+@!!loc:438:24:438:26
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:248
-@!!loc:436:27:436:31
+@!!loc:438:27:438:31
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:249
-@!!loc:436:33:436:37
+@!!loc:438:33:438:37
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:250
-@!!loc:472:16:472:18
+@!!loc:474:16:474:18
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:251
-@!!loc:472:19:472:23
+@!!loc:474:19:474:23
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:252
-@!!loc:472:25:472:29
+@!!loc:474:25:474:29
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:253
-@!!loc:441:9:441:11
+@!!loc:443:9:443:11
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:254
-@!!loc:441:12:441:16
+@!!loc:443:12:443:16
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:255
-@!!loc:442:19:442:21
+@!!loc:444:19:444:21
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:256
-@!!loc:442:22:442:33
+@!!loc:444:22:444:33
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:257
-@!!loc:443:17:443:19
+@!!loc:445:17:445:19
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:258
-@!!loc:443:20:443:24
+@!!loc:445:20:445:24
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:259
-@!!loc:443:26:443:30
+@!!loc:445:26:445:30
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:260
-@!!loc:445:26:445:28
+@!!loc:447:26:447:28
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:261
-@!!loc:445:29:445:41
+@!!loc:447:29:447:41
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:262
-@!!loc:446:25:446:27
+@!!loc:448:25:448:27
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:263
-@!!loc:446:28:446:42
+@!!loc:448:28:448:42
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:264
-@!!loc:464:17:464:19
+@!!loc:466:17:466:19
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:265
-@!!loc:464:20:464:24
+@!!loc:466:20:466:24
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:266
-@!!loc:464:26:464:30
+@!!loc:466:26:466:30
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:267
-@!!loc:451:11:451:13
-@!!status:to be proved
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:268
 @!!loc:453:11:453:13
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
+@!!id:268
+@!!loc:455:11:455:13
+@!!status:to be proved
+@!!END
+
+@!!BEGIN
+@!!type:obligation
 @!!id:269
-@!!loc:454:19:454:21
+@!!loc:456:19:456:21
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:270
-@!!loc:454:22:454:26
+@!!loc:456:22:456:26
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:271
-@!!loc:455:39:455:41
+@!!loc:457:39:457:41
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:272
-@!!loc:455:42:455:46
+@!!loc:457:42:457:46
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:273
-@!!loc:456:24:456:26
+@!!loc:458:24:458:26
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:274
-@!!loc:456:27:456:31
+@!!loc:458:27:458:31
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:275
-@!!loc:463:19:463:21
+@!!loc:465:19:465:21
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:276
-@!!loc:463:22:463:26
+@!!loc:465:22:465:26
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:277
-@!!loc:459:13:459:15
+@!!loc:461:13:461:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:278
-@!!loc:459:16:459:20
+@!!loc:461:16:461:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:279
-@!!loc:459:22:459:36
+@!!loc:461:22:461:36
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:280
-@!!loc:459:38:459:45
+@!!loc:461:38:461:45
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:281
-@!!loc:460:36:460:38
+@!!loc:462:36:462:38
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:282
-@!!loc:460:39:460:43
+@!!loc:462:39:462:43
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:283
-@!!loc:462:13:462:15
+@!!loc:464:13:464:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:284
-@!!loc:462:16:462:20
+@!!loc:464:16:464:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:285
-@!!loc:462:22:462:26
+@!!loc:464:22:464:26
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:286
-@!!loc:462:28:462:32
+@!!loc:464:28:464:32
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:287
-@!!loc:462:34:462:38
+@!!loc:464:34:464:38
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:288
-@!!loc:462:40:462:55
+@!!loc:464:40:464:55
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:289
-@!!loc:468:17:468:19
+@!!loc:470:17:470:19
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:290
-@!!loc:468:20:468:24
+@!!loc:470:20:470:24
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:291
-@!!loc:468:26:468:30
+@!!loc:470:26:470:30
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:292
-@!!loc:468:32:468:36
+@!!loc:470:32:470:36
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:293
-@!!loc:467:11:467:18
+@!!loc:469:11:469:18
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:294
-@!!loc:469:37:469:39
+@!!loc:471:37:471:39
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:295
-@!!loc:469:40:469:44
+@!!loc:471:40:471:44
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:296
-@!!loc:469:46:469:50
+@!!loc:471:46:471:50
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:297
-@!!loc:469:52:469:56
+@!!loc:471:52:471:56
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:298
-@!!loc:471:9:471:11
+@!!loc:473:9:473:11
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:299
-@!!loc:471:12:471:16
+@!!loc:473:12:473:16
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:300
-@!!loc:471:18:471:22
+@!!loc:473:18:473:22
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:301
-@!!loc:471:24:471:38
+@!!loc:473:24:473:38
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:302
-@!!loc:471:40:471:47
+@!!loc:473:40:473:47
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:303
-@!!loc:483:15:483:17
+@!!loc:485:15:485:17
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:304
-@!!loc:483:18:483:22
+@!!loc:485:18:485:22
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:305
-@!!loc:483:24:483:28
+@!!loc:485:24:485:28
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:306
-@!!loc:478:17:478:19
+@!!loc:480:17:480:19
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:307
-@!!loc:478:20:478:24
+@!!loc:480:20:480:24
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:308
-@!!loc:478:26:478:30
+@!!loc:480:26:480:30
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:309
-@!!loc:478:32:478:36
+@!!loc:480:32:480:36
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:310
-@!!loc:477:28:477:30
+@!!loc:479:28:479:30
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:311
-@!!loc:477:31:477:35
+@!!loc:479:31:479:35
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:312
-@!!loc:482:17:482:19
+@!!loc:484:17:484:19
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:313
-@!!loc:482:20:482:24
+@!!loc:484:20:484:24
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:314
-@!!loc:482:26:482:30
+@!!loc:484:26:484:30
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:315
-@!!loc:481:61:481:63
+@!!loc:483:61:483:63
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:316
-@!!loc:481:64:481:68
+@!!loc:483:64:483:68
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:317
-@!!loc:502:13:502:15
+@!!loc:505:13:505:15
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:318
-@!!loc:502:16:502:20
+@!!loc:505:16:505:20
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:319
-@!!loc:502:22:502:26
+@!!loc:505:22:505:26
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:320
-@!!loc:502:28:502:32
+@!!loc:505:28:505:32
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:321
-@!!loc:496:7:496:9
+@!!loc:499:7:499:9
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:322
-@!!loc:496:10:496:24
+@!!loc:499:10:499:24
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:323
-@!!loc:498:7:498:9
+@!!loc:501:7:501:9
 @!!status:to be proved
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:324
-@!!loc:501:7:501:14
+@!!loc:504:7:504:14
 @!!status:to be proved
 @!!END
 
@@ -2418,11 +2421,21 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
+@!!id:16
+@!!loc:114:19:114:21
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
 @!!id:15
 @!!loc:113:9:113:16
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -2432,7 +2445,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:115:15:115:17
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -2442,7 +2455,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:109:7:109:9
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -2452,7 +2465,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:116:13:116:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -2462,7 +2475,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:101:7:101:14
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
 @!!already:false
 @!!END
 
@@ -2472,7 +2485,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:99:17:99:19
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.3 (5%)
 @!!already:false
 @!!END
 
@@ -2482,7 +2495,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:98:7:98:14
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.3 (5%)
 @!!already:false
 @!!END
 
@@ -2492,7 +2505,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:102:13:102:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (9%)
+@!!meth:time-limit: 5; time-used: 0.8 (17%)
 @!!already:false
 @!!END
 
@@ -2502,7 +2515,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:93:3:93:5
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (9%)
+@!!meth:time-limit: 5; time-used: 0.9 (17%)
 @!!already:false
 @!!END
 
@@ -2512,7 +2525,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:89:3:89:5
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.5 (9%)
+@!!meth:time-limit: 5; time-used: 0.9 (17%)
 @!!already:false
 @!!END
 
@@ -2645,13 +2658,15 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 ** Unexpanded symbols: CONSTANT_EdgeExit_, CONSTANT_ReachExit_
 
+** Unexpanded symbols: CONSTANT_EdgeExit_, CONSTANT_ReachExit_
+
 @!!BEGIN
 @!!type:obligation
 @!!id:32
 @!!loc:135:19:135:21
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -2661,7 +2676,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:136:15:136:17
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -2671,7 +2686,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:132:32:132:34
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
 @!!already:false
 @!!END
 
@@ -2681,7 +2696,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:131:32:131:34
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
 @!!already:false
 @!!END
 
@@ -2691,7 +2706,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:130:9:130:11
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!meth:time-limit: 5; time-used: 0.3 (5%)
 @!!already:false
 @!!END
 
@@ -2701,7 +2716,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:133:15:133:17
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
 @!!already:false
 @!!END
 
@@ -2711,7 +2726,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:125:23:125:25
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
 @!!already:false
 @!!END
 
@@ -2721,7 +2736,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:124:24:124:26
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!meth:time-limit: 5; time-used: 0.3 (7%)
 @!!already:false
 @!!END
 
@@ -2731,21 +2746,9 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:137:13:137:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!meth:time-limit: 5; time-used: 0.4 (7%)
 @!!already:false
 @!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:16
-@!!loc:114:19:114:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
-@!!already:false
-@!!END
-
-** Unexpanded symbols: CONSTANT_EdgeExit_, CONSTANT_ReachExit_
 
 @!!BEGIN
 @!!type:obligation
@@ -2821,16 +2824,6 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
-@!!id:52
-@!!loc:183:13:183:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
 @!!id:51
 @!!loc:166:19:166:21
 @!!status:proved
@@ -2845,7 +2838,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:165:9:165:16
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -2855,7 +2848,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:167:15:167:17
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -2885,7 +2878,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:150:7:150:14
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
 @!!already:false
 @!!END
 
@@ -2895,7 +2888,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:146:7:146:14
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!meth:time-limit: 5; time-used: 0.3 (5%)
 @!!already:false
 @!!END
 
@@ -2905,7 +2898,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:151:13:151:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
 @!!already:false
 @!!END
 
@@ -2915,7 +2908,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:141:3:141:5
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
 @!!already:false
 @!!END
 
@@ -3038,32 +3031,11 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
-@!!id:84
-@!!loc:248:16:248:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-** Unexpanded symbols: CONSTANT_ReachExc_, CONSTANT_HandlesMinus_, CONSTANT_Labelings_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:74
-@!!loc:208:37:208:39
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
 @!!id:72
 @!!loc:207:19:207:21
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -3073,7 +3045,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:204:9:204:11
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -3083,7 +3055,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:212:15:212:17
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -3093,7 +3065,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:197:39:197:41
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
 @!!already:false
 @!!END
 
@@ -3103,7 +3075,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:198:17:198:19
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!meth:time-limit: 5; time-used: 0.3 (5%)
 @!!already:false
 @!!END
 
@@ -3113,7 +3085,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:199:15:199:17
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
 @!!already:false
 @!!END
 
@@ -3123,7 +3095,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:213:13:213:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (5%)
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
 @!!already:false
 @!!END
 
@@ -3133,7 +3105,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:181:36:181:38
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (5%)
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
 @!!already:false
 @!!END
 
@@ -3143,7 +3115,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:180:9:180:11
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
+@!!meth:time-limit: 5; time-used: 0.3 (7%)
 @!!already:false
 @!!END
 
@@ -3153,9 +3125,30 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:182:15:182:17
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
+@!!meth:time-limit: 5; time-used: 0.4 (7%)
 @!!already:false
 @!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:52
+@!!loc:183:13:183:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (8%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:84
+@!!loc:248:16:248:20
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+** Unexpanded symbols: CONSTANT_ReachExc_, CONSTANT_HandlesMinus_, CONSTANT_Labelings_
 
 @!!BEGIN
 @!!type:obligation
@@ -3296,56 +3289,6 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
-@!!id:109
-@!!loc:239:41:239:45
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:110
-@!!loc:239:47:239:51
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-** Unexpanded symbols: CONSTANT_ReachExc_, CONSTANT_EdgeExit_, CONSTANT_Labelings_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:105
-@!!loc:238:27:238:29
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (1%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:102
-@!!loc:241:19:241:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:100
-@!!loc:242:17:242:19
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
 @!!id:98
 @!!loc:235:17:235:19
 @!!status:proved
@@ -3370,7 +3313,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:231:9:231:11
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
@@ -3380,7 +3323,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:244:15:244:17
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
 @!!already:false
 @!!END
 
@@ -3390,7 +3333,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:226:20:226:22
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
 @!!already:false
 @!!END
 
@@ -3400,7 +3343,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:225:23:225:25
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (5%)
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
 @!!already:false
 @!!END
 
@@ -3410,7 +3353,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:224:24:224:26
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
+@!!meth:time-limit: 5; time-used: 0.3 (7%)
 @!!already:false
 @!!END
 
@@ -3420,7 +3363,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:248:13:248:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
+@!!meth:time-limit: 5; time-used: 0.4 (7%)
 @!!already:false
 @!!END
 
@@ -3430,7 +3373,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:211:9:211:11
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (7%)
+@!!meth:time-limit: 5; time-used: 0.4 (8%)
 @!!already:false
 @!!END
 
@@ -3440,7 +3383,17 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:209:36:209:38
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (8%)
+@!!meth:time-limit: 5; time-used: 0.5 (9%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:74
+@!!loc:208:37:208:39
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (10%)
 @!!already:false
 @!!END
 
@@ -3450,9 +3403,29 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:206:9:206:11
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (9%)
+@!!meth:time-limit: 5; time-used: 0.5 (11%)
 @!!already:false
 @!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:109
+@!!loc:239:41:239:45
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:110
+@!!loc:239:47:239:51
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+** Unexpanded symbols: CONSTANT_ReachExc_, CONSTANT_EdgeExit_, CONSTANT_Labelings_
 
 @!!BEGIN
 @!!type:obligation
@@ -3622,83 +3595,11 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
-@!!id:139
-@!!loc:293:10:293:14
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:140
-@!!loc:293:16:293:30
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:141
-@!!loc:293:32:293:39
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_AllBot_, CONSTANT_Labelings_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:143
-@!!loc:304:16:304:20
-@!!status:trivial
-@!!prover:tlapm
-@!!already:false
-@!!END
-
-** Unexpanded symbols: CONSTANT_LabelIndep_, CONSTANT_AllBot_, CONSTANT_Labelings_
-
-** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_AllBot_, CONSTANT_Labelings_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:138
-@!!loc:293:7:293:9
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:137
-@!!loc:291:23:291:25
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:134
-@!!loc:294:13:294:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
 @!!id:131
 @!!loc:281:20:281:22
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.1 (2%)
 @!!already:false
 @!!END
 
@@ -3708,7 +3609,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:280:17:280:19
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -3718,7 +3619,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:279:7:279:14
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
@@ -3728,7 +3629,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:282:13:282:15
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
@@ -3778,7 +3679,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!loc:240:40:240:42
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (7%)
+@!!meth:time-limit: 5; time-used: 0.4 (7%)
 @!!already:false
 @!!END
 
@@ -3791,6 +3692,78 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!meth:time-limit: 5; time-used: 0.4 (8%)
 @!!already:false
 @!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:105
+@!!loc:238:27:238:29
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (9%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:102
+@!!loc:241:19:241:21
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (10%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:100
+@!!loc:242:17:242:19
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (10%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:139
+@!!loc:293:10:293:14
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:140
+@!!loc:293:16:293:30
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:141
+@!!loc:293:32:293:39
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_AllBot_, CONSTANT_Labelings_
+
+@!!BEGIN
+@!!type:obligation
+@!!id:143
+@!!loc:304:16:304:20
+@!!status:trivial
+@!!prover:tlapm
+@!!already:false
+@!!END
+
+** Unexpanded symbols: CONSTANT_LabelIndep_, CONSTANT_AllBot_, CONSTANT_Labelings_
+
+** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_AllBot_, CONSTANT_Labelings_
 
 @!!BEGIN
 @!!type:obligation
@@ -3895,6 +3868,126 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
+@!!id:157
+@!!loc:317:27:317:29
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:154
+@!!loc:316:34:316:36
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:153
+@!!loc:315:61:315:63
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:152
+@!!loc:314:9:314:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:150
+@!!loc:318:15:318:17
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:148
+@!!loc:319:13:319:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (7%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:145
+@!!loc:303:36:303:38
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (7%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:144
+@!!loc:302:23:302:25
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (8%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:142
+@!!loc:304:13:304:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (8%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:138
+@!!loc:293:7:293:9
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (9%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:137
+@!!loc:291:23:291:25
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (10%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:134
+@!!loc:294:13:294:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (10%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
 @!!id:165
 @!!loc:335:20:335:32
 @!!status:trivial
@@ -3952,136 +4045,6 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!END
 
 ** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_AllBot_, CONSTANT_HandlesMinus_, CONSTANT_SepAch_, CONSTANT_Labelings_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:164
-@!!loc:335:17:335:19
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:163
-@!!loc:334:7:334:9
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:162
-@!!loc:332:7:332:9
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:159
-@!!loc:338:13:338:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:157
-@!!loc:317:27:317:29
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:154
-@!!loc:316:34:316:36
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:153
-@!!loc:315:61:315:63
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (5%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:152
-@!!loc:314:9:314:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:150
-@!!loc:318:15:318:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:148
-@!!loc:319:13:319:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (7%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:145
-@!!loc:303:36:303:38
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (7%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:144
-@!!loc:302:23:302:25
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (8%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:142
-@!!loc:304:13:304:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (8%)
-@!!already:false
-@!!END
 
 @!!BEGIN
 @!!type:obligation
@@ -4227,6 +4190,126 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 ** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_ClosedUnder_, CONSTANT_AllBot_
 
+@!!BEGIN
+@!!type:obligation
+@!!id:187
+@!!loc:360:9:360:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:184
+@!!loc:361:15:361:17
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:182
+@!!loc:355:9:355:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (5%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:179
+@!!loc:353:9:353:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:176
+@!!loc:356:15:356:17
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (7%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:173
+@!!loc:362:13:362:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (8%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:170
+@!!loc:337:30:337:32
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (9%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:166
+@!!loc:336:32:336:34
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (11%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:164
+@!!loc:335:17:335:19
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (12%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:163
+@!!loc:334:7:334:9
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (12%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:162
+@!!loc:332:7:332:9
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (13%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:159
+@!!loc:338:13:338:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.7 (14%)
+@!!already:false
+@!!END
+
 ** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_ClosedUnder_, CONSTANT_LabelIndep_, CONSTANT_AllBot_, CONSTANT_EdgeAt_
 
 @!!BEGIN
@@ -4263,7 +4346,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:203
-@!!loc:400:16:400:20
+@!!loc:401:16:401:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4272,143 +4355,13 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:204
-@!!loc:400:22:400:26
+@!!loc:401:22:401:26
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
 @!!END
 
 ** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_ReachExc_, CONSTANT_AllBot_, CONSTANT_Handles_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:197
-@!!loc:375:36:375:38
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:196
-@!!loc:374:61:374:63
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:195
-@!!loc:373:9:373:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:193
-@!!loc:377:15:377:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:191
-@!!loc:378:13:378:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:187
-@!!loc:360:9:360:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (5%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:184
-@!!loc:361:15:361:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:182
-@!!loc:355:9:355:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:179
-@!!loc:353:9:353:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (7%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:176
-@!!loc:356:15:356:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (8%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:173
-@!!loc:362:13:362:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (8%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:170
-@!!loc:337:30:337:32
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.5 (9%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:166
-@!!loc:336:32:336:34
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.5 (10%)
-@!!already:false
-@!!END
 
 ** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_ReachExc_, CONSTANT_AllBot_
 
@@ -4417,7 +4370,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:208
-@!!loc:395:20:395:32
+@!!loc:396:20:396:32
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4428,7 +4381,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:210
-@!!loc:397:10:397:14
+@!!loc:398:10:398:14
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4437,7 +4390,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:211
-@!!loc:397:16:397:20
+@!!loc:398:16:398:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4446,7 +4399,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:212
-@!!loc:397:22:397:34
+@!!loc:398:22:398:34
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4457,7 +4410,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:214
-@!!loc:398:24:398:28
+@!!loc:399:24:399:28
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4466,7 +4419,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:215
-@!!loc:398:30:398:54
+@!!loc:399:30:399:54
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4477,7 +4430,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:217
-@!!loc:399:23:399:27
+@!!loc:400:23:400:27
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4486,7 +4439,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:218
-@!!loc:399:29:399:33
+@!!loc:400:29:400:33
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4497,7 +4450,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:220
-@!!loc:416:16:416:20
+@!!loc:417:16:417:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4508,13 +4461,143 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:222
-@!!loc:415:18:415:22
+@!!loc:416:18:416:22
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
 @!!END
 
 ** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_AllBot_, CONSTANT_ClosedLI_, CONSTANT_EdgeAt_
+
+@!!BEGIN
+@!!type:obligation
+@!!id:216
+@!!loc:400:20:400:22
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:213
+@!!loc:399:21:399:23
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:209
+@!!loc:398:7:398:9
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:207
+@!!loc:396:17:396:19
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:206
+@!!loc:395:7:395:9
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (6%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:205
+@!!loc:393:7:393:9
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (7%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:202
+@!!loc:401:13:401:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (8%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:200
+@!!loc:376:22:376:24
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (8%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:197
+@!!loc:375:36:375:38
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (9%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:196
+@!!loc:374:61:374:63
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (10%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:195
+@!!loc:373:9:373:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (11%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:193
+@!!loc:377:15:377:17
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (12%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:191
+@!!loc:378:13:378:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (12%)
+@!!already:false
+@!!END
 
 ** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_AllBot_, CONSTANT_ClosedLI_
 
@@ -4523,7 +4606,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:226
-@!!loc:413:56:413:60
+@!!loc:414:56:414:60
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4532,7 +4615,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:227
-@!!loc:413:62:413:74
+@!!loc:414:62:414:74
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4543,7 +4626,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:229
-@!!loc:414:32:414:36
+@!!loc:415:32:415:36
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4554,7 +4637,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:231
-@!!loc:484:16:484:20
+@!!loc:486:16:486:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4563,7 +4646,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:232
-@!!loc:484:22:484:39
+@!!loc:486:22:486:39
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4573,148 +4656,8 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
-@!!id:228
-@!!loc:414:29:414:31
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:225
-@!!loc:413:53:413:55
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:224
-@!!loc:412:61:412:63
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:223
-@!!loc:411:9:411:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:221
-@!!loc:415:15:415:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:219
-@!!loc:416:13:416:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:216
-@!!loc:399:20:399:22
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:213
-@!!loc:398:21:398:23
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:209
-@!!loc:397:7:397:9
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (7%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:207
-@!!loc:395:17:395:19
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (8%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:206
-@!!loc:394:7:394:9
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (8%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:205
-@!!loc:392:7:392:9
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (9%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:202
-@!!loc:400:13:400:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.5 (10%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:200
-@!!loc:376:22:376:24
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.5 (10%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
 @!!id:234
-@!!loc:437:18:437:22
+@!!loc:439:18:439:22
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4723,7 +4666,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:235
-@!!loc:437:24:437:28
+@!!loc:439:24:439:28
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4734,7 +4677,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:237
-@!!loc:431:12:431:16
+@!!loc:433:12:433:16
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4745,7 +4688,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:239
-@!!loc:432:22:432:34
+@!!loc:434:22:434:34
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4756,7 +4699,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:241
-@!!loc:434:12:434:16
+@!!loc:436:12:436:16
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4765,7 +4708,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:242
-@!!loc:434:18:434:22
+@!!loc:436:18:436:22
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4774,7 +4717,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:243
-@!!loc:434:24:434:36
+@!!loc:436:24:436:36
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4785,7 +4728,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:245
-@!!loc:435:33:435:37
+@!!loc:437:33:437:37
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4794,7 +4737,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:246
-@!!loc:435:39:435:65
+@!!loc:437:39:437:65
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4805,7 +4748,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:248
-@!!loc:436:27:436:31
+@!!loc:438:27:438:31
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4814,7 +4757,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:249
-@!!loc:436:33:436:37
+@!!loc:438:33:438:37
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4825,7 +4768,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:251
-@!!loc:472:19:472:23
+@!!loc:474:19:474:23
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4834,7 +4777,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:252
-@!!loc:472:25:472:29
+@!!loc:474:25:474:29
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4845,7 +4788,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:254
-@!!loc:441:12:441:16
+@!!loc:443:12:443:16
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4855,8 +4798,128 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
+@!!id:247
+@!!loc:438:24:438:26
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:244
+@!!loc:437:30:437:32
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:240
+@!!loc:436:9:436:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (5%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:238
+@!!loc:434:19:434:21
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (7%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:233
+@!!loc:439:15:439:17
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (8%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:230
+@!!loc:486:13:486:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (9%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:228
+@!!loc:415:29:415:31
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (10%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:225
+@!!loc:414:53:414:55
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (11%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:224
+@!!loc:413:61:413:63
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (12%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:223
+@!!loc:412:9:412:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (13%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:221
+@!!loc:416:15:416:17
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.7 (14%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:219
+@!!loc:417:13:417:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.7 (15%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
 @!!id:256
-@!!loc:442:22:442:33
+@!!loc:444:22:444:33
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4867,7 +4930,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:258
-@!!loc:443:20:443:24
+@!!loc:445:20:445:24
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4876,7 +4939,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:259
-@!!loc:443:26:443:30
+@!!loc:445:26:445:30
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4887,7 +4950,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:261
-@!!loc:445:29:445:41
+@!!loc:447:29:447:41
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4898,7 +4961,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:263
-@!!loc:446:28:446:42
+@!!loc:448:28:448:42
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4909,7 +4972,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:265
-@!!loc:464:20:464:24
+@!!loc:466:20:466:24
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4918,7 +4981,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:266
-@!!loc:464:26:464:30
+@!!loc:466:26:466:30
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -4928,142 +4991,12 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 ** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_LabelIndep_, CONSTANT_ReachExc_, CONSTANT_AllBot_, CONSTANT_Sink_, CONSTANT_ReachLI_
 
-@!!BEGIN
-@!!type:obligation
-@!!id:264
-@!!loc:464:17:464:19
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:262
-@!!loc:446:25:446:27
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:260
-@!!loc:445:26:445:28
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:257
-@!!loc:443:17:443:19
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:255
-@!!loc:442:19:442:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:253
-@!!loc:441:9:441:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (5%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:250
-@!!loc:472:16:472:18
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:247
-@!!loc:436:24:436:26
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (7%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:244
-@!!loc:435:30:435:32
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (8%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:240
-@!!loc:434:9:434:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (9%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:238
-@!!loc:432:19:432:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.5 (10%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:233
-@!!loc:437:15:437:17
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.5 (11%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:230
-@!!loc:484:13:484:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.6 (12%)
-@!!already:false
-@!!END
-
 ** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_LabelIndep_, CONSTANT_ReachExc_, CONSTANT_AllBot_, CONSTANT_ReachLI_, CONSTANT_EdgeLI_
 
 @!!BEGIN
 @!!type:obligation
 @!!id:270
-@!!loc:454:22:454:26
+@!!loc:456:22:456:26
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5074,7 +5007,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:272
-@!!loc:455:42:455:46
+@!!loc:457:42:457:46
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5085,7 +5018,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:274
-@!!loc:456:27:456:31
+@!!loc:458:27:458:31
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5096,7 +5029,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:276
-@!!loc:463:22:463:26
+@!!loc:465:22:465:26
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5107,7 +5040,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:278
-@!!loc:459:16:459:20
+@!!loc:461:16:461:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5116,7 +5049,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:279
-@!!loc:459:22:459:36
+@!!loc:461:22:461:36
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5125,7 +5058,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:280
-@!!loc:459:38:459:45
+@!!loc:461:38:461:45
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5135,8 +5068,138 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
+@!!id:275
+@!!loc:465:19:465:21
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:273
+@!!loc:458:24:458:26
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:271
+@!!loc:457:39:457:41
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (5%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:269
+@!!loc:456:19:456:21
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.3 (7%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:268
+@!!loc:455:11:455:13
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (8%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:267
+@!!loc:453:11:453:13
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (8%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:264
+@!!loc:466:17:466:19
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (10%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:262
+@!!loc:448:25:448:27
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (11%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:260
+@!!loc:447:26:447:28
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (12%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:257
+@!!loc:445:17:445:19
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.7 (13%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:255
+@!!loc:444:19:444:21
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.7 (14%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:253
+@!!loc:443:9:443:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.7 (15%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:250
+@!!loc:474:16:474:18
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.8 (16%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
 @!!id:282
-@!!loc:460:39:460:43
+@!!loc:462:39:462:43
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5147,7 +5210,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:284
-@!!loc:462:16:462:20
+@!!loc:464:16:464:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5156,7 +5219,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:285
-@!!loc:462:22:462:26
+@!!loc:464:22:464:26
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5165,7 +5228,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:286
-@!!loc:462:28:462:32
+@!!loc:464:28:464:32
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5174,7 +5237,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:287
-@!!loc:462:34:462:38
+@!!loc:464:34:464:38
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5183,7 +5246,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:288
-@!!loc:462:40:462:55
+@!!loc:464:40:464:55
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5194,7 +5257,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:290
-@!!loc:468:20:468:24
+@!!loc:470:20:470:24
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5203,7 +5266,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:291
-@!!loc:468:26:468:30
+@!!loc:470:26:470:30
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5212,7 +5275,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:292
-@!!loc:468:32:468:36
+@!!loc:470:32:470:36
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5225,7 +5288,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:295
-@!!loc:469:40:469:44
+@!!loc:471:40:471:44
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5234,7 +5297,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:296
-@!!loc:469:46:469:50
+@!!loc:471:46:471:50
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5243,7 +5306,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:297
-@!!loc:469:52:469:56
+@!!loc:471:52:471:56
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5254,7 +5317,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:299
-@!!loc:471:12:471:16
+@!!loc:473:12:473:16
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5263,7 +5326,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:300
-@!!loc:471:18:471:22
+@!!loc:473:18:473:22
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5272,7 +5335,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:301
-@!!loc:471:24:471:38
+@!!loc:473:24:473:38
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5281,7 +5344,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:302
-@!!loc:471:40:471:47
+@!!loc:473:40:473:47
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5292,7 +5355,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:304
-@!!loc:483:18:483:22
+@!!loc:485:18:485:22
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5301,7 +5364,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:305
-@!!loc:483:24:483:28
+@!!loc:485:24:485:28
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5311,148 +5374,8 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
-@!!id:298
-@!!loc:471:9:471:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:294
-@!!loc:469:37:469:39
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (3%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:293
-@!!loc:467:11:467:18
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:289
-@!!loc:468:17:468:19
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (5%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:283
-@!!loc:462:13:462:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (7%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:281
-@!!loc:460:36:460:38
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (7%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:277
-@!!loc:459:13:459:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.4 (9%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:275
-@!!loc:463:19:463:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.5 (9%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:273
-@!!loc:456:24:456:26
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.5 (10%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:271
-@!!loc:455:39:455:41
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.5 (11%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:269
-@!!loc:454:19:454:21
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.6 (11%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:268
-@!!loc:453:11:453:13
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.6 (12%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:267
-@!!loc:451:11:451:13
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.6 (13%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:236
-@!!loc:431:9:431:11
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 1.1 (23%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
 @!!id:307
-@!!loc:478:20:478:24
+@!!loc:480:20:480:24
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5461,7 +5384,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:308
-@!!loc:478:26:478:30
+@!!loc:480:26:480:30
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5470,7 +5393,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:309
-@!!loc:478:32:478:36
+@!!loc:480:32:480:36
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5481,7 +5404,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:311
-@!!loc:477:31:477:35
+@!!loc:479:31:479:35
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5492,7 +5415,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:313
-@!!loc:482:20:482:24
+@!!loc:484:20:484:24
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5501,7 +5424,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:314
-@!!loc:482:26:482:30
+@!!loc:484:26:484:30
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5512,7 +5435,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:316
-@!!loc:481:64:481:68
+@!!loc:483:64:483:68
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5523,7 +5446,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:318
-@!!loc:502:16:502:20
+@!!loc:505:16:505:20
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5532,7 +5455,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:319
-@!!loc:502:22:502:26
+@!!loc:505:22:505:26
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5541,7 +5464,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:320
-@!!loc:502:28:502:32
+@!!loc:505:28:505:32
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5552,7 +5475,7 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 @!!BEGIN
 @!!type:obligation
 @!!id:322
-@!!loc:496:10:496:24
+@!!loc:499:10:499:24
 @!!status:trivial
 @!!prover:tlapm
 @!!already:false
@@ -5560,52 +5483,30 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 ** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_LabelIndep_, CONSTANT_Sink_, CONSTANT_PinsLI_
 
-** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_LabelIndep_, CONSTANT_Sink_, CONSTANT_PinsLI_
-
-@!!BEGIN
-@!!type:obligation
-@!!id:317
-@!!loc:502:13:502:15
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
-@!!already:false
-@!!END
-
 @!!BEGIN
 @!!type:obligation
 @!!id:315
-@!!loc:481:61:481:63
+@!!loc:483:61:483:63
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (3%)
+@!!meth:time-limit: 5; time-used: 0.2 (4%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:312
-@!!loc:482:17:482:19
+@!!loc:484:17:484:19
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
+@!!meth:time-limit: 5; time-used: 0.2 (5%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:310
-@!!loc:477:28:477:30
-@!!status:proved
-@!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.2 (4%)
-@!!already:false
-@!!END
-
-@!!BEGIN
-@!!type:obligation
-@!!id:306
-@!!loc:478:17:478:19
+@!!loc:479:28:479:30
 @!!status:proved
 @!!prover:smt
 @!!meth:time-limit: 5; time-used: 0.3 (5%)
@@ -5614,45 +5515,147 @@ File "./Antagonism.tla", line 1, character 1 to line 177, character 76:
 
 @!!BEGIN
 @!!type:obligation
-@!!id:303
-@!!loc:483:15:483:17
+@!!id:306
+@!!loc:480:17:480:19
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.3 (6%)
+@!!meth:time-limit: 5; time-used: 0.3 (7%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:303
+@!!loc:485:15:485:17
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.4 (7%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:298
+@!!loc:473:9:473:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (10%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:294
+@!!loc:471:37:471:39
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.5 (11%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:293
+@!!loc:469:11:469:18
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (11%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:289
+@!!loc:470:17:470:19
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.6 (13%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:283
+@!!loc:464:13:464:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.8 (16%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:281
+@!!loc:462:36:462:38
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.8 (17%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:277
+@!!loc:461:13:461:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.9 (19%)
+@!!already:false
+@!!END
+
+@!!BEGIN
+@!!type:obligation
+@!!id:236
+@!!loc:433:9:433:11
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 1.9 (38%)
+@!!already:false
+@!!END
+
+** Unexpanded symbols: CONSTANT_Dichotomy_, CONSTANT_LabelIndep_, CONSTANT_Sink_, CONSTANT_PinsLI_
+
+@!!BEGIN
+@!!type:obligation
+@!!id:317
+@!!loc:505:13:505:15
+@!!status:proved
+@!!prover:smt
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:321
-@!!loc:496:7:496:9
+@!!loc:499:7:499:9
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (1%)
+@!!meth:time-limit: 5; time-used: 0.2 (3%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:323
-@!!loc:498:7:498:9
+@!!loc:501:7:501:9
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (2%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
 @!!BEGIN
 @!!type:obligation
 @!!id:324
-@!!loc:501:7:501:14
+@!!loc:504:7:504:14
 @!!status:proved
 @!!prover:smt
-@!!meth:time-limit: 5; time-used: 0.1 (1%)
+@!!meth:time-limit: 5; time-used: 0.1 (3%)
 @!!already:false
 @!!END
 
 (* created new ".tlacache/Synthesis.tlaps/Synthesis.thy" *)
 (* fingerprints written in ".tlacache/Synthesis.tlaps/fingerprints" *)
-File "./Synthesis.tla", line 1, character 1 to line 504, character 76:
+File "./Synthesis.tla", line 1, character 1 to line 507, character 76:
 [INFO]: All 324 obligations proved.
